@@ -1,0 +1,36 @@
+.theme-component-jagged {
+	height: 1em;
+}
+
+.theme-component-jagged svg {
+	display: block;
+}
+
+.theme-component-line-left, .theme-component-line-right, .theme-component-line-1, .theme-component-line-2 {
+	min-height: 4px;
+}
+
+.theme-component-line-1, .theme-component-line-2 {
+	background-color: currentColor;
+}
+
+.theme-component-line-left .theme-component-line-1 {
+	clip-path: polygon(100% 0, 100% 100%, 4px 100%, 0 0);
+}
+
+.theme-component-line-right .theme-component-line-1 {
+	clip-path: polygon(100% 0, calc(100% - 4px) 100%, 0 100%, 0 0);
+}
+
+.theme-component-line-2 {
+	position: absolute;
+	height: auto;
+}
+
+.theme-component-line-left .theme-component-line-2 {
+	left: 0;
+}
+
+.theme-component-line-right .theme-component-line-2 {
+	right: 0;
+}

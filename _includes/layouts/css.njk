@@ -1,0 +1,2 @@
+{% set mergeSourceConfig = css[filename] %}{% if mergeSourceConfig.preamble %}{{ mergeSourceConfig.preamble }}
+{% endif %}{% set content %}{% mergeSource mergeSourceConfig.files, 'css', mergeSourceConfig.parse %}{% endset %}{% if PRODUCTION and mergeSourceConfig.parse %}{{ content | cssmin | safe }}{% else %}{{ content | safe }}{% endif %}

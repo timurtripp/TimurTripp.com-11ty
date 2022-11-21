@@ -1,0 +1,87 @@
+.tt-navbar .tt-logo {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: auto;
+	margin: 0;
+}
+
+.tt-logo-main {
+	color: var(--theme-text-strong);
+	font-family: var(--font-emphasis);
+	font-weight: 900;
+	font-size: 1.1em;
+}
+
+.tt-logo-est {
+	display: block;
+	box-sizing: border-box;
+	color: var(--theme-text-normal);
+	font-family: var(--font-kollektif);
+	font-weight: 500;
+	font-size: 0.5em;
+	text-align: right;
+	margin-top: -0.5em
+}
+
+.tt-nav {
+	font-family: var(--font-normal);
+	font-size: 1em;
+}
+
+.tt-nav a, .tt-nav a:hover, .tt-nav a:active, .tt-nav a:focus {
+	border-bottom: none;
+	text-decoration: none;
+}
+
+.tt-nav .navbar-toggler {
+	border: none;
+	background: transparent;
+	text-align: center;
+	box-shadow: none;
+}
+.tt-nav .navbar-toggler .icon-bar {
+	display: block;
+	background-color: var(--theme-text-strong);
+	width: 22px;
+	height: 2px;
+	margin: 4px 0;
+	transition: all 0.1s;
+}
+.tt-nav .navbar-toggler .top-bar {
+	transform: rotate(45deg) translatex(15%);
+	transform-origin: 25% 10%;
+}
+.tt-nav .navbar-toggler .middle-bar {
+	opacity: 0;
+}
+.tt-nav .navbar-toggler .bottom-bar {
+	transform: rotate(-45deg) translatex(15%);
+	transform-origin: 25% 90%;
+}
+.tt-nav .navbar-toggler.collapsed .top-bar, .tt-nav .navbar-toggler.collapsed .bottom-bar {
+	transform: rotate(0);
+	margin-left: 0;
+}
+.tt-nav .navbar-toggler.collapsed .middle-bar {
+	opacity: 1;
+}
+
+.tt-nav .nav-link {
+	color: var(--theme-text-normal);
+	padding: 4px 16px;
+}
+
+.tt-nav .nav-link:hover {
+	color: var(--theme-text-black);
+}
+
+.tt-nav-border-block2 {
+	left: 0;
+}
+
+@media (min-width: 576px) {
+	.tt-logo-main {
+		font-size: 2em;
+	}
+}

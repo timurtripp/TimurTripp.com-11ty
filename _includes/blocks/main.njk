@@ -1,0 +1,19 @@
+<main class="content tt-main">
+    {% block content %}
+		{% if sectionedContent %}
+			{{ content | safe }}
+		{% else %}
+			<div class="container page-intro-outer">
+				<div class="theme-color-text" style="transform: scale(-1, -1);">
+					{% include 'components/theme/jagged.njk' %}
+				</div>
+				<div class="content page-intro">
+					{{ content | safe }}
+				</div>
+				<div class="theme-color-text">
+					{% include 'components/theme/jagged.njk' %}
+				</div>
+			</div>
+		{% endif %}
+	{% endblock %}
+</main>

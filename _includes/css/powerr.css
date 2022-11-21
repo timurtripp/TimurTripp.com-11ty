@@ -1,0 +1,21 @@
+/* Powerr regular */
+@font-face {
+	font-family: Powerr;
+	font-style: normal;
+	font-weight: 400;
+	src: url('./files/PowerrRegular.ttf');
+}
+/* Powerr bold */
+@font-face {
+	font-family: Powerr;
+	font-style: normal;
+	font-weight: 700;
+	src: url('./files/PowerrBold.ttf');
+}
+/* Powerr black */
+@font-face {
+	font-family: Powerr;
+	font-style: normal;
+	font-weight: 900;
+	src: url('./files/PowerrBlack.ttf');
+}

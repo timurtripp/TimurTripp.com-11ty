@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="{{ lang or "en" }}">
+	<head>
+		<title>{{ title }}</title>
+		<meta name="author" content="{{ author }}">
+		<meta name="description" content="{{ description }}">
+		<meta name="keywords" content="{% for keyword in keywords %}{{ ',' if loop.index != 1 }}{{ keyword }}{% endfor %}">
+		<meta name="viewport" content="width=device-width,initial-scale=1">{% if noIndex %}
+		<meta name="robots" content="noindex">{% endif %}
+		<link rel="stylesheet" type="text/css" href="/assets/theme/bootstrap/{{ bootstrapVersion }}/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="/assets/theme/fonts/eb-garamond-400-400i-700-700i-powerr-400-700-900.css">
+		<link rel="stylesheet" type="text/css" href="/assets/theme/syntax/prism-vs-default.css" id="syntaxCSS">
+		<link rel="stylesheet" type="text/css" href="/assets/theme/styles.css?v={{ version }}">
+		<script type="text/javascript" src="/assets/theme/bootstrap/{{ bootstrapVersion }}/bootstrap.min.js"></script>
+		<script type="text/javascript" src="/assets/theme/scripts.js?v={{ version }}"></script>
+		<style type="text/css">
+			:root {
+				--theme-color: var(--theme-{% if section %}{{ section }}{% else %}default{% endif %}-color);
+				--theme-light-color-alt: var(--theme-light-{% if section %}{{ section }}{% else %}default{% endif %}-color-alt);
+				--theme-dark-color-alt: var(--theme-dark-{% if section %}{{ section }}{% else %}default{% endif %}-color-alt);
+				--theme-fill: var(--theme-{% if section %}{{ section }}{% else %}default{% endif %}-fill);
+				--theme-color-alt: var(--theme-light-color-alt, --theme-light-default-color-alt);
+				--theme-color-contrasty: var(--theme-color, --theme-default-color);
+			}
+			.theme-mode-dark, .theme-mode-dark * {
+				--theme-color-alt: var(--theme-dark-color-alt, --theme-dark-default-color-alt);
+				--theme-color-contrasty: var(--theme-dark-color-alt, --theme-dark-default-color-alt);
+			}
+			@media (prefers-color-scheme: dark) {
+				.theme-mode-auto, .theme-mode-auto * {
+					--theme-color-alt: var(--theme-dark-color-alt, --theme-dark-default-color-alt);
+					--theme-color-contrasty: var(--theme-dark-color-alt, --theme-dark-default-color-alt);
+				}
+			}
+		</style>
+	</head>
+	<body class="{% if section %}{{ section }} {% endif %}theme-mode-auto">
+		{% block page %}
+			{{ content | safe }}
+		{% endblock %}
+	</body>
+</html>

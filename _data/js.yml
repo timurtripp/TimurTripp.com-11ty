@@ -1,0 +1,9 @@
+scripts.js:
+  parse: true
+  preamble: |
+    /**
+     * @file Theme JS for TimurTripp.com
+    */
+  files:
+    - path: '_includes/layouts/js/*.js'
+    - path: '_includes/blocks/js/*.js'

@@ -1,0 +1,63 @@
+
+.tt-footer {
+    margin-top: auto;
+}
+
+.tt-footer .tt-footer-inner {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.tt-footer .tt-copyright-notice, .tt-footer .tt-footer-contact {
+    font-family: var(--font-emphasis);
+    font-size: 12pt;
+}
+
+.tt-footer .tt-copyright-notice .tt-site-footer-link, .tt-footer .tt-footer-contact a {
+    color: var(--theme-text-strong);
+    font-family: var(--font-emphasis);
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.tt-footer .tt-footer-name, .tt-footer .tt-footer-logo {
+	display: block;
+    font-family: var(--font-emphasis);
+    font-weight: 900;
+    font-size: 1.5em;
+	margin: 0;
+	padding: 0;
+}
+
+.tt-footer .tt-footer-bio {
+    font-family: var(--font-normal);
+    font-size: 1em;
+    line-height: 1.1em;
+    padding: 0;
+}
+
+.tt-footer .tt-footer-contact, .tt-footer .tt-footer-contact a {
+	font-weight: normal;
+	font-size: 1em;
+}
+
+.tt-footer .tt-footer-remark, .tt-footer .tt-footer-built-with {
+	display: block;
+	font-family: var(--font-normal);
+	font-size: 1em;
+	font-variant: small-caps;
+}
+
+.tt-footer .tt-footer-built-with {
+	font-size: 0.8em;
+}
+
+.tt-footer .tt-footer-socials {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.tt-footer .tt-footer-social {
+	display: inline-block;
+	margin-left: 2px;
+}

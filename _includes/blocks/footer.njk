@@ -1,0 +1,30 @@
+<footer class="tt-footer">
+	{% include 'components/theme/line-right.njk' %}
+	<div class="tt-footer-inner">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm align-items-center text-start">
+					<div class="tt-footer-remark">
+						<p class="tt-footer-built-with">Built with <a href="https://www.11ty.dev" target="_blank">11ty</a><br><a href="https://github.com/TeddyBearX/timurtripp.com-11ty" target="_blank">Source on GitHub</a> (<a href="https://gitlab.teddybear.pro/TeddyBearX/timurtripp.com-11ty" target="_blank">GitLab</a>) &#8226; <a href="/README.md">README</a></p>
+					</div>
+				</div>
+				<div class="col-sm align-items-center text-end">
+					<span class="tt-footer-name theme-text-strong">{{ author }}</span>
+					<div class="tt-footer-contact">
+						{% if site.email %}<a href="mailto:{{ site.email }}">{{ site.email }}</a>{% endif %}
+						{% if socials %}<ul class="tt-footer-socials">
+							{% for socialName, social in socials %}{% if social.footer %}
+								<li class="tt-footer-social tt-footer-social-{{ socialName|classify }}">
+									<a target="_blank" href="{{ social.url }}">
+										<span aria-hidden="true" class="text-like">{% brandIcon socialName %}</span>
+										<span class="visually-hidden">{{ socialName }}</span>
+									</a>
+								</li>
+							{% endif %}{% endfor %}
+						</ul>{% endif %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>

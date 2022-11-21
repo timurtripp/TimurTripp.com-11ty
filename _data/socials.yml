@@ -1,0 +1,12 @@
+LinkedIn:
+  username: 'Timur Tripp'
+  url: 'https://www.linkedin.com/in/timur-tripp-1031a61b1/'
+  footer: true
+GitLab:
+  username: '@TeddyBearX'
+  url: 'https://gitlab.teddybear.pro/TeddyBearX'
+  footer: true
+GitHub:
+  username: '@TeddyBearX'
+  url: 'https://github.com/TeddyBearX'
+  footer: true

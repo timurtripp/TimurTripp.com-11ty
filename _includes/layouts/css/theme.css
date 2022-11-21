@@ -1,0 +1,137 @@
+:root {
+	--font-normal: serif;
+	--font-secondary: 'EB Garamond', serif;
+	--font-emphasis: Powerr, sans-serif;
+	--theme-color-blue: #0080FF;
+	--theme-light-color-blue-alt: #005CB3;
+	--theme-dark-color-blue-alt: #4EAAFF;
+	--theme-fill-blue: #0080FF;
+	--theme-color-red: #e04b2d;
+	--theme-fill-red: #e04b2d;
+	--theme-color-brown: #ba7d3f;
+	--theme-fill-brown: #ba7d3f;
+	--theme-color-gray: #6c757d;
+	--theme-fill-gray: #6c757d;
+	--theme-color-green: #19a643;
+	--theme-fill-green: #19a643;
+	--theme-color-text: #FFFFFF;
+	--theme-fill-text: #FFFFFF;
+	--theme-light-text-normal: rgb(44, 44, 44);
+	--theme-light-text-strong: rgb(24, 24, 24);
+	--theme-light-text-black: #000000;
+	--theme-dark-text-normal: rgb(211, 211, 211);
+	--theme-dark-text-strong: rgb(231, 231, 231);
+	--theme-dark-text-black: #FFFFFF;
+	--theme-text-normal: var(--theme-light-text-normal);
+	--theme-text-strong: var(--theme-light-text-strong);
+	--theme-text-black: var(--theme-light-text-black);
+	--theme-light-foreground-bg: rgb(245, 245, 245);
+	--theme-dark-foreground-bg: rgb(34, 34, 34);
+	--theme-foreground-bg: var(--theme-light-foreground-bg);
+	--theme-light-background-bg: #FFFFFF;
+	--theme-dark-background-bg: rgb(10, 10, 10);
+	--theme-background-bg: var(--theme-light-background-bg);
+	--theme-light-foreground-translucent-bg: rgba(245, 245, 245, .98);
+	--theme-dark-foreground-translucent-bg: rgba(34, 34, 34, .98);
+	--theme-foreground-translucent-bg: var(--theme-light-foreground-translucent-bg);
+	--theme-default-color: var(--theme-color-blue);
+	--theme-light-default-color-alt: var(--theme-light-color-blue-alt);
+	--theme-dark-default-color-alt: var(--theme-dark-color-blue-alt);
+	--theme-default-color-alt: var(--theme-light-default-color-alt);
+	--theme-default-color-contrasty: var(--theme-default-color);
+	--theme-default-fill: var(--theme-fill-blue);
+	--theme-home-color: var(--theme-color-blue);
+	--theme-light-home-color-alt: var(--theme-light-color-blue-alt);
+	--theme-dark-home-color-alt: var(--theme-dark-color-blue-alt);
+	--theme-home-fill: var(--theme-fill-blue);
+	--theme-portfolio-color: var(--theme-color-red);
+	--theme-light-portfolio-color-alt: var(--theme-light-color-red-alt);
+	--theme-dark-portfolio-color-alt: var(--theme-dark-color-red-alt);
+	--theme-portfolio-fill: var(--theme-fill-red);
+	--theme-archive-color: var(--theme-color-gray);
+	--theme-light-archive-color-alt: var(--theme-light-color-gray-alt);
+	--theme-dark-archive-color-alt: var(--theme-dark-color-gray-alt);
+	--theme-archive-fill: var(--theme-fill-gray);
+	--theme-links-color: var(--theme-color-green);
+	--theme-light-links-color-alt: var(--theme-light-color-green-alt);
+	--theme-dark-links-color-alt: var(--theme-dark-color-green-alt);
+	--theme-links-fill: var(--theme-fill-green);
+}
+
+.theme-mode-dark, .theme-mode-dark * {
+	--theme-text-normal: var(--theme-dark-text-normal);
+	--theme-text-strong: var(--theme-dark-text-strong);
+	--theme-text-black: var(--theme-dark-text-black);
+	--theme-background-bg: var(--theme-dark-background-bg);
+	--theme-foreground-bg: var(--theme-dark-foreground-bg);
+	--theme-foreground-translucent-bg: var(--theme-dark-foreground-translucent-bg);
+	--theme-default-color-alt: var(--theme-dark-default-color-alt);
+	--theme-default-color-contrasty: var(--theme-default-color-alt);
+}
+
+@media (prefers-color-scheme: dark) {
+	.theme-mode-auto, .theme-mode-auto * {
+		--theme-text-normal: var(--theme-dark-text-normal);
+		--theme-text-strong: var(--theme-dark-text-strong);
+		--theme-text-black: var(--theme-dark-text-black);
+		--theme-background-bg: var(--theme-dark-background-bg);
+		--theme-foreground-bg: var(--theme-dark-foreground-bg);
+		--theme-foreground-translucent-bg: var(--theme-dark-foreground-translucent-bg);
+		--theme-default-color-alt: var(--theme-dark-default-color-alt);
+		--theme-default-color-contrasty: var(--theme-default-color-alt);
+	}
+}
+
+.font-normal {
+	font-family: var(--font-normal);
+	font-weight: 400;
+}
+
+.font-secondary {
+	font-family: var(--font-secondary);
+	font-weight: 900;
+}
+
+.font-emphasis {
+	font-family: var(--font-emphasis);
+	font-weight: 900;
+}
+
+.theme-color-bg {
+	color: var(--theme-color-text);
+	background: var(--theme-color, --theme-default-color);
+}
+
+.theme-color-text {
+	color: var(--theme-color, --theme-default-color);
+}
+
+.theme-color-alt {
+	color: var(--theme-color-alt, --theme-default-color-alt);
+}
+
+.theme-color-contrasty {
+	color: var(--theme-color-contrasty, --theme-default-color-contrasty);
+}
+
+.theme-fill-bg {
+	color: var(--theme-fill-text);
+	background: var(--theme-fill, --theme-default-fill);
+}
+
+.theme-foreground, .theme-foreground-translucent {
+	color: var(--theme-text-normal);
+	background-color: var(--theme-foreground-bg);
+}
+
+.theme-foreground-translucent {
+	background-color: var(--theme-foreground-translucent-bg);
+}
+
+.theme-text-strong {
+	color: var(--theme-text-strong);
+}
+
+.theme-text-black {
+	color: var(--theme-text-black);
+}

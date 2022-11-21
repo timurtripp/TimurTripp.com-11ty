@@ -1,0 +1,2 @@
+{% set mergeSourceConfig = js[filename] %}{% if mergeSourceConfig.preamble %}{{ mergeSourceConfig.preamble }}
+{% endif %}{% set content %}{% mergeSource mergeSourceConfig.files, 'js', mergeSourceConfig.parse %}{% endset %}{% if PRODUCTION and mergeSourceConfig.parse %}{{ content | jsmin | safe }}{% else %}{{ content | safe }}{% endif %}

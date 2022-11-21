@@ -1,0 +1,27 @@
+styles.css:
+  parse: true
+  preamble: |
+    /**
+     * @file Theme CSS for TimurTripp.com
+    */
+  files:
+    - path: '_includes/layouts/css/*.css'
+    - path: '_includes/blocks/css/*.css'
+    - path: '_includes/components/theme/css/*.css'
+
+eb-garamond-400-400i-700-700i-powerr-400-700-900.css:
+  parse: false
+  files:
+    - path: 'node_modules/@fontsource/eb-garamond/400.css'
+    - path: 'node_modules/@fontsource/eb-garamond/400-italic.css'
+    - path: 'node_modules/@fontsource/eb-garamond/700.css'
+    - path: 'node_modules/@fontsource/eb-garamond/700-italic.css'
+    - path: '_includes/css/powerr.css'
+
+prism-vs-default.css:
+  parse: false
+  files:
+    - path: 'node_modules/prismjs-vs/dist/prism-vs-light.css'
+    - raw: '@media (prefers-color-scheme: dark) {'
+    - path: 'node_modules/prismjs-vs/dist/prism-vs-dark.css'
+    - raw: '}'
