@@ -18,10 +18,10 @@ eb-garamond-400-400i-700-700i-powerr-400-700-900.css:
     - path: 'node_modules/@fontsource/eb-garamond/700-italic.css'
     - path: '_includes/css/powerr.css'
 
-prism-vs-default.css:
+prism-coldark-default.css:
   parse: false
   files:
-    - path: 'node_modules/prismjs-vs/dist/prism-vs-light.css'
+    - path: 'node_modules/prism-themes/themes/prism-coldark-cold.css'
     - raw: '@media (prefers-color-scheme: dark) {'
-    - path: 'node_modules/prismjs-vs/dist/prism-vs-dark.css'
+    - path: 'node_modules/prism-themes/themes/prism-coldark-dark.css'
     - raw: '}'

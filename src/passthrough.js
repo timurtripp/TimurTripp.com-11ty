@@ -28,6 +28,6 @@ module.exports = {
 	'node_modules/bootstrap/dist/css/bootstrap.min.css.map': 'assets/theme/bootstrap/' + bootstrapVersion + '/bootstrap.min.css.map',
 
 	// Passthrough of syntax highlighting CSS
-	'node_modules/prismjs-vs/dist/prism-vs-light.css': 'assets/theme/syntax/prism-vs-light.css',
-	'node_modules/prismjs-vs/dist/prism-vs-dark.css': 'assets/theme/syntax/prism-vs-dark.css'
+	'node_modules/prism-themes/themes/prism-coldark-cold.css': 'assets/theme/syntax/prism-coldark-light.css',
+	'node_modules/prism-themes/themes/prism-coldark-dark.css': 'assets/theme/syntax/prism-coldark-dark.css'
 };

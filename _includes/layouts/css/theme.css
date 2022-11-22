@@ -25,14 +25,14 @@
 	--theme-text-normal: var(--theme-light-text-normal);
 	--theme-text-strong: var(--theme-light-text-strong);
 	--theme-text-black: var(--theme-light-text-black);
-	--theme-light-foreground-bg: rgb(245, 245, 245);
-	--theme-dark-foreground-bg: rgb(34, 34, 34);
+	--theme-light-foreground-bg: rgb(240, 240, 240);
+	--theme-dark-foreground-bg: rgb(40, 40, 40);
 	--theme-foreground-bg: var(--theme-light-foreground-bg);
 	--theme-light-background-bg: #FFFFFF;
 	--theme-dark-background-bg: rgb(10, 10, 10);
 	--theme-background-bg: var(--theme-light-background-bg);
-	--theme-light-foreground-translucent-bg: rgba(245, 245, 245, .98);
-	--theme-dark-foreground-translucent-bg: rgba(34, 34, 34, .98);
+	--theme-light-foreground-translucent-bg: rgba(240, 240, 240, .98);
+	--theme-dark-foreground-translucent-bg: rgba(40, 40, 40, .98);
 	--theme-foreground-translucent-bg: var(--theme-light-foreground-translucent-bg);
 	--theme-default-color: var(--theme-color-blue);
 	--theme-light-default-color-alt: var(--theme-light-color-blue-alt);

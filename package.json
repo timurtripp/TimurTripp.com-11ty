@@ -7,7 +7,21 @@
 	},
 	"author": "Timur Tripp",
 	"description": "11ty source project and 1980s-inspired template for the website TimurTripp.com.",
-	"keywords": ["11ty", "website", "personal website", "template", "website template", "portfolio", "retro", "vintage", "80s", "1980s", "90s", "1990s", "dark mode"],
+	"keywords": [
+		"11ty",
+		"website",
+		"personal website",
+		"template",
+		"website template",
+		"portfolio",
+		"retro",
+		"vintage",
+		"80s",
+		"1980s",
+		"90s",
+		"1990s",
+		"dark mode"
+	],
 	"license": "MIT",
 	"dependencies": {
 		"@11ty/eleventy": "^1.0.1",
@@ -24,7 +38,7 @@
 		"luxon": "^3.0.1",
 		"markdown-it": "^13.0.1",
 		"markdown-it-anchor": "^8.6.4",
-		"prismjs-vs": "^1.0.2",
+		"prism-themes": "^1.9.0",
 		"terser": "^5.14.2"
 	}
 }

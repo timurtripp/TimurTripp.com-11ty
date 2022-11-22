@@ -81,24 +81,31 @@ a:hover, a:focus, a:active {
 code {
 	display: inline-block;
 	color: var(--theme-text-strong);
-	background-color: var(--theme-foreground-bg) !important;
-	font-size: 0.8em;
+	background-color: var(--theme-foreground-bg);
+	font-family: monospace;
+	font-size: 1em;
 }
 
-pre {
+pre, pre[class*='language-'] {
 	position: relative;
 	display: block;
 	width: auto;
+	background-color: transparent;
 	border-radius: 12px;
 	overflow-x: auto;
 	color: var(--theme-text-strong);
-	font-size: 0.8em;
+	margin: 0 0 1rem 0;
+	padding: 0;
 }
 
-pre code {
+pre code, pre[class*='language-'] code {
+	color: var(--theme-text-strong);
+	background-color: var(--theme-foreground-bg);
 	border-radius: 12px;
 	line-height: 1.4em;
 	vertical-align: auto;
+	font-family: monospace;
+	font-size: 1em;
 	padding: 10px 20px;
 }
 
@@ -139,8 +146,8 @@ blockquote::before {
 	width: 24px;
 	height: 100%;
 	background-color: var(--theme-color, --default-theme-color);
-	-webkit-mask-image: url('/assets/curve-vertical.svg');
-	mask-image: url('/assets/curve-vertical.svg');
+	-webkit-mask-image: url('/assets/theme/curve-vertical.svg');
+	mask-image: url('/assets/theme/curve-vertical.svg');
 	-webkit-mask-repeat: no-repeat;
 	mask-repeat: no-repeat;
 	-webkit-mask-size: 100%;

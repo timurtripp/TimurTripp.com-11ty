@@ -1,9 +1,9 @@
 /**
- * @file Outputs `/assets/theme/syntax/prism-vs-default.css`.
+ * @file Outputs `/assets/theme/syntax/prism-coldark-default.css`.
  */
 
 module.exports.data = {
 	layout: 'layouts/css.njk',
-	filename: 'prism-vs-default.css',
+	filename: 'prism-coldark-default.css',
 	permalink: data => '/assets/theme/syntax/' + data.filename
 };
