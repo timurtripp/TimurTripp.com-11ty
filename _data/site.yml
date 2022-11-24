@@ -6,9 +6,7 @@ keywords: ['software engineer', 'web developer', 'personal website', 'portfolio'
 authorBio: 'I’m a web-focused software enginner based in the Denver metropolitan area.'
 authorTagline: Software engineer
 email: 'timur@timurtripp.com'
-
-# Sections of the site navigation
-sections:
+sections: # Sections of the site navigation
   home:
     name: Home
     url: '/'

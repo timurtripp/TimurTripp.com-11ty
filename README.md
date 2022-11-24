@@ -25,7 +25,5 @@ Install [NodeJS](https://nodejs.org/) and [npm](https://www.npmjs.com/), and run
 `npm run build` to output static HTML/CSS/JS files suitable for the production site.
 
 ## TODO
-- Style tables
-- Style `<hr>`
 - Add more content to the homepage
 - Site navigation

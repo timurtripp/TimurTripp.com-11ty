@@ -1,11 +1,3 @@
-.theme-component-jagged {
-	height: 1em;
-}
-
-.theme-component-jagged svg {
-	display: block;
-}
-
 .theme-component-line-left, .theme-component-line-right, .theme-component-line-1, .theme-component-line-2 {
 	min-height: 4px;
 }

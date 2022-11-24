@@ -2,6 +2,7 @@
 	--font-normal: serif;
 	--font-secondary: 'EB Garamond', serif;
 	--font-emphasis: Powerr, sans-serif;
+	--font-mono: 'Cutive Mono', monospace;
 	--theme-color-blue: #0080FF;
 	--theme-light-color-blue-alt: #005CB3;
 	--theme-dark-color-blue-alt: #4EAAFF;
@@ -26,8 +27,11 @@
 	--theme-text-strong: var(--theme-light-text-strong);
 	--theme-text-black: var(--theme-light-text-black);
 	--theme-light-foreground-bg: rgb(240, 240, 240);
+	--theme-light-contrast-bg: rgb(225, 225, 225);
 	--theme-dark-foreground-bg: rgb(40, 40, 40);
+	--theme-dark-contrast-bg: rgb(55, 55, 55);
 	--theme-foreground-bg: var(--theme-light-foreground-bg);
+	--theme-contrast-bg: var(--theme-light-contrast-bg);
 	--theme-light-background-bg: #FFFFFF;
 	--theme-dark-background-bg: rgb(10, 10, 10);
 	--theme-background-bg: var(--theme-light-background-bg);
@@ -65,6 +69,7 @@
 	--theme-background-bg: var(--theme-dark-background-bg);
 	--theme-foreground-bg: var(--theme-dark-foreground-bg);
 	--theme-foreground-translucent-bg: var(--theme-dark-foreground-translucent-bg);
+	--theme-contrast-bg: var(--theme-dark-contrast-bg);
 	--theme-default-color-alt: var(--theme-dark-default-color-alt);
 	--theme-default-color-contrasty: var(--theme-default-color-alt);
 }
@@ -77,6 +82,7 @@
 		--theme-background-bg: var(--theme-dark-background-bg);
 		--theme-foreground-bg: var(--theme-dark-foreground-bg);
 		--theme-foreground-translucent-bg: var(--theme-dark-foreground-translucent-bg);
+		--theme-contrast-bg: var(--theme-dark-contrast-bg);
 		--theme-default-color-alt: var(--theme-dark-default-color-alt);
 		--theme-default-color-contrasty: var(--theme-default-color-alt);
 	}

@@ -20,6 +20,10 @@ module.exports = {
 	'node_modules/@fontsource/eb-garamond/files/*latin-700-*.woff2': 'assets/theme/fonts/files',
 	'node_modules/@fontsource/eb-garamond/files/*latin-ext-700-*.woff2': 'assets/theme/fonts/files',
 	'node_modules/@fontsource/eb-garamond/files/*cyrillic-700-*.woff2': 'assets/theme/fonts/files',
+	'node_modules/@fontsource/cutive-mono/files/*all-400-*.woff': 'assets/theme/fonts/files',
+	'node_modules/@fontsource/cutive-mono/files/*latin-400-*.woff2': 'assets/theme/fonts/files',
+	'node_modules/@fontsource/cutive-mono/files/*latin-ext-400-*.woff2': 'assets/theme/fonts/files',
+	'node_modules/@fontsource/cutive-mono/files/*cyrillic-400-*.woff2': 'assets/theme/fonts/files',
 
 	// Passthrough of Bootstrap files 
 	'node_modules/bootstrap/dist/js/bootstrap.min.js': 'assets/theme/bootstrap/' + bootstrapVersion + '/bootstrap.min.js',

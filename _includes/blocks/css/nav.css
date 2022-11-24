@@ -67,18 +67,18 @@
 	opacity: 1;
 }
 
-.tt-nav .nav-link {
+.tt-nav .nav-link, .tt-nav .theme-mode-toggle-container {
 	color: var(--theme-text-normal);
 	background-color: transparent;
 	border: none;
 	padding: 4px 16px;
 }
 
-.tt-nav .nav-link * {
+.tt-nav .nav-link *, .tt-nav .theme-mode-toggle-container * {
 	color: var(--theme-text-normal);
 }
 
-.tt-nav .nav-link:hover, .tt-nav .nav-link:hover * {
+.tt-nav .nav-link:hover, .tt-nav .nav-link:hover *, .tt-nav .theme-mode-toggle-container:hover * {
 	color: var(--theme-text-black);
 }
 
@@ -86,64 +86,12 @@
 	left: 0;
 }
 
+.tt-nav .theme-mode-toggle {
+	vertical-align: text-top;
+}
+
 @media (min-width: 576px) {
 	.tt-logo-main {
 		font-size: 2em;
 	}
-}
-
-.theme-mode-toggle {
-	display: inline-block;
-	vertical-align: text-top;
-	background: transparent;
-	width: 23px;
-	height: 23px;
-	border-radius: 12px;
-	border: 1px solid currentColor;
-	padding: 1px;
-}
-
-.theme-mode-toggle .theme-mode-toggle-circle-inner {
-	overflow: hidden;
-	width: 100%;
-	border-radius: 10px 10px 10px 10px;
-	width: 19px;
-	height: 19px;
-}
-
-.theme-mode-toggle .theme-mode-toggle-inner-left, .theme-mode-toggle .theme-mode-toggle-inner-right {
-	position: relative;
-	width: 50%;
-	float: left;
-	height: 20px;
-	transition: width .5s linear;
-}
-
-@media(prefers-color-scheme: dark) {
-	.theme-mode-toggle .theme-mode-toggle-inner-left, .theme-mode-toggle .theme-mode-toggle-inner-right {
-		float: right;
-	}
-}
-
-.theme-mode-light .theme-mode-toggle .theme-mode-toggle-inner-left, .theme-mode-dark .theme-mode-toggle .theme-mode-toggle-inner-right {
-	width: 100%;
-}
-
-.theme-mode-light .theme-mode-toggle .theme-mode-toggle-inner-right, .theme-mode-dark .theme-mode-toggle .theme-mode-toggle-inner-left {
-	width: 0%;
-}
-
-.theme-mode-toggle .theme-mode-toggle-line {
-	height: 1px; 
-	background-color: currentColor;
-	margin: 2px 0;
-}
-
-.theme-mode-toggle .theme-mode-toggle-inner-left .theme-mode-toggle-line {
-	height: 2px;
-	margin: 1px 0;
-}
-
-.theme-mode-toggle .theme-mode-toggle-inner-right .theme-mode-toggle-line.theme-mode-toggle-line-1 {
-	margin-top: 0;
 }

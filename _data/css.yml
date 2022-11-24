@@ -9,7 +9,7 @@ styles.css:
     - path: '_includes/blocks/css/*.css'
     - path: '_includes/components/theme/css/*.css'
 
-eb-garamond-400-400i-700-700i-powerr-400-700-900.css:
+eb-garamond-400-400i-700-700i-powerr-400-700-900-cutive-mono-400.css:
   parse: false
   files:
     - path: 'node_modules/@fontsource/eb-garamond/400.css'
@@ -17,6 +17,7 @@ eb-garamond-400-400i-700-700i-powerr-400-700-900.css:
     - path: 'node_modules/@fontsource/eb-garamond/700.css'
     - path: 'node_modules/@fontsource/eb-garamond/700-italic.css'
     - path: '_includes/css/powerr.css'
+    - path: 'node_modules/@fontsource/cutive-mono/400.css'
 
 prism-coldark-default.css:
   parse: false
