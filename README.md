@@ -1,4 +1,4 @@
-# TimurTripp.com Personal Website 11ty Source Project
+# TimurTripp.com 11ty Source Project
 
 [Тhis project](https://github.com/TeddyBearX/TimurTripp.com-11ty) contains the files and source code for my personal website, TimurTripp.com. It is licensed under the [MIT license](/LICENSE.md).
 

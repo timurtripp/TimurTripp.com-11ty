@@ -156,6 +156,20 @@ blockquote::before {
 	content: '';
 }
 
+h1::after {
+	display: block;
+	height: 50px;
+	background-color: var(--theme-color, --default-theme-color);
+	-webkit-mask-image: url('/assets/theme/header-underline.svg');
+	mask-image: url('/assets/theme/header-underline.svg');
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	-webkit-mask-position: center center;
+	mask-position: center center;
+	margin-bottom: 2rem;
+	content: '';
+}
+
 hr, table thead th::after {
 	display: block;
 	height: 7px;
@@ -173,7 +187,6 @@ hr {
 }
 
 table {
-	background-color: var(--theme-foreground-bg);
 	border-radius: 12px;
 }
 
