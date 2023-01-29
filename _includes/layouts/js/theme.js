@@ -62,8 +62,18 @@ function toggleThemeMode() {
 		changeThemeMode(themeMode === 'dark' ? 'light' : themeMode === 'light' ? 'auto' : 'dark');
 }
 
+function styleJumpableHeadings() {
+	const jumpableHeadings = document.getElementsByClassName('jumpable-heading');
+	for(let index = 0; index < jumpableHeadings.length; index++) {
+		const jumpableHeading = jumpableHeadings[index];
+		jumpableHeading.querySelector('.jumpable-heading-link').style.width = Math.round(jumpableHeading.querySelector('.jumpable-heading-text').getBoundingClientRect().left) + 3 + 'px';
+	}
+}
+
 document.addEventListener('DOMContentLoaded', function() {
 	changeThemeMode(themeSettings['mode']);
+	styleJumpableHeadings();
+	window.addEventListener('resize', styleJumpableHeadings);
 });
 
 getThemeSettings();

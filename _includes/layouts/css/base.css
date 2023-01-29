@@ -38,15 +38,15 @@ h2, .h2 {
 }
 
 h2, .h2, h3, .h3 {
-	font-size: 3rem;
+	font-size: 2.5rem;
 }
 
 h4, .h4 {
-	font-size: 2rem;
+	font-size: 1.5rem;
 }
 
 h5, .h5, th {
-	font-size: 1.5rem;
+	font-size: 1.25rem;
 }
 
 h6, .h6 {
@@ -66,6 +66,29 @@ h3, .h3, h4, .h4, h5, .h5, h6, .h6, th {
 
 .text-like, .text-like svg {
 	height: 1em;
+}
+
+.jumpable-heading {
+	margin-bottom: 1rem;
+}
+
+.jumpable-heading-text {
+	display: inline-block;
+	box-sizing: content-box;
+	border-bottom: 3px solid var(--theme-color, --default-theme-color);
+}
+
+.jumpable-heading-link:link, .jumpable-heading-link:visited {
+	position: absolute;
+	display: block;
+	left: 0;
+	width: 0;
+	height: 3px;
+	background-color: var(--theme-color-alt, --default-theme-color-alt);
+	overflow: hidden;
+	text-decoration: none;
+	border-bottom: none;
+	margin-top: calc(-0.5rem + 3px);
 }
 
 a:link, a:visited {
@@ -226,6 +249,6 @@ tr:last-child td {
 		font-size: calc(3rem + 1.2vw);
 	}
 	h2, .h2, h3, .h3 {
-		font-size: calc(2rem + 1.2vw);
+		font-size: calc(1.67rem + 1.2vw);
 	}
 }

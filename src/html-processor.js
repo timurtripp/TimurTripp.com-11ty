@@ -13,7 +13,8 @@ module.exports = {
 			const element = $(e), id = e.attribs.id || (element.text().toLowerCase().replace(/ /g, '-').replace(/[^a-z0-9_\-]/g, '') + '-' + (++h2Index));
 			if (id) {
 				e.attribs.id = id;
-				element.append('<a href="#' + id + '"><span class="visually-hidden">Jump to heading</span> <span aria-hidden="true">#</span></a>');
+				element.addClass('jumpable-heading');
+				element.html('<span class="jumpable-heading-text">' + element.html() + '</span> <a class="jumpable-heading-link" href="#' + id + '"><span aria-hidden="true">Jump to section</span></a>');
 			}
 		});
 		return $.html();
