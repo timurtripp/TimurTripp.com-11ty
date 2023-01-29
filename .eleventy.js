@@ -5,7 +5,7 @@
 require('dotenv').config();
 const 
 	yaml = require('js-yaml'),
-	htmlmin = require('html-minifier');
+	htmlProcessor = require('./src/html-processor.js');
 
 module.exports = (eleventyConfig) => {
 	// Enables support for YAML in place of JSON
@@ -19,15 +19,17 @@ module.exports = (eleventyConfig) => {
 	for(const [name, operation] of Object.entries(require('./src/shortcodes.js')))
 		eleventyConfig.addShortcode(name, operation);
 
-	// Minifies HTML output
+	// Transforms HTML output
+	eleventyConfig.addTransform('htmltransform', function (content, outputPath) {
+		if (outputPath && outputPath.indexOf('.html') > -1)
+			return htmlProcessor.htmltransform(content);
+		return content;
+	});
+
+	// Minfies HTML output
 	eleventyConfig.addTransform('htmlmin', function (content, outputPath) {
-		if (outputPath && outputPath.indexOf('.html') > -1) {
-			return htmlmin.minify(content, {
-				useShortDoctype: true,
-				removeComments: true,
-				collapseWhitespace: false
-			});
-		}
+		if (outputPath && outputPath.indexOf('.html') > -1)
+			return htmlProcessor.htmlmin(content);
 		return content;
 	});
 
