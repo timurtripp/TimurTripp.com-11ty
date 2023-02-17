@@ -30,8 +30,8 @@ module.exports = {
 	 * @param {string} code The original JS
 	 * @returns The minified JS (or the original JS if an error occured)
 	 */
-	 jsmin: function (code) {
-		const minified = terser.minify(code);
+	jsmin: async function (code) {
+		const minified = await terser.minify(code);
 		if (minified.error) {
 			console.log('Terser error: ', minified.error);
 			return code;

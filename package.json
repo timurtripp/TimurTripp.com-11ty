@@ -1,6 +1,6 @@
 {
 	"name": "timurtripp.com",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"scripts": {
 		"start": "npx @11ty/eleventy --serve",
 		"build": "NODE_ENV=production npx @11ty/eleventy"
@@ -24,7 +24,7 @@
 	],
 	"license": "MIT",
 	"dependencies": {
-		"@11ty/eleventy": "^1.0.2",
+		"@11ty/eleventy": "^2.0.0",
 		"@11ty/eleventy-navigation": "^0.3.3",
 		"@11ty/eleventy-plugin-syntaxhighlight": "^4.1.0",
 		"@fontsource/cutive-mono": "^4.5.10",
