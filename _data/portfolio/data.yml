@@ -1,0 +1,88 @@
+projects:
+  iiod.io:
+    name: 'iiod.io'
+    description: 'The goal is to play as a dinosaur and climb the food chain to dominate the island. Players can interact with and chase each other in real-time, as well as create an account to earn badges and track their highest scores. The game is a resposive web app compatible with both desktop and mobile devices, and makes use of a custom engine written in Java with a PostgreSQL database for storing player account information.'
+    website: 'https://playground.iiod.io'
+    start: '01-2018'
+    _tags: ['java', 'javascript', 'web_development', 'sql', 'api_development', 'html', 'css', 'websocket', 'spring_framework', 'apache_tomcat', 'postgresql', 'git', 'gitlab', 'docker', 'nodejs']
+  pride:
+    name: 'Utah Pride Center Youth & Family Check-in'
+    description: 'This was a collaborative group project in CMPT 375 Web Applications to create a purpose-driven check-in app for our clients at Utah Pride Center. Administrators can manage users, sections, and programs, as well as generate a unique and secure join link for each user in Django admin. The user clicks the link to check-in to a meeting and obtain a Zoom link, and may optionally also edit their display name and pronouns from the user portal.'
+    institution: westminster
+    start: '09-2021'
+    end: '12-2021'
+    _institutions: ['westminster']
+    _tags: ['django', 'python', 'web_development', 'collaboration', 'communication', 'application_design', 'html', 'css']
+  tb:
+    name: '[TB] Mods'
+    description: '[TB] Mods, or Teddy Bear Mod Pack, was a set of modifications for the online multiplayer game mope.io. A PHP script used regular expressions to programmatically modify the game‘s client JavaScript. A lot of functionality was added, such as skin and theme features, that wasn‘t there by default.'
+    start: '01-2017'
+    end: '05-2018'
+    _tags: ['javascript', 'web_development', 'html', 'css', 'php']
+
+education:
+  bachleor_of_science_degree:
+    award: 'Bachelor of Science'
+    field: 'Computer Science'
+    institution: westminster
+    end: '05-2022'
+    _institutions: ['westminster']
+  associate_of_science_degree:
+    award: 'Associate of Science'
+    field: 'Computer Science'
+    institution: slcc
+    end: '07-2020'
+    _institutions: ['slcc']
+  software_development_certificate:
+    award: 'Certificate of Proficiency'
+    field: 'Software Development'
+    institution: slcc
+    end: '2020'
+    _institutions: ['slcc']
+  web_development_certificate:
+    award: 'Certificate of Proficiency'
+    field: 'Web Development'
+    institution: slcc
+    end: '2019'
+    _institutions: ['slcc']
+    _tags: ['web_development', 'html', 'css', 'javascript', 'php']
+
+work:
+  cu_boulder_software_engineer:
+    title: 'Software Enginner'
+    department: 'Strategic Relations'
+    institution: cu_boulder
+    description: ''
+    start: '06-2022'
+    partTime: false
+    _institutions: ['cu_boulder']
+    _tags: ['php', 'javascript', 'drupal', 'docker', 'web_development', 'software_engineering', 'collaboration', 'communication', 'html', 'css', 'git', 'github']
+  slcc_tutor:
+    title: 'Tutor Non-Certified'
+    department: 'Computer Science and Information Systems'
+    institution: slcc
+    description: ''
+    start: '02-2022'
+    end: '05-2022'
+    partTime: true
+    _institutions: ['slcc']
+    _tags: ['java', 'php', 'teaching_others', 'communication']
+  introcs_pogil:
+    title: 'Research Assistant'
+    institution: introcs_pogil
+    description: 'IntroCS-POGIL is an NSF-funded project on the adoption of POGIL in introductory programming courses. I wrote several scripts to automate the process of adding CSV data to an SQLite database.'
+    start: '12-2021'
+    end: '04-2022'
+    partTime: true
+    _institutions: ['introcs_pogil']
+    _tags: ['research', 'data_processing', 'python', 'sql', 'sqlite', 'csv', 'communication']
+  westminster_lab_assistant:
+    title: 'Computer Lab Assistant I'
+    department: 'Computer Support'
+    institution: westminster
+    description: 'I provided students and faculty of the college with assistance regarding their school account or other technical issues.'
+    start: '05-2021'
+    end: '12-2021'
+    partTime: true
+    _institutions: ['westminster']
+    _tags: ['communication']

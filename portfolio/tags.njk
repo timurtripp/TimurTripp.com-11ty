@@ -1,0 +1,10 @@
+---
+section: 'portfolio'
+layout: 'layouts/base.njk'
+permalink: 'portfolio/tags/'
+---
+<h1>Tags</h1>
+{% import 'portfolio/tag.njk' as tagrenderer with context %}
+<ul>{% for tagid, tag in portfolio.dictionary.tags %}
+	<li>{{ tagrenderer.embedded_result(tagid) }}</li>{% endfor %}
+</ul>

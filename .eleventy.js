@@ -4,10 +4,18 @@
 
 require('dotenv').config();
 const 
+	fs = require('fs'),
 	yaml = require('js-yaml'),
-	htmlProcessor = require('./src/html-processor.js');
+	htmlProcessor = require('./src/html-processor.js'),
+	generatedDataPath = './_data/generated/';
 
 module.exports = (eleventyConfig) => {
+	// Run data generators
+	if(!(fs.existsSync(generatedDataPath) && fs.lstatSync(generatedDataPath).isDirectory()))
+		fs.mkdirSync(generatedDataPath);
+	for(const [name, operation] of Object.entries(require('./src/data-generators.js')))
+		fs.writeFileSync(generatedDataPath + name + '.json', JSON.stringify(operation()));
+
 	// Enables support for YAML in place of JSON
 	eleventyConfig.addDataExtension('yml', contents => yaml.load(contents));
 

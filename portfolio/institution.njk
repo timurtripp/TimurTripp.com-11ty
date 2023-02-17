@@ -1,0 +1,21 @@
+---
+section: 'portfolio'
+layout: 'layouts/base.njk'
+pagination:
+  data: portfolio.dictionary.institutions
+  size: 1
+  alias: institutionid
+permalink: 'portfolio/institutions/{{ institutionid | slugify }}/'
+---
+{% import 'portfolio/tag.njk' as tagrenderer with context %}
+{% macro embedded_label(institutionid) %}
+	<a class="institution-label" href="/portfolio/institutions/{{ institutionid | slugify }}">{{ portfolio.dictionary.institutions[institutionid].label }}</a>
+{% endmacro %}
+{% macro embedded_result(institutionid) %}
+	<h3>{{ embedded_label(institutionid) }}</h3>
+	<span class="institution-location">{{ portfolio.dictionary.institutions[institutionid].location }}</span>
+{% endmacro %}
+{% set institution = portfolio.dictionary.institutions[institutionid] %}{% set institutionInclusion = generated.portfolio.institutions[institutionid] %}
+<h1><span class="h3">Institution:</span> {{ institution.label }}</h1>
+<span class="h4 text-center">{{ institution.location }}</span>
+{{ tagrenderer.inclusion_results(institution, institutionInclusion) }}

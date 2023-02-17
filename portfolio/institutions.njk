@@ -1,0 +1,10 @@
+---
+section: 'portfolio'
+layout: 'layouts/base.njk'
+permalink: 'portfolio/institutions/'
+---
+<h1>Institutions</h1>
+{% import 'portfolio/institution.njk' as institutionrenderer with context %}
+<ul>{% for institutionid, institution in portfolio.dictionary.institutions %}
+	<li>{{ institutionrenderer.embedded_result(institutionid) }}</li>{% endfor %}
+</ul>

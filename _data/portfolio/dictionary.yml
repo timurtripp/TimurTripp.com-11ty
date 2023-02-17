@@ -1,0 +1,181 @@
+_tagCategories:
+  platform:
+    label: 'Platform'
+  programming_language:
+    label: 'Programming Language'
+  personal_skill:
+    label: 'Personal Skill'
+  technical_skill:
+    label: 'Technical Skill'
+
+tags:
+  11ty:
+    label: '11ty'
+    category: platform
+    related: ['web_development', 'nodejs', 'django']
+  apache_tomcat:
+    label: 'Apache Tomcat'
+    category: platform
+    related: ['java', 'web_development']
+  api_development:
+    label: 'API Development'
+    category: technical_skill
+    related: ['websocket']
+  application_design:
+    label: 'Application Design'
+    category: technical_skill
+    related: ['software_engineering']
+  c:
+    label: 'C'
+    category: programming_language
+    related: ['java']
+  cloudflare:
+    label: 'Cloudflare'
+    category: platform
+    related: ['web_development', 'api_development', 'heroku']
+  collaboration:
+    label: 'Collaboration'
+    category: personal_skill
+    related: ['communication']
+  communication:
+    label: 'Communication'
+    category: personal_skill
+    related: ['collaboration']
+  css:
+    label: 'CSS'
+    category: programming_language
+    related: ['html', 'web_development']
+  csv:
+    label: 'CSV'
+    category: technical_skill
+    related: ['data_processing']
+  data_processing:
+    label: 'Data Processing'
+    category: technical_skill
+    related: ['sql', 'csv', 'research']
+  django:
+    label: 'Django'
+    category: platform
+    related: ['python', 'web_development', '11ty']
+  docker:
+    label: 'Docker'
+    category: platform
+  drupal:
+    label: 'Drupal'
+    category: platform
+    related: ['php', 'mysql', 'web_development']
+  heroku:
+    label: 'Heroku'
+    category: platform
+    related: ['web_development', 'api_development', 'cloudflare']
+  git:
+    label: 'Git'
+    category: technical_skill
+    related: ['github', 'gitlab']
+  github:
+    label: 'GitHub'
+    category: platform
+    related: ['git']
+  gitlab:
+    label: 'GitLab'
+    category: platform
+    related: ['git']
+  html:
+    label: 'HTML'
+    category: programming_language
+    related: ['css', 'web_development']
+  ios:
+    label: 'iOS'
+    category: platform
+    related: ['mobile_development', 'macos', 'xcode']
+  java:
+    label: 'Java'
+    category: programming_language
+    related: ['spring_framework', 'apache_tomcat']
+  javascript:
+    label: 'JavaScript'
+    category: programming_language
+    related: ['web_development', 'nodejs']
+  macos:
+    label: 'macOS'
+    category: platform
+    related: ['ios', 'xcode']
+  mobile_development:
+    label: 'Mobile Development'
+    category: technical_skill
+    related: ['ios', 'xcode']
+  mysql:
+    label: 'MySQL'
+    category: platform
+    related: ['sql']
+  nodejs:
+    label: 'Node.js'
+    category: platform
+    related: ['javascript', '11ty']
+  postgresql:
+    label: 'PostgreSQL'
+    category: platform
+  python:
+    label: 'Python'
+    category: programming_language
+    related: ['django']
+  research:
+    label: 'Research'
+    category: technical_skill
+    related: ['data_processing']
+  spring_framework:
+    label: 'Spring Framework'
+    category: platform
+    related: ['java', 'web_development', 'api_development']
+  software_engineering:
+    label: 'Software Engineering'
+    category: technical_skill
+    related: ['web_development', 'mobile_development', 'application_design']
+  sql:
+    label: 'SQL'
+    category: programming_language
+    related: ['mysql', 'postgresql', 'sqlite']
+  sqlite:
+    label: 'SQLite'
+    category: platform
+    related: ['sql']
+  swift:
+    label: 'Swift'
+    category: programming_language
+  teaching_others:
+    label: 'Teaching Others'
+    category: personal_skill
+  php:
+    label: 'PHP'
+    category: programming_language
+    related: ['web_development', 'drupal']
+  web_development:
+    label: 'Web Development'
+    category: technical_skill
+    related: ['html', 'css', 'php']
+  websocket:
+    label: 'WebSocket'
+    category: technical_skill
+    related: ['api_development']
+  xcode:
+    label: 'Xcode'
+    category: platform
+    related: ['ios', 'macos', 'mobile_development']
+
+institutions:
+  cu_boulder:
+    label: 'University of Colorado Boulder'
+    location: 'Boulder, Colorado, United States'
+    website: 'https://www.colorado.edu'
+  introcs_pogil:
+    label: 'IntroCS-POGIL'
+    location: 'United States'
+    website: 'https://introcspogil.org'
+  slcc:
+    label: 'Salt Lake Community College'
+    location: 'Taylorsville, Utah, United States'
+    website: 'https://www.slcc.edu'
+  westminster:
+    label: 'Westminster College'
+    location: 'Salt Lake City, Utah, United States'
+    website: 'https://westminstercollege.edu'

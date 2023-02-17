@@ -1,0 +1,6 @@
+- label: 'Projects'
+  id: projects
+- label: 'Education'
+  id: education
+- label: 'Work Experience'
+  id: work
