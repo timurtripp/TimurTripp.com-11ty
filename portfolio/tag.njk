@@ -5,25 +5,8 @@ pagination:
   data: portfolio.dictionary.tags
   size: 1
   alias: tagid
-permalink: 'portfolio/tags/{{ tagid | slugify }}/'
+path: '/portfolio/tags/'
+permalink: '{{ path }}{{ tagid | slugify }}/'
 ---
-{% macro embedded_label(tagid) %}
-	<a class="tag-label" href="/portfolio/tags/{{ tagid | slugify }}">{{ portfolio.dictionary.tags[tagid].label }}</a>
-{% endmacro %}
-{% macro embedded_result(tagid) %}
-	<h3>{{ embedded_label(tagid) }}</h3>
-	<span class="tag-category">{{ portfolio.dictionary._tagCategories[portfolio.dictionary.tags[tagid].category].label }}</span>
-{% endmacro %}
-{% macro inclusion_results(tag, tagInclusion) %}
-	{% for indexItem in portfolio.index %}{% set itemTagInclusion = tagInclusion[indexItem.id] %}{% if itemTagInclusion %}
-		<h2 id="{{ indexItem.id }}">{{ indexItem.label }} – {{ itemTagInclusion | length }}</h2>
-	{% endif %}{% endfor %}
-{% endmacro %}
-{% set tag = portfolio.dictionary.tags[tagid] %}{% set tagInclusion = generated.portfolio.tags[tagid] %}
-<h1><span class="h3">Tag:</span> {{ tag.label }}</h1>
-<span class="h4 text-center">{{ portfolio.dictionary._tagCategories[tag.category].label }}</span>
-{{ inclusion_results(tag, tagInclusion) }}
-{% if tag.related %}<h2 id="related-tags">Related Tags – {{ tag.related | length }}</h2>
-<ul>{% for tagid in tag.related %}
-	<li>{{ embedded_result(tagid) }}</li>{% endfor %}
-</ul>{% endif %}
+{% import '_includes/components/dictionary-term.njk' as renderer %}
+{{ renderer.term_page(portfolio.index, generated.portfolio, portfolio.dictionary, 'tags', tagid, path) }}

@@ -1,10 +1,8 @@
 ---
 section: 'portfolio'
 layout: 'layouts/base.njk'
-permalink: 'portfolio/institutions/'
+permalink: '/portfolio/institutions/'
 ---
+{% import '_includes/components/dictionary-term.njk' as renderer %}
 <h1>Institutions</h1>
-{% import 'portfolio/institution.njk' as institutionrenderer with context %}
-<ul>{% for institutionid, institution in portfolio.dictionary.institutions %}
-	<li>{{ institutionrenderer.embedded_result(institutionid) }}</li>{% endfor %}
-</ul>
+{{ renderer.collection_index(portfolio.index, generated.portfolio, portfolio.dictionary, 'institutions', permalink) }}

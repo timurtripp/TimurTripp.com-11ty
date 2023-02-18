@@ -1,0 +1,38 @@
+{% macro term_label(index, inclusion, dictionary, collectionid, termid, path='') %}{% set term = dictionary[collectionid][termid] %}{% if path %}<a class="term-label term-{{ termid }}" href="{{ path }}{{ termid | slugify }}">{{ term.label }}</a>{% else %}{% if term.url %}<a href="{{ term.url }}" target="_blank" class="term-label term-{{ termid }}">{{ term.label }}</a>{% else %}<span class="term-label term-{{ termid }}">{{ term.label }}</span>{% endif %}{% endif %}{% endmacro %}
+{% macro term_description(index, inclusion, dictionary, collectionid, termid, path, summary) %}{% set term = dictionary[collectionid][termid] %}{% if term.descriptors %}{% for descriptor in term.descriptors %}{% if (not summary and not (descriptor.inline == 'continue' or descriptor.inline == 'end')) or (summary and descriptor.summary) %}
+	<div class="term-descriptor{{ ' d-inline' if descriptor.inline }}">{% if not summary %}{{ term_summary(index, inclusion, dictionary, descriptor.collection, descriptor.term, dictionary._index[descriptor.collection].path if dictionary._index[descriptor.collection]) }}{% else %}{{ term_label(index, inclusion, dictionary, descriptor.collection, descriptor.term, dictionary._index[descriptor.collection].path if dictionary._index[descriptor.collection]) }}{{',' if descriptor.inline and descriptor.inline != 'end' }}{% endif %}</div>
+{% endif %}{% endfor %}{% endif %}{% endmacro %}
+{% macro term_summary(index, inclusion, dictionary, collectionid, termid, path='') %}
+	<h3>{{ term_label(index, inclusion, dictionary, collectionid, termid, path) }}</h3>
+	{{ term_description(index, inclusion, dictionary, collectionid, termid, path, true) }}
+{% endmacro %}
+{% macro term_page(index, inclusion, dictionary, collectionid, termid, path='') %}{% set term = dictionary[collectionid][termid] %}
+	<h1><span class="h2">{{ term_label(index, inclusion, dictionary, '_index', collectionid) }}:</span> {{ term_label(index, inclusion, dictionary, collectionid, termid) }}</h1>
+	<div class="text-center">{{ term_description(index, inclusion, dictionary, collectionid, termid, path, false) }}</div>
+	{{ term_data_inclusion_results(index, inclusion[collectionid][termid].dataInclusion) }}
+	{{ term_term_inclusion_results(index, inclusion[collectionid][termid].termInclusion, dictionary, collectionid, termid, path) }}
+	{% if term.related %}
+		<h2 id="related">Related – {{ term.related | length }}</h2>
+		<ul>{% for termid in term.related %}
+			<li>{{ term_summary(index, inclusion, dictionary, collectionid, termid, path) }}</li>{% endfor %}
+		</ul>
+	{% endif %}
+{% endmacro %}
+{% macro term_data_inclusion_results(index, dataInclusion) %}
+	{% for indexItem in index %}{% set dataItemInclusion = dataInclusion[indexItem.id] %}{% if dataItemInclusion %}
+		<h2 id="{{ indexItem.id }}">{{ indexItem.label }} – {{ dataItemInclusion | length }}</h2>
+	{% endif %}{% endfor %}
+{% endmacro %}
+{% macro term_term_inclusion_results(index, termInclusion, dictionary, collectionid, termid, path) %}
+	{% for collectionid2, collectionInclusion in termInclusion %}{% if collectionInclusion %}
+		<h2 id="{{ collectionid }}">{{ term_label(index, inclusion, dictionary, '_index', collectionid2) }} – {{ collectionInclusion | length }}</h2>
+		<ul>{% for termid2 in collectionInclusion %}
+			<li>{{ term_summary(index, inclusion, dictionary, collectionid2, termid2, dictionary._index[collectionid2].path if dictionary._index[collectionid2]) }}</li>{% endfor %}
+		</ul>
+	{% endif %}{% endfor %}
+{% endmacro %}
+{% macro collection_index(index, inclusion, dictionary, collectionid, path='') %}{% set collection = dictionary[collectionid] %}
+	<ul>{% for termid, term in collection %}
+		<li>{{ term_summary(index, inclusion, dictionary, collectionid, termid, path) }}</li>{% endfor %}
+	</ul>
+{% endmacro %}

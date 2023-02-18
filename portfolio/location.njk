@@ -1,0 +1,12 @@
+---
+section: 'portfolio'
+layout: 'layouts/base.njk'
+pagination:
+  data: portfolio.dictionary._locations
+  size: 1
+  alias: termid
+path: '/portfolio/locations/'
+permalink: '{{ path }}{{ termid | slugify }}/'
+---
+{% import '_includes/components/dictionary-term.njk' as renderer %}
+{{ renderer.term_page(portfolio.index, generated.portfolio, portfolio.dictionary, '_locations', termid, path) }}
