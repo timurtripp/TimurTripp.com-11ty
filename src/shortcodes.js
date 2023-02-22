@@ -5,7 +5,8 @@
 const
 	readFileSync = require('fs').readFileSync,
 	fg = require('fast-glob'),
-	faBrands = require('@fortawesome/free-brands-svg-icons').fab;
+	faBrands = require('@fortawesome/free-brands-svg-icons').fab,
+	term = require('./term.js');
 
 /**
  * Shortcodes (can be called in templates)
@@ -49,5 +50,18 @@ module.exports = {
 		if(iconData)
 			return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ' + iconData.icon[0] + ' ' + iconData.icon[1] + '"><path fill="currentColor" d="' + iconData.icon[4] + '"/></svg>';
 		return '';
+	},
+
+	termLabel: function(termId, collectionId, dictionary, dataIndex, globalRelationships) {
+		return new term.Term(termId, collectionId, dictionary, dataIndex, globalRelationships).label();
+	},
+	termSummary: function(termId, collectionId, dictionary, dataIndex, globalRelationships) {
+		return new term.Term(termId, collectionId, dictionary, dataIndex, globalRelationships).summary();
+	},
+	termPage: function(termId, collectionId, dictionary, dataIndex, globalRelationships) {
+		return new term.Term(termId, collectionId, dictionary, dataIndex, globalRelationships).page();
+	},
+	termList: function(termIds, collectionId, dictionary, dataIndex, globalRelationships) {
+		return term.termList(termIds, collectionId, dictionary, dataIndex, globalRelationships);
 	}
 };

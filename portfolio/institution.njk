@@ -4,9 +4,8 @@ layout: 'layouts/base.njk'
 pagination:
   data: portfolio.dictionary.institutions
   size: 1
-  alias: institutionid
-path: '/portfolio/institutions/'
-permalink: '{{ path }}{{ institutionid | slugify }}/'
+  alias: termid
+permalink: '{{ portfolio.dictionary._index.institutions.path }}{{ termid }}/'
 ---
-{% import '_includes/components/dictionary-term.njk' as renderer %}
-{{ renderer.term_page(portfolio.index, generated.portfolio, portfolio.dictionary, 'institutions', institutionid, path) }}
+{% set content %}{% termPage termid, 'institutions', portfolio.dictionary, portfolio.index, generated.portfolio %}{% endset %}
+{{ content | safe }}

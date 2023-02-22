@@ -5,8 +5,7 @@ pagination:
   data: portfolio.dictionary._tagCategories
   size: 1
   alias: termid
-path: '/portfolio/tags/categories/'
-permalink: '{{ path }}{{ termid | slugify }}/'
+permalink: '{{ portfolio.dictionary._index._tagCategories.path }}{{ termid }}/'
 ---
-{% import '_includes/components/dictionary-term.njk' as renderer %}
-{{ renderer.term_page(portfolio.index, generated.portfolio, portfolio.dictionary, '_tagCategories', termid, path) }}
+{% set content %}{% termPage termid, '_tagCategories', portfolio.dictionary, portfolio.index, generated.portfolio %}{% endset %}
+{{ content | safe }}

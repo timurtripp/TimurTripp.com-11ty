@@ -10,17 +10,17 @@ module.exports = {
 		for (const [dictionaryTermListingId, dictionaryTermListing] of Object.entries(dictionary)) {
 			const inclusion = returnObject[dictionaryTermListingId] = {};
 			for (const tid of Object.keys(dictionaryTermListing))
-				inclusion[tid] = {dataInclusion: {}, termInclusion: {}};
+				inclusion[tid] = {dataItems: {}, terms: {}};
 			if (dictionaryTermListingId[0] === '_') continue;
 			index.forEach(indexItem => {
 				const dataListing = data[indexItem.id];
 				for (const [dataItemId, dataItem] of Object.entries(dataListing)) {
 					if(dataItem && dataItem['_' + dictionaryTermListingId]) {
 						dataItem['_' + dictionaryTermListingId].forEach(tid => {
-							if(inclusion[tid].dataInclusion) {
-								const dataItemTermInclusion = inclusion[tid].dataInclusion[indexItem.id] || [];
-								dataItemTermInclusion.push(dataItemId);
-								inclusion[tid].dataInclusion[indexItem.id] = dataItemTermInclusion;
+							if(inclusion[tid].dataItems) {
+								const dataItemterms = inclusion[tid].dataItems[indexItem.id] || [];
+								dataItemterms.push(dataItemId);
+								inclusion[tid].dataItems[indexItem.id] = dataItemterms;
 							}
 						})
 					}
@@ -32,9 +32,9 @@ module.exports = {
 				if(term.descriptors) {
 					term.descriptors.forEach(descriptor => {
 						if(returnObject[descriptor.collection] && returnObject[descriptor.collection][descriptor.term]) {
-							const termCollectionInclusion = returnObject[descriptor.collection][descriptor.term].termInclusion[collectionid] || [];
+							const termCollectionInclusion = returnObject[descriptor.collection][descriptor.term].terms[collectionid] || [];
 							termCollectionInclusion.push(termid);
-							returnObject[descriptor.collection][descriptor.term].termInclusion[collectionid] = termCollectionInclusion;
+							returnObject[descriptor.collection][descriptor.term].terms[collectionid] = termCollectionInclusion;
 						}
 					});
 				}

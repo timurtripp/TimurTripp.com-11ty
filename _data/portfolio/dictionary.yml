@@ -290,15 +290,15 @@ institutions:
       - collection: _locations
         term: boulder
         summary: true
-        inline: start
+        inline: true
       - collection: _locations
         term: colorado
         summary: true
-        inline: continue
+        inline: true
       - collection: _locations
         term: united_states
         summary: true
-        inline: end
+        inline: true
       - collection: _websites
         term: colorado.edu
         summary: false
@@ -309,7 +309,7 @@ institutions:
         term: united_states
         summary: true
       - collection: _websites
-        term: westminstercollege.edu
+        term: introcspogil.org
         summary: false
   slcc:
     label: 'Salt Lake Community College'
@@ -317,15 +317,15 @@ institutions:
       - collection: _locations
         term: taylorsville
         summary: true
-        inline: start
+        inline: true
       - collection: _locations
         term: utah
         summary: true
-        inline: continue
+        inline: true
       - collection: _locations
         term: united_states
         summary: true
-        inline: end
+        inline: true
       - collection: _websites
         term: slcc.edu
         summary: false
@@ -336,15 +336,15 @@ institutions:
       - collection: _locations
         term: salt_lake_city
         summary: true
-        inline: start
+        inline: true
       - collection: _locations
         term: utah
         summary: true
-        inline: continue
+        inline: true
       - collection: _locations
         term: united_states
         summary: true
-        inline: end
+        inline: true
       - collection: _websites
         term: westminstercollege.edu
         summary: false
@@ -356,11 +356,11 @@ _locations:
       - collection: _locations
         term: colorado
         summary: true
-        inline: start
+        inline: true
       - collection: _locations
         term: united_states
         summary: true
-        inline: end
+        inline: true
   colorado:
     label: 'Colorado'
     descriptors:
@@ -373,22 +373,22 @@ _locations:
       - collection: _locations
         term: utah
         summary: true
-        inline: start
+        inline: true
       - collection: _locations
         term: united_states
         summary: true
-        inline: end
+        inline: true
   taylorsville:
     label: 'Taylorsville'
     descriptors:
       - collection: _locations
         term: utah
         summary: true
-        inline: start
+        inline: true
       - collection: _locations
         term: united_states
         summary: true
-        inline: end
+        inline: true
   utah:
     label: 'Utah'
     descriptors:

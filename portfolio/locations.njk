@@ -1,8 +1,9 @@
 ---
+title: 'Locations'
 section: 'portfolio'
 layout: 'layouts/base.njk'
 permalink: '/portfolio/locations/'
 ---
-{% import '_includes/components/dictionary-term.njk' as renderer %}
 <h1>Locations</h1>
-{{ renderer.collection_index(portfolio.index, generated.portfolio, portfolio.dictionary, '_locations', permalink) }}
+{% set content %}{% termList portfolio.dictionary._locations | keys, '_locations', portfolio.dictionary, portfolio.index, generated.portfolio %}{% endset %}
+{{ content | safe }}
