@@ -290,15 +290,15 @@ institutions:
       - collection: _locations
         term: boulder
         summary: true
-        inline: true
+        display: inline
       - collection: _locations
         term: colorado
         summary: true
-        inline: true
+        display: inline-only
       - collection: _locations
         term: united_states
         summary: true
-        inline: true
+        display: inline-only
       - collection: _websites
         term: colorado.edu
         summary: false
@@ -317,15 +317,15 @@ institutions:
       - collection: _locations
         term: taylorsville
         summary: true
-        inline: true
+        display: inline
       - collection: _locations
         term: utah
         summary: true
-        inline: true
+        display: inline-only
       - collection: _locations
         term: united_states
         summary: true
-        inline: true
+        display: inline-only
       - collection: _websites
         term: slcc.edu
         summary: false
@@ -336,15 +336,15 @@ institutions:
       - collection: _locations
         term: salt_lake_city
         summary: true
-        inline: true
+        display: inline
       - collection: _locations
         term: utah
         summary: true
-        inline: true
+        display: inline-only
       - collection: _locations
         term: united_states
         summary: true
-        inline: true
+        display: inline-only
       - collection: _websites
         term: westminstercollege.edu
         summary: false
@@ -356,11 +356,11 @@ _locations:
       - collection: _locations
         term: colorado
         summary: true
-        inline: true
+        display: inline
       - collection: _locations
         term: united_states
         summary: true
-        inline: true
+        display: inline-only
   colorado:
     label: 'Colorado'
     descriptors:
@@ -373,22 +373,22 @@ _locations:
       - collection: _locations
         term: utah
         summary: true
-        inline: true
+        display: inline
       - collection: _locations
         term: united_states
         summary: true
-        inline: true
+        display: inline-only
   taylorsville:
     label: 'Taylorsville'
     descriptors:
       - collection: _locations
         term: utah
         summary: true
-        inline: true
+        display: inline
       - collection: _locations
         term: united_states
         summary: true
-        inline: true
+        display: inline-only
   utah:
     label: 'Utah'
     descriptors:

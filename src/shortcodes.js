@@ -6,7 +6,7 @@ const
 	readFileSync = require('fs').readFileSync,
 	fg = require('fast-glob'),
 	faBrands = require('@fortawesome/free-brands-svg-icons').fab,
-	term = require('./term.js');
+	dataManager = require('./data-manager.js');
 
 /**
  * Shortcodes (can be called in templates)
@@ -52,16 +52,16 @@ module.exports = {
 		return '';
 	},
 
-	termLabel: function(termId, collectionId, dictionary, dataIndex, globalRelationships) {
-		return new term.Term(termId, collectionId, dictionary, dataIndex, globalRelationships).label();
+	termLabel: function(termId, collectionId, dictionary, itemIndex, globalRelationships) {
+		return new dataManager.Term(termId, collectionId, dictionary, itemIndex, globalRelationships).label();
 	},
-	termSummary: function(termId, collectionId, dictionary, dataIndex, globalRelationships) {
-		return new term.Term(termId, collectionId, dictionary, dataIndex, globalRelationships).summary();
+	termSummary: function(termId, collectionId, dictionary, itemIndex, globalRelationships) {
+		return new dataManager.Term(termId, collectionId, dictionary, itemIndex, globalRelationships).summary();
 	},
-	termPage: function(termId, collectionId, dictionary, dataIndex, globalRelationships) {
-		return new term.Term(termId, collectionId, dictionary, dataIndex, globalRelationships).page();
+	termPage: function(termId, collectionId, dictionary, itemIndex, globalRelationships) {
+		return new dataManager.Term(termId, collectionId, dictionary, itemIndex, globalRelationships).page();
 	},
-	termList: function(termIds, collectionId, dictionary, dataIndex, globalRelationships) {
-		return term.termList(termIds, collectionId, dictionary, dataIndex, globalRelationships);
+	termList: function(termIds, collectionId, dictionary, itemIndex, globalRelationships) {
+		return dataManager.termList(termIds, collectionId, dictionary, itemIndex, globalRelationships);
 	}
 };
