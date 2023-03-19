@@ -39,6 +39,11 @@
 .tt-footer .tt-footer-contact, .tt-footer .tt-footer-contact a {
 	font-weight: normal;
 	font-size: 1em;
+	border-bottom: 1px;
+}
+
+.tt-footer-contact a:not(:hover):not(:active):not(:focus)::after {
+	display: none;
 }
 
 .tt-footer .tt-footer-remark, .tt-footer .tt-footer-built-with {

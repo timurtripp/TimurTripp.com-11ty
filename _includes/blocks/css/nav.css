@@ -6,6 +6,10 @@
 	margin: 0;
 }
 
+a.navbar-brand::after {
+	display: none;
+}
+
 .tt-logo-main {
 	color: var(--theme-text-strong);
 	font-family: var(--font-emphasis);
