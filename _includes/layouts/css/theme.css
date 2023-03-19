@@ -1,8 +1,8 @@
 :root {
-	--font-normal: serif;
+	--font-normal: 'CMU Serif', serif;
 	--font-secondary: 'EB Garamond', serif;
 	--font-emphasis: Powerr, sans-serif;
-	--font-mono: 'Cutive Mono', monospace;
+	--font-mono: 'CMU Typewriter Text', monospace;
 	--theme-color-blue: hsl(210, 100%, 50%);
 	--theme-light-color-blue-alt: hsl(210, 100%, 35%);
 	--theme-dark-color-blue-alt: hsl(210, 100%, 65%);
