@@ -58,7 +58,7 @@ work:
     _institutions: ['cu-boulder']
     _tags: ['php', 'javascript', 'drupal', 'docker', 'web-development', 'software-engineering', 'collaboration', 'communication', 'html', 'css', 'git', 'github']
   slcc-tutor:
-    title: 'Tutor Non-Certified'
+    title: 'Tutor'
     department: 'Computer Science and Information Systems'
     institution: slcc
     description: I assisted students at SLCC with the first steps of their coding journey, not only helping with assignments but also breaking down programming concepts in easy to understand ways.
@@ -77,7 +77,7 @@ work:
     _institutions: ['introcs-pogil']
     _tags: ['research', 'data-processing', 'python', 'sql', 'sqlite', 'csv', 'communication']
   westminster-lab-assistant:
-    title: 'Computer Lab Assistant I'
+    title: 'Computer Lab Assistant'
     department: 'Computer Support'
     institution: westminster
     description: I provided students and faculty of the college with assistance regarding their school account or other technical issues.

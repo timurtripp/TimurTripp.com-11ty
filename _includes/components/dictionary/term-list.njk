@@ -1,3 +1,7 @@
-<ul class="term-list">{% for term in terms %}
-	<li class="content-block">{{ term.summary() | safe }}</li>{% endfor %}
+{% from './term-macros.njk' import termSummary %}
+
+<ul class="term-list{% if nested %} d-inline list-unstyled{% endif %}">
+	{% for term in terms %}
+	{% if nested %}<li class="d-inline">{{ termLabel(term) }}</li>{% else %}<li class="content-block">{{ termSummary(term, createTerm, termList) }}</li>{% endif %}
+	{% endfor %}
 </ul>

@@ -6,7 +6,7 @@ const
 	readFileSync = require('fs').readFileSync,
 	fg = require('fast-glob'),
 	faBrands = require('@fortawesome/free-brands-svg-icons').fab,
-	dataManager = require('./data-manager.js');
+	dataManager = require('./term.js');
 
 /**
  * Shortcodes (can be called in templates)
@@ -50,18 +50,5 @@ module.exports = {
 		if(iconData)
 			return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ' + iconData.icon[0] + ' ' + iconData.icon[1] + '"><path fill="currentColor" d="' + iconData.icon[4] + '"/></svg>';
 		return '';
-	},
-
-	termLabel: function(termId, collectionId, dictionary, itemIndex, items, globalRelationships) {
-		return new dataManager.Term(termId, collectionId, dictionary, itemIndex, items, globalRelationships).label();
-	},
-	termSummary: function(termId, collectionId, dictionary, itemIndex, items, globalRelationships) {
-		return new dataManager.Term(termId, collectionId, dictionary, itemIndex, items, globalRelationships).summary();
-	},
-	termPage: function(termId, collectionId, dictionary, itemIndex, items, globalRelationships) {
-		return new dataManager.Term(termId, collectionId, dictionary, itemIndex, items, globalRelationships).page();
-	},
-	termList: function(termIds, collectionId, dictionary, itemIndex, items, globalRelationships) {
-		return dataManager.termList(termIds, collectionId, dictionary, itemIndex, items, globalRelationships);
 	}
 };

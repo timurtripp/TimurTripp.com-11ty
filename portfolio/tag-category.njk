@@ -7,5 +7,7 @@ pagination:
   alias: termid
 permalink: '{{ portfolio.dictionary._index._tagCategories.path }}{{ termid }}/'
 ---
-{% set content %}{% termPage termid, '_tagCategories', portfolio.dictionary, portfolio.index, portfolio.items, generated.portfolio %}{% endset %}
-{{ content | safe }}
+{% from '../_includes/components/dictionary/portfolio/term-factory.njk' import createTerm, termList with context %}
+{% from '../_includes/components/dictionary/term-macros.njk' import termPage %}
+
+{{ termPage(createTerm(termid, '_tagCategories'), createTerm, termList) }}

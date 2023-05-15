@@ -13,6 +13,6 @@ sections: # Sections of the site navigation
   portfolio:
     name: Portfolio
     url: '/portfolio'
-  archive:
-    name: Archive
-    url: '/archive'
+  # archive:
+  #   name: Archive
+  #   url: '/archive'

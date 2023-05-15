@@ -4,6 +4,8 @@ section: 'portfolio'
 layout: 'layouts/base.njk'
 permalink: '/portfolio/institutions/'
 ---
+{% from '../_includes/components/dictionary/portfolio/term-factory.njk' import createTerm, termList with context %}
+{% from '../_includes/components/dictionary/term-macros.njk' import termList as termListRenderer %}
+
 <h1>Institutions</h1>
-{% set content %}{% termList portfolio.dictionary.institutions | keys, 'institutions', portfolio.dictionary, portfolio.index, portfolio.items, generated.portfolio %}{% endset %}
-{{ content | safe }}
+{{ termListRenderer(termList(portfolio.dictionary.institutions | keys, 'institutions'), createTerm, termList) }}

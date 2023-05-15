@@ -1,0 +1,7 @@
+{% set _dictionary = portfolio.dictionary %}
+{% set _index = portfolio.index %}
+{% set _items = portfolio.items %}
+{% set _relationships = generated.portfolio %}
+{% set _termFactory = termFactory(_dictionary, _index, _items, _relationships) %}
+{% set createTerm = _termFactory.createTerm %}
+{% set termList = _termFactory.termList %}
