@@ -52,7 +52,7 @@ work:
     title: 'Software Enginner'
     department: 'Strategic Relations'
     institution: cu-boulder
-    description: ''
+    description: I work on a team developing the next generation of website management tools for CU Boulder and migrating colorado.edu's hundreds of individually-managed websites to Drupal 10.
     start: '06-2022'
     partTime: false
     _institutions: ['cu-boulder']
@@ -61,7 +61,7 @@ work:
     title: 'Tutor Non-Certified'
     department: 'Computer Science and Information Systems'
     institution: slcc
-    description: ''
+    description: I assisted students at SLCC with the first steps of their coding journey, not only helping with assignments but also breaking down programming concepts in easy to understand ways.
     start: '02-2022'
     end: '05-2022'
     partTime: true
@@ -70,7 +70,7 @@ work:
   introcs-pogil:
     title: 'Research Assistant'
     institution: introcs-pogil
-    description: 'IntroCS-POGIL is an NSF-funded project on the adoption of POGIL in introductory programming courses. I wrote several scripts to automate the process of adding CSV data to an SQLite database.'
+    description: IntroCS-POGIL is an NSF-funded project on the adoption of POGIL in introductory programming courses. I wrote several scripts to automate the process of adding CSV data to an SQLite database.
     start: '12-2021'
     end: '04-2022'
     partTime: true
@@ -80,7 +80,7 @@ work:
     title: 'Computer Lab Assistant I'
     department: 'Computer Support'
     institution: westminster
-    description: 'I provided students and faculty of the college with assistance regarding their school account or other technical issues.'
+    description: I provided students and faculty of the college with assistance regarding their school account or other technical issues.
     start: '05-2021'
     end: '12-2021'
     partTime: true

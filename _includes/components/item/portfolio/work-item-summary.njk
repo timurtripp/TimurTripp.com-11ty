@@ -1,0 +1,8 @@
+{% extends '../item-summary.njk' %}
+
+{% block itemName %}{{ item.title }}{% endblock %}
+
+{% block itemHeader %}
+	{{ super() }}
+	{{ toTerm(item.institution, 'institutions').summary(true) | safe }}
+{% endblock %}

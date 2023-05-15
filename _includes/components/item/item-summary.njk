@@ -1,0 +1,13 @@
+{% if term %}{% set toTerm = term.termFrom %}{% endif %}
+<div class="summary item-{{ index }} item-{{ index }}-{{ id }}">
+	<div class="item-header compact-content">
+		{% block itemHeader %}
+			<h3 class="item-name">{% block itemName %}{{ item.name }}{% endblock %}</h3>
+		{% endblock %}
+	</div>
+	<div class="item-body">
+		{% block itemBody %}
+			<p class="item-description">{% block itemDescription %}{{ item.description }}{% endblock %}</p>
+		{% endblock %}
+	</div>
+</div>

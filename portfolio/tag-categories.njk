@@ -5,5 +5,5 @@ layout: 'layouts/base.njk'
 permalink: '/portfolio/tags/categories/'
 ---
 <h1>Categories</h1>
-{% set content %}{% termList portfolio.dictionary._tagCategories | keys, '_tagCategories', portfolio.dictionary, portfolio.index, generated.portfolio %}{% endset %}
+{% set content %}{% termList portfolio.dictionary._tagCategories | keys, '_tagCategories', portfolio.dictionary, portfolio.index, portfolio.items, generated.portfolio %}{% endset %}
 {{ content | safe }}

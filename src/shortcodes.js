@@ -52,16 +52,16 @@ module.exports = {
 		return '';
 	},
 
-	termLabel: function(termId, collectionId, dictionary, itemIndex, globalRelationships) {
-		return new dataManager.Term(termId, collectionId, dictionary, itemIndex, globalRelationships).label();
+	termLabel: function(termId, collectionId, dictionary, itemIndex, items, globalRelationships) {
+		return new dataManager.Term(termId, collectionId, dictionary, itemIndex, items, globalRelationships).label();
 	},
-	termSummary: function(termId, collectionId, dictionary, itemIndex, globalRelationships) {
-		return new dataManager.Term(termId, collectionId, dictionary, itemIndex, globalRelationships).summary();
+	termSummary: function(termId, collectionId, dictionary, itemIndex, items, globalRelationships) {
+		return new dataManager.Term(termId, collectionId, dictionary, itemIndex, items, globalRelationships).summary();
 	},
-	termPage: function(termId, collectionId, dictionary, itemIndex, globalRelationships) {
-		return new dataManager.Term(termId, collectionId, dictionary, itemIndex, globalRelationships).page();
+	termPage: function(termId, collectionId, dictionary, itemIndex, items, globalRelationships) {
+		return new dataManager.Term(termId, collectionId, dictionary, itemIndex, items, globalRelationships).page();
 	},
-	termList: function(termIds, collectionId, dictionary, itemIndex, globalRelationships) {
-		return dataManager.termList(termIds, collectionId, dictionary, itemIndex, globalRelationships);
+	termList: function(termIds, collectionId, dictionary, itemIndex, items, globalRelationships) {
+		return dataManager.termList(termIds, collectionId, dictionary, itemIndex, items, globalRelationships);
 	}
 };

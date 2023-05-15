@@ -1,1 +1,1 @@
-<div class="summary collection-{{ term.collectionId }} term-{{ term.termId }}"><h3>{{ term.label(true) | safe }}</h3>{{ term.description(true) | safe }}</div>
+<div class="content-block compact-content summary {% if nested %}nested-summary {% endif %}collection-{{ term.collectionId }} term-{{ term.termId }}">{% if nested %}<h4>{{ term.label(true) | safe }}</h4><div class="nested-content">{{ term.description(true) | safe }}</div>{% else %}<h3>{{ term.label(true) | safe }}</h3><div>{{ term.description(true) | safe }}</div>{% endif %}</div>

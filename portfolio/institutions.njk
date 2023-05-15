@@ -5,5 +5,5 @@ layout: 'layouts/base.njk'
 permalink: '/portfolio/institutions/'
 ---
 <h1>Institutions</h1>
-{% set content %}{% termList portfolio.dictionary.institutions | keys, 'institutions', portfolio.dictionary, portfolio.index, generated.portfolio %}{% endset %}
+{% set content %}{% termList portfolio.dictionary.institutions | keys, 'institutions', portfolio.dictionary, portfolio.index, portfolio.items, generated.portfolio %}{% endset %}
 {{ content | safe }}
