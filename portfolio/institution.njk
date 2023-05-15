@@ -1,0 +1,13 @@
+---
+section: 'portfolio'
+layout: 'layouts/base.njk'
+pagination:
+  data: portfolio.dictionary.institutions
+  size: 1
+  alias: termid
+permalink: '{{ portfolio.dictionary._index.institutions.path }}{{ termid }}/'
+---
+{% from '../_includes/components/dictionary/portfolio/term-factory.njk' import createTerm, termList with context %}
+{% from '../_includes/components/dictionary/term-macros.njk' import termPage %}
+
+{{ termPage(createTerm(termid, 'institutions'), createTerm, termList) }}

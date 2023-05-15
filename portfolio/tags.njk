@@ -1,0 +1,11 @@
+---
+title: 'Tags'
+section: 'portfolio'
+layout: 'layouts/base.njk'
+permalink: '/portfolio/tags/'
+---
+{% from '../_includes/components/dictionary/portfolio/term-factory.njk' import createTerm, termList with context %}
+{% from '../_includes/components/dictionary/term-macros.njk' import termList as termListRenderer %}
+
+<h1>Tags</h1>
+{{ termListRenderer(termList(portfolio.dictionary.tags | keys, 'tags'), createTerm, termList) }}

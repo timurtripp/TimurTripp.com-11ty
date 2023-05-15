@@ -31,7 +31,7 @@
 	display: block;
 }
 
-.tt-main ul li::before {
+.tt-main ul:not(.list-unstyled) li::before {
 	content: '\2022';
 	color: var(--theme-color, --default-theme-color);
 	display: block;

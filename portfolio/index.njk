@@ -1,0 +1,11 @@
+---
+section: portfolio
+layout: 'layouts/base.njk'
+---
+{% from '../_includes/components/dictionary/portfolio/term-factory.njk' import createTerm, termList with context %}
+
+<h1>Portfolio</h1>
+{% for indexItem in portfolio.index %}
+<h2 id="{{ indexItem.id }}">{{ indexItem.label }}</h2>
+{% for itemid, item in portfolio.items[indexItem.id] %}{% include '../_includes/components/item/' + indexItem.templates.summary %}{% endfor %}
+{% endfor %}

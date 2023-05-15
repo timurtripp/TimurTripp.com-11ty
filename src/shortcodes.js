@@ -5,7 +5,8 @@
 const
 	readFileSync = require('fs').readFileSync,
 	fg = require('fast-glob'),
-	faBrands = require('@fortawesome/free-brands-svg-icons').fab;
+	faBrands = require('@fortawesome/free-brands-svg-icons').fab,
+	dataManager = require('./term.js');
 
 /**
  * Shortcodes (can be called in templates)

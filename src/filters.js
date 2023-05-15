@@ -51,5 +51,12 @@ module.exports = {
 	 * @param {string} text The original text
 	 * @returns {string} The text converted to a CSS class name
 	 */
-	classify: text => text.toLowerCase().replace(' ', '-')
+	classify: text => text.toLowerCase().replace(' ', '-'),
+
+	/**
+	 * Converts an object to an array of its keys.
+	 * @param {object} object 
+	 * @returns The array of the object's keys.
+	 */
+	keys: object => Object.keys(object)
 };

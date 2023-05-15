@@ -1,0 +1,12 @@
+- label: 'Projects'
+  id: projects
+  templates:
+    summary: 'portfolio/projects-item-summary.njk'
+- label: 'Education'
+  id: education
+  templates:
+    summary: 'portfolio/education-item-summary.njk'
+- label: 'Work Experience'
+  id: work
+  templates:
+    summary: 'portfolio/work-item-summary.njk'

@@ -1,0 +1,10 @@
+{% extends '../item-summary.njk' %}
+{% from '../../dictionary/term-macros.njk' import termSummary %}
+
+{% block itemName %}{{ item.title }}{% endblock %}
+
+{% block itemHeader %}
+{{ super() }}
+{% if item.department %}<span class="d-block">{{ item.department }}</span>{% endif %}
+{{ termSummary(createTerm(item.institution, 'institutions'), createTerm, termList, true) }}
+{% endblock %}

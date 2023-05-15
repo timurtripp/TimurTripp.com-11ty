@@ -1,0 +1,5 @@
+{% macro termLabel(term, asLink = true) %}{% include "./term-label.njk" %}{% endmacro %}
+{% macro termDescription(term, createTerm, termList, asSummary = true, nested = false) %}{% include "./term-description.njk" %}{% endmacro %}
+{% macro termSummary(term, createTerm, termList, nested = false) %}{% include "./term-summary.njk" %}{% endmacro %}
+{% macro termPage(term, createTerm, termList) %}{% include "./term-page.njk" %}{% endmacro %}
+{% macro termList(terms, createTerm, termList, nested = false) %}{% include "./term-list.njk" %}{% endmacro %}

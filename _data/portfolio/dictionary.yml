@@ -1,0 +1,425 @@
+_index:
+  _locations:
+    label: 'Location'
+    path: '/portfolio/locations/'
+  _tagCategories:
+    label: 'Category'
+    path: '/portfolio/tags/categories/'
+  _websites:
+    label: 'Website'
+  tags:
+    label: 'Tag'
+    path: '/portfolio/tags/'
+  institutions:
+    label: 'Institution'
+    path: '/portfolio/institutions/'
+
+tags:
+  11ty:
+    label: '11ty'
+    descriptors:
+      - collection: _tagCategories
+        term: platform
+        summary: true
+    related: ['web-development', 'nodejs', 'django']
+  apache-tomcat:
+    label: 'Apache Tomcat'
+    descriptors:
+      - collection: _tagCategories
+        term: platform
+        summary: true
+    related: ['java', 'web-development']
+  api-development:
+    label: 'API Development'
+    descriptors:
+      - collection: _tagCategories
+        term: technical-skill
+        summary: true
+    related: ['websocket']
+  application-design:
+    label: 'Application Design'
+    descriptors:
+      - collection: _tagCategories
+        term: technical-skill
+        summary: true
+    related: ['software-engineering']
+  c:
+    label: 'C'
+    descriptors:
+      - collection: _tagCategories
+        term: programming-language
+        summary: true
+    related: ['java']
+  cloudflare:
+    label: 'Cloudflare'
+    descriptors:
+      - collection: _tagCategories
+        term: platform
+        summary: true
+    related: ['web-development', 'api-development', 'heroku']
+  collaboration:
+    label: 'Collaboration'
+    descriptors:
+      - collection: _tagCategories
+        term: personal-skill
+        summary: true
+    related: ['communication']
+  communication:
+    label: 'Communication'
+    descriptors:
+      - collection: _tagCategories
+        term: personal-skill
+        summary: true
+    related: ['collaboration']
+  css:
+    label: 'CSS'
+    descriptors:
+      - collection: _tagCategories
+        term: programming-language
+        summary: true
+    related: ['html', 'web-development']
+  csv:
+    label: 'CSV'
+    descriptors:
+      - collection: _tagCategories
+        term: technical-skill
+        summary: true
+    related: ['data-processing']
+  data-processing:
+    label: 'Data Processing'
+    descriptors:
+      - collection: _tagCategories
+        term: technical-skill
+        summary: true
+    related: ['sql', 'csv', 'research']
+  django:
+    label: 'Django'
+    descriptors:
+      - collection: _tagCategories
+        term: platform
+        summary: true
+    related: ['python', 'web-development', '11ty']
+  docker:
+    label: 'Docker'
+    descriptors:
+      - collection: _tagCategories
+        term: platform
+        summary: true
+  drupal:
+    label: 'Drupal'
+    descriptors:
+      - collection: _tagCategories
+        term: platform
+        summary: true
+    related: ['php', 'mysql', 'web-development']
+  heroku:
+    label: 'Heroku'
+    descriptors:
+      - collection: _tagCategories
+        term: platform
+        summary: true
+    related: ['web-development', 'api-development', 'cloudflare']
+  git:
+    label: 'Git'
+    descriptors:
+      - collection: _tagCategories
+        term: technical-skill
+        summary: true
+    related: ['github', 'gitlab']
+  github:
+    label: 'GitHub'
+    descriptors:
+      - collection: _tagCategories
+        term: platform
+        summary: true
+    related: ['git']
+  gitlab:
+    label: 'GitLab'
+    descriptors:
+      - collection: _tagCategories
+        term: platform
+        summary: true
+    related: ['git']
+  html:
+    label: 'HTML'
+    descriptors:
+      - collection: _tagCategories
+        term: programming-language
+        summary: true
+    related: ['css', 'web-development']
+  ios:
+    label: 'iOS'
+    descriptors:
+      - collection: _tagCategories
+        term: platform
+        summary: true
+    related: ['mobile-development', 'macos', 'xcode']
+  java:
+    label: 'Java'
+    descriptors:
+      - collection: _tagCategories
+        term: programming-language
+        summary: true
+    related: ['spring-framework', 'apache-tomcat']
+  javascript:
+    label: 'JavaScript'
+    descriptors:
+      - collection: _tagCategories
+        term: programming-language
+        summary: true
+    related: ['web-development', 'nodejs']
+  macos:
+    label: 'macOS'
+    descriptors:
+      - collection: _tagCategories
+        term: platform
+        summary: true
+    related: ['ios', 'xcode']
+  mobile-development:
+    label: 'Mobile Development'
+    descriptors:
+      - collection: _tagCategories
+        term: technical-skill
+        summary: true
+    related: ['ios', 'xcode']
+  mysql:
+    label: 'MySQL'
+    descriptors:
+      - collection: _tagCategories
+        term: platform
+        summary: true
+    related: ['sql']
+  nodejs:
+    label: 'Node.js'
+    descriptors:
+      - collection: _tagCategories
+        term: platform
+        summary: true
+    related: ['javascript', '11ty']
+  postgresql:
+    label: 'PostgreSQL'
+    descriptors:
+      - collection: _tagCategories
+        term: platform
+        summary: true
+  python:
+    label: 'Python'
+    descriptors:
+      - collection: _tagCategories
+        term: programming-language
+        summary: true
+    related: ['django']
+  research:
+    label: 'Research'
+    descriptors:
+      - collection: _tagCategories
+        term: technical-skill
+        summary: true
+    related: ['data-processing']
+  spring-framework:
+    label: 'Spring Framework'
+    descriptors:
+      - collection: _tagCategories
+        term: platform
+        summary: true
+    related: ['java', 'web-development', 'api-development']
+  software-engineering:
+    label: 'Software Engineering'
+    descriptors:
+      - collection: _tagCategories
+        term: technical-skill
+        summary: true
+    related: ['web-development', 'mobile-development', 'application-design']
+  sql:
+    label: 'SQL'
+    descriptors:
+      - collection: _tagCategories
+        term: programming-language
+        summary: true
+    related: ['mysql', 'postgresql', 'sqlite']
+  sqlite:
+    label: 'SQLite'
+    descriptors:
+      - collection: _tagCategories
+        term: platform
+        summary: true
+    related: ['sql']
+  swift:
+    label: 'Swift'
+    descriptors:
+      - collection: _tagCategories
+        term: programming-language
+        summary: true
+  teaching-others:
+    label: 'Teaching Others'
+    descriptors:
+      - collection: _tagCategories
+        term: personal-skill
+        summary: true
+  php:
+    label: 'PHP'
+    descriptors:
+      - collection: _tagCategories
+        term: programming-language
+        summary: true
+    related: ['web-development', 'drupal']
+  web-development:
+    label: 'Web Development'
+    descriptors:
+      - collection: _tagCategories
+        term: technical-skill
+        summary: true
+    related: ['html', 'css', 'php']
+  websocket:
+    label: 'WebSocket'
+    descriptors:
+      - collection: _tagCategories
+        term: technical-skill
+        summary: true
+    related: ['api-development']
+  xcode:
+    label: 'Xcode'
+    descriptors:
+      - collection: _tagCategories
+        term: platform
+        summary: true
+    related: ['ios', 'macos', 'mobile-development']
+
+institutions:
+  cu-boulder:
+    label: 'University of Colorado Boulder'
+    descriptors:
+      - collection: _locations
+        term: boulder
+        summary: true
+        display: inline
+      - collection: _locations
+        term: colorado
+        summary: true
+        display: inline-only
+      - collection: _locations
+        term: united-states
+        summary: true
+        display: inline-only
+      - collection: _websites
+        term: colorado.edu
+        summary: false
+  introcs-pogil:
+    label: 'IntroCS-POGIL'
+    descriptors:
+      - collection: _locations
+        term: united-states
+        summary: true
+      - collection: _websites
+        term: introcspogil.org
+        summary: false
+  slcc:
+    label: 'Salt Lake Community College'
+    descriptors:
+      - collection: _locations
+        term: taylorsville
+        summary: true
+        display: inline
+      - collection: _locations
+        term: utah
+        summary: true
+        display: inline-only
+      - collection: _locations
+        term: united-states
+        summary: true
+        display: inline-only
+      - collection: _websites
+        term: slcc.edu
+        summary: false
+    website: 'https://www.slcc.edu'
+  westminster:
+    label: 'Westminster College'
+    descriptors:
+      - collection: _locations
+        term: salt-lake-city
+        summary: true
+        display: inline
+      - collection: _locations
+        term: utah
+        summary: true
+        display: inline-only
+      - collection: _locations
+        term: united-states
+        summary: true
+        display: inline-only
+      - collection: _websites
+        term: westminstercollege.edu
+        summary: false
+
+_locations:
+  boulder:
+    label: 'Boulder'
+    descriptors:
+      - collection: _locations
+        term: colorado
+        summary: true
+        display: inline
+      - collection: _locations
+        term: united-states
+        summary: true
+        display: inline-only
+  colorado:
+    label: 'Colorado'
+    descriptors:
+      - collection: _locations
+        term: united-states
+        summary: true
+  salt-lake-city:
+    label: 'Salt Lake City'
+    descriptors:
+      - collection: _locations
+        term: utah
+        summary: true
+        display: inline
+      - collection: _locations
+        term: united-states
+        summary: true
+        display: inline-only
+  taylorsville:
+    label: 'Taylorsville'
+    descriptors:
+      - collection: _locations
+        term: utah
+        summary: true
+        display: inline
+      - collection: _locations
+        term: united-states
+        summary: true
+        display: inline-only
+  utah:
+    label: 'Utah'
+    descriptors:
+      - collection: _locations
+        term: united-states
+        summary: true
+  united-states:
+    label: 'United States'
+
+_tagCategories:
+  platform:
+    label: 'Platform'
+  programming-language:
+    label: 'Programming Language'
+  personal-skill:
+    label: 'Personal Skill'
+  technical-skill:
+    label: 'Technical Skill'
+
+_websites:
+  colorado.edu:
+    label: 'colorado.edu'
+    url: '//colorado.edu'
+  introcspogil.org:
+    label: 'introcspogil.org'
+    url: '//introcspogil.org'
+  slcc.edu:
+    label: 'slcc.edu'
+    url: '//slcc.edu'
+  westminstercollege.edu:
+    label: 'westminstercollege.edu'
+    url: '//westminstercollege.edu'

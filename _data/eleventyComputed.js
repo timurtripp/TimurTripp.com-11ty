@@ -1,4 +1,5 @@
 const package = require('../package.json');
+const { TermFactory } = require('../src/term.js');
 
 module.exports = {
 	isDeveloperPage: data => data.page.inputPath.indexOf('/README') > -1 || data.page.inputPath.indexOf('/LICENSE') > -1 || data.page.inputPath.indexOf('/TEST') > -1,
@@ -13,5 +14,6 @@ module.exports = {
 	version: data => data.site.version || package.version,
 	license: data => data.site.license || package.license,
 	noIndex: data => data.noIndex || data.isDeveloperPage,
-	permalink: data => data.isDeveloperPage ? data.page.inputPath + '/' : data.permalink
+	permalink: data => data.isDeveloperPage ? data.page.inputPath + '/' : data.permalink,
+	termFactory: data => (dictionary, index, items, relationships) => new TermFactory(dictionary, index, items, relationships)
 };

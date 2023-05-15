@@ -1,0 +1,11 @@
+---
+title: 'Locations'
+section: 'portfolio'
+layout: 'layouts/base.njk'
+permalink: '/portfolio/locations/'
+---
+{% from '../_includes/components/dictionary/portfolio/term-factory.njk' import createTerm, termList with context %}
+{% from '../_includes/components/dictionary/term-macros.njk' import termList as termListRenderer %}
+
+<h1>Locations</h1>
+{{ termListRenderer(termList(portfolio.dictionary._locations | keys, '_locations'), createTerm, termList) }}

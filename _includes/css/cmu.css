@@ -1,0 +1,63 @@
+/* CMU Typewriter Text regular */
+@font-face {
+	font-family: 'CMU Typewriter Text';
+	font-style: normal;
+	font-weight: 400;
+	src: url('./files/cmu/cmuntt.ttf');
+}
+
+/* CMU Typewriter Text regular italic */
+@font-face {
+	font-family: 'CMU Typewriter Text';
+	font-style: italic;
+	font-weight: 400;
+	src: url('./files/cmu/cmunit.ttf');
+}
+
+/* CMU Typewriter Text bold */
+@font-face {
+	font-family: 'CMU Typewriter Text';
+	font-style: normal;
+	font-weight: 700;
+	src: url('./files/cmu/cmuntb.ttf');
+}
+
+/* CMU Typewriter Text bold italic */
+@font-face {
+	font-family: 'CMU Typewriter Text';
+	font-style: italic;
+	font-weight: 700;
+	src: url('./files/cmu/cmuntx.ttf');
+}
+
+/* CMU Serif regular */
+@font-face {
+	font-family: 'CMU Serif';
+	font-style: normal;
+	font-weight: 400;
+	src: url('./files/cmu/cmunrm.ttf');
+}
+
+/* CMU Serif regular italic */
+@font-face {
+	font-family: 'CMU Serif';
+	font-style: italic;
+	font-weight: 400;
+	src: url('./files/cmu/cmunti.ttf');
+}
+
+/* CMU Serif bold */
+@font-face {
+	font-family: 'CMU Serif';
+	font-style: normal;
+	font-weight: 700;
+	src: url('./files/cmu/cmunbx.ttf');
+}
+
+/* CMU Serif bold italic */
+@font-face {
+	font-family: 'CMU Serif';
+	font-style: italic;
+	font-weight: 700;
+	src: url('./files/cmu/cmunbi.ttf');
+}
