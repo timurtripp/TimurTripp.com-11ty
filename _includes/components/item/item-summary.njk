@@ -9,7 +9,7 @@
 	<div class="item-body">
 		{% block itemBody %}
 		<p class="item-description">{% block itemDescription %}{{ item.description }}{% endblock %}</p>
-		{% if item._tags %}
+		{% if item._tags and item._tags|length %}
 		<div class="content-block">Tags: {{ renderTermList(termList(item._tags, 'tags'), createTerm, termList, true) }}</div>
 		{% endif %}
 		{% endblock %}

@@ -71,6 +71,10 @@ tags:
         term: personal-skill
         summary: true
     related: ['collaboration']
+  coursework:
+    label: 'Coursework'
+    descriptors: []
+    related: ['personal-project']
   css:
     label: 'CSS'
     descriptors:
@@ -196,6 +200,10 @@ tags:
         term: platform
         summary: true
     related: ['javascript', '11ty']
+  personal-project:
+    label: 'Personal Project'
+    descriptors: []
+    related: ['coursework']
   postgresql:
     label: 'PostgreSQL'
     descriptors:

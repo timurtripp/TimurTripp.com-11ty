@@ -4,7 +4,7 @@ projects:
     description: 'The goal is to play as a dinosaur and climb the food chain to dominate the island. Players can interact with and chase each other in real-time, as well as create an account to earn badges and track their highest scores. The game is a resposive web app compatible with both desktop and mobile devices, and makes use of a custom engine written in Java with a PostgreSQL database for storing player account information.'
     website: 'https://playground.iiod.io'
     start: '01-2018'
-    _tags: ['java', 'javascript', 'web-development', 'sql', 'api-development', 'html', 'css', 'websocket', 'spring-framework', 'apache-tomcat', 'postgresql', 'git', 'gitlab', 'docker', 'nodejs']
+    _tags: ['personal-project', 'java', 'javascript', 'web-development', 'sql', 'api-development', 'html', 'css', 'websocket', 'spring-framework', 'apache-tomcat', 'postgresql', 'git', 'gitlab', 'docker', 'nodejs']
   pride:
     name: 'Utah Pride Center Youth & Family Check-in'
     description: 'This was a collaborative group project in CMPT 375 Web Applications to create a purpose-driven check-in app for our clients at Utah Pride Center. Administrators can manage users, sections, and programs, as well as generate a unique and secure join link for each user in Django admin. The user clicks the link to check-in to a meeting and obtain a Zoom link, and may optionally also edit their display name and pronouns from the user portal.'
@@ -12,13 +12,13 @@ projects:
     start: '09-2021'
     end: '12-2021'
     _institutions: ['westminster']
-    _tags: ['django', 'python', 'web-development', 'collaboration', 'communication', 'application-design', 'html', 'css']
+    _tags: ['coursework', 'django', 'python', 'web-development', 'collaboration', 'communication', 'application-design', 'html', 'css']
   tb:
     name: '[TB] Mods'
     description: '[TB] Mods, or Teddy Bear Mod Pack, was a set of modifications for the online multiplayer game mope.io. A PHP script used regular expressions to programmatically modify the game‘s client JavaScript. A lot of functionality was added, such as skin and theme features, that wasn‘t there by default.'
     start: '01-2017'
     end: '05-2018'
-    _tags: ['javascript', 'web-development', 'html', 'css', 'php']
+    _tags: ['personal-project', 'javascript', 'web-development', 'html', 'css', 'php']
 
 education:
   bachleor-of-science-degree:
@@ -27,18 +27,21 @@ education:
     institution: westminster
     end: '05-2022'
     _institutions: ['westminster']
+    _tags: []
   associate-of-science-degree:
     award: 'Associate of Science'
     field: 'Computer Science'
     institution: slcc
     end: '07-2020'
     _institutions: ['slcc']
+    _tags: []
   software-development-certificate:
     award: 'Certificate of Proficiency'
     field: 'Software Development'
     institution: slcc
     end: '2020'
     _institutions: ['slcc']
+    _tags: []
   web-development-certificate:
     award: 'Certificate of Proficiency'
     field: 'Web Development'
