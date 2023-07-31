@@ -270,6 +270,10 @@ h1, .h1, .h1-like, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, hr, ul, ol, t
 	font-size: 1rem;
 }
 
+.hero {
+	text-align: center;
+}
+
 .hero * {
 	justify-content: center;
 }

@@ -11,6 +11,8 @@ _index:
       faSolid: List
   _websites:
     label: 'Website'
+    icon:
+      faSolid: Globe
   tags:
     label: 'Tag'
     path: '/portfolio/tags/'
