@@ -6,7 +6,7 @@ const
 	readFileSync = require('fs').readFileSync,
 	fg = require('fast-glob'),
 	faBrands = require('@fortawesome/free-brands-svg-icons').fab,
-	dataManager = require('./term.js');
+	faSolid = require('@fortawesome/free-solid-svg-icons').fas;
 
 /**
  * Shortcodes (can be called in templates)
@@ -47,6 +47,18 @@ module.exports = {
 				siteName.split(' ').forEach(word => iconName = iconName + word[0].toUpperCase() + word.substr(1).toLowerCase());
 		}
 		const iconData = faBrands['fa' + iconName];
+		if(iconData)
+			return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ' + iconData.icon[0] + ' ' + iconData.icon[1] + '"><path fill="currentColor" d="' + iconData.icon[4] + '"/></svg>';
+		return '';
+	},
+
+	/**
+	 * Constructs an SVG icon from the FontAwesome solid icon set.
+	 * @param {string} iconName The name of the icon
+	 * @returns {string} The HTML code for the SVG icon
+	 */
+	faSolid: function(iconName) {
+		const iconData = faSolid['fa' + iconName];
 		if(iconData)
 			return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ' + iconData.icon[0] + ' ' + iconData.icon[1] + '"><path fill="currentColor" d="' + iconData.icon[4] + '"/></svg>';
 		return '';

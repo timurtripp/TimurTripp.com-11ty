@@ -2,17 +2,25 @@ _index:
   _locations:
     label: 'Location'
     path: '/portfolio/locations/'
+    icon:
+      faSolid: MapPin
   _tagCategories:
     label: 'Category'
     path: '/portfolio/tags/categories/'
+    icon:
+      faSolid: List
   _websites:
     label: 'Website'
   tags:
     label: 'Tag'
     path: '/portfolio/tags/'
+    icon:
+      faSolid: Tag
   institutions:
     label: 'Institution'
     path: '/portfolio/institutions/'
+    icon:
+      faSolid: Building
 
 tags:
   11ty:
@@ -296,6 +304,8 @@ tags:
 institutions:
   cu-boulder:
     label: 'University of Colorado Boulder'
+    icon:
+      imageurl: 'https://assets.timurtripp.com/portfolio/CU.svg'
     descriptors:
       - collection: _locations
         term: boulder
@@ -314,6 +324,8 @@ institutions:
         summary: false
   introcs-pogil:
     label: 'IntroCS-POGIL'
+    icon: 
+      imageurl: 'https://assets.timurtripp.com/portfolio/IntroCS%20POGIL.png'
     descriptors:
       - collection: _locations
         term: united-states
@@ -323,6 +335,8 @@ institutions:
         summary: false
   slcc:
     label: 'Salt Lake Community College'
+    icon:
+      imageurl: 'https://assets.timurtripp.com/portfolio/SLCC.png'
     descriptors:
       - collection: _locations
         term: taylorsville
@@ -341,7 +355,9 @@ institutions:
         summary: false
     website: 'https://www.slcc.edu'
   westminster:
-    label: 'Westminster College'
+    label: 'Westminster University'
+    icon:
+      imageurl: 'https://assets.timurtripp.com/portfolio/Westminster.svg'
     descriptors:
       - collection: _locations
         term: salt-lake-city
@@ -429,5 +445,5 @@ _websites:
     label: 'slcc.edu'
     url: '//slcc.edu'
   westminstercollege.edu:
-    label: 'westminstercollege.edu'
-    url: '//westminstercollege.edu'
+    label: 'westminsteru.edu'
+    url: '//westminsteru.edu'

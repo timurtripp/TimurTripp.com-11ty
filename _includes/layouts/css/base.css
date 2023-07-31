@@ -270,6 +270,62 @@ h1, .h1, .h1-like, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, hr, ul, ol, t
 	font-size: 1rem;
 }
 
+.hero * {
+	justify-content: center;
+}
+
+.icon-container {
+	width: 2em;
+	height: 2em;
+	margin-top: .3em;
+}
+
+.icon {
+	position: relative;
+	display: block;
+	width: 2em;
+	height: 2em;
+	background-size: 1.8em auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	text-align: left;
+}
+
+.icon.icon-monochrome {
+	color: var(--theme-text-strong);
+}
+
+.icon svg {
+	position: absolute;
+	display: inline-block;
+	top: 50%;
+	width: 100%;
+	transform: translateY(-50%);
+	max-height: 2em;
+}
+
+.icon.icon-framed::before, .icon.icon-framed::after {
+	position: absolute;
+	display: block;
+	width: 2em;
+	height: 2em;
+	top: .15em;
+	left: .15em;
+	background-color: var(--theme-color-alt, --default-theme-color-alt);
+	transform: rotate(6deg);
+	z-index: -999;
+	content: '';
+}
+
+.icon.icon-framed::after {
+	background-color: var(--theme-color-text);
+	outline: .1em solid var(--theme-color, --default-theme-color);
+	box-sizing: content-box;
+	top: 0;
+	left: 0;
+	transform: rotate(-3deg);
+}
+
 @media (max-width: 1199px) {
 	h1, .h1, .h1-like {
 		font-size: calc(3rem + 1.2vw);

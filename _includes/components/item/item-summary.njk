@@ -1,17 +1,21 @@
 {% from '../dictionary/term-macros.njk' import termList as renderTermList %}
+{% from '../icon-macro.njk' import icon %}
 
-<div class="summary item-{{ index }} item-{{ index }}-{{ id }}">
-	<div class="item-header compact-content">
-		{% block itemHeader %}
-		<h3 class="item-name">{% block itemName %}{{ item.name }}{% endblock %}</h3>
-		{% endblock %}
-	</div>
-	<div class="item-body">
-		{% block itemBody %}
-		<p class="item-description">{% block itemDescription %}{{ item.description }}{% endblock %}</p>
-		{% if item._tags and item._tags|length %}
-		<div class="content-block">Tags: {{ renderTermList(termList(item._tags, 'tags'), createTerm, termList, true) }}</div>
-		{% endif %}
-		{% endblock %}
+<div class="summary d-sm-flex gap-2 flex-row item-{{ index }} item-{{ index }}-{{ id }}">
+	{% block itemIcon %}{{ icon(item.icon) }}{% endblock %}
+	<div>
+		<div class="item-header compact-content">
+			{% block itemHeader %}
+			<h3 class="item-name">{% block itemName %}{{ item.name }}{% endblock %}</h3>
+			{% endblock %}
+		</div>
+		<div class="item-body">
+			{% block itemBody %}
+			<p class="item-description">{% block itemDescription %}{{ item.description }}{% endblock %}</p>
+			{% if item._tags and item._tags|length %}
+			<div class="content-block">Tags: {{ renderTermList(termList(item._tags, 'tags'), createTerm, termList, true) }}</div>
+			{% endif %}
+			{% endblock %}
+		</div>
 	</div>
 </div>

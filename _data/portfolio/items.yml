@@ -3,12 +3,16 @@ projects:
     name: 'iiod.io'
     description: 'The goal is to play as a dinosaur and climb the food chain to dominate the island. Players can interact with and chase each other in real-time, as well as create an account to earn badges and track their highest scores. The game is a resposive web app compatible with both desktop and mobile devices, and makes use of a custom engine written in Java with a PostgreSQL database for storing player account information.'
     website: 'https://playground.iiod.io'
+    icon:
+      faSolid: Star
     start: '01-2018'
     _tags: ['personal-project', 'java', 'javascript', 'web-development', 'sql', 'api-development', 'html', 'css', 'websocket', 'spring-framework', 'apache-tomcat', 'postgresql', 'git', 'gitlab', 'docker', 'nodejs']
   pride:
     name: 'Utah Pride Center Youth & Family Check-in'
     description: 'This was a collaborative group project in CMPT 375 Web Applications to create a purpose-driven check-in app for our clients at Utah Pride Center. Administrators can manage users, sections, and programs, as well as generate a unique and secure join link for each user in Django admin. The user clicks the link to check-in to a meeting and obtain a Zoom link, and may optionally also edit their display name and pronouns from the user portal.'
     institution: westminster
+    icon:
+      faSolid: Star
     start: '09-2021'
     end: '12-2021'
     _institutions: ['westminster']
@@ -16,6 +20,8 @@ projects:
   tb:
     name: '[TB] Mods'
     description: '[TB] Mods, or Teddy Bear Mod Pack, was a set of modifications for the online multiplayer game mope.io. A PHP script used regular expressions to programmatically modify the game‘s client JavaScript. A lot of functionality was added, such as skin and theme features, that wasn‘t there by default.'
+    icon:
+      faSolid: Star
     start: '01-2017'
     end: '05-2018'
     _tags: ['personal-project', 'javascript', 'web-development', 'html', 'css', 'php']
@@ -25,6 +31,8 @@ education:
     award: 'Bachelor of Science'
     field: 'Computer Science'
     institution: westminster
+    icon:
+      faSolid: GraduationCap
     end: '05-2022'
     _institutions: ['westminster']
     _tags: []
@@ -32,6 +40,8 @@ education:
     award: 'Associate of Science'
     field: 'Computer Science'
     institution: slcc
+    icon:
+      faSolid: GraduationCap
     end: '07-2020'
     _institutions: ['slcc']
     _tags: []
@@ -39,6 +49,8 @@ education:
     award: 'Certificate of Proficiency'
     field: 'Software Development'
     institution: slcc
+    icon:
+      faSolid: Award
     end: '2020'
     _institutions: ['slcc']
     _tags: []
@@ -46,6 +58,8 @@ education:
     award: 'Certificate of Proficiency'
     field: 'Web Development'
     institution: slcc
+    icon:
+      faSolid: Award
     end: '2019'
     _institutions: ['slcc']
     _tags: ['web-development', 'html', 'css', 'javascript', 'php']
@@ -56,6 +70,8 @@ work:
     department: 'Strategic Relations'
     institution: cu-boulder
     description: I work on a team developing the next generation of website management tools for CU Boulder and migrating colorado.edu's hundreds of individually-managed websites to Drupal 10.
+    icon:
+      faSolid: Code
     start: '06-2022'
     partTime: false
     _institutions: ['cu-boulder']
@@ -65,6 +81,8 @@ work:
     department: 'Computer Science and Information Systems'
     institution: slcc
     description: I assisted students at SLCC with the first steps of their coding journey, not only helping with assignments but also breaking down programming concepts in easy to understand ways.
+    icon:
+      faSolid: Chalkboard
     start: '02-2022'
     end: '05-2022'
     partTime: true
@@ -74,6 +92,8 @@ work:
     title: 'Research Assistant'
     institution: introcs-pogil
     description: IntroCS-POGIL is an NSF-funded project on the adoption of POGIL in introductory programming courses. I wrote several scripts to automate the process of adding CSV data to an SQLite database.
+    icon:
+      faSolid: Database
     start: '12-2021'
     end: '04-2022'
     partTime: true
@@ -84,6 +104,8 @@ work:
     department: 'Computer Support'
     institution: westminster
     description: I provided students and faculty of the college with assistance regarding their school account or other technical issues.
+    icon:
+      faSolid: ConciergeBell
     start: '05-2021'
     end: '12-2021'
     partTime: true

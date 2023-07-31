@@ -1,0 +1,1 @@
+{% macro icon(iconData) %}{% if iconData %}<div class="position-relative icon-container">{% if iconData.imageurl %}<div class="icon icon-framed" style="background-image:url('{{ iconData.imageurl }}')"></div>{% elseif iconData.faSolid %}<div class="icon icon-monochrome">{% faSolid iconData.faSolid %}</div>{% endif %}</div>{% endif %}{% endmacro %}
