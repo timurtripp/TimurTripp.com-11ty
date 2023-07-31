@@ -1,9 +1,9 @@
 {% from '../dictionary/term-macros.njk' import termList as renderTermList %}
 {% from '../icon-macro.njk' import icon %}
 
-<div class="summary d-sm-flex gap-2 flex-row item-{{ index }} item-{{ index }}-{{ id }}">
+<div class="summary large-text d-sm-flex gap-4 flex-row item-{{ index }} item-{{ index }}-{{ id }}">
 	{% block itemIcon %}{{ icon(item.icon) }}{% endblock %}
-	<div>
+	<div class="normal-text">
 		<div class="item-header compact-content">
 			{% block itemHeader %}
 			<h3 class="item-name">{% block itemName %}{{ item.name }}{% endblock %}</h3>
@@ -13,7 +13,7 @@
 			{% block itemBody %}
 			<p class="item-description">{% block itemDescription %}{{ item.description }}{% endblock %}</p>
 			{% if item._tags and item._tags|length %}
-			<div class="content-block">Tags: {{ renderTermList(termList(item._tags, 'tags'), createTerm, termList, true) }}</div>
+			<div class="content-block"><span class="d-none" aria-hidden="false">Tags: </span>{{ renderTermList(termList(item._tags, 'tags'), createTerm, termList, true) }}</div>
 			{% endif %}
 			{% endblock %}
 		</div>

@@ -53,6 +53,18 @@ module.exports = {
 	},
 
 	/**
+	 * Constructs an SVG icon from the FontAwesome brand icon set.
+	 * @param {string} iconName The name of the icon
+	 * @returns {string} The HTML code for the SVG icon
+	 */
+	faBrand: function(iconName) {
+		const iconData = faBrands['fa' + iconName];
+		if(iconData)
+			return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ' + iconData.icon[0] + ' ' + iconData.icon[1] + '"><path fill="currentColor" d="' + iconData.icon[4] + '"/></svg>';
+		return '';
+	},
+
+	/**
 	 * Constructs an SVG icon from the FontAwesome solid icon set.
 	 * @param {string} iconName The name of the icon
 	 * @returns {string} The HTML code for the SVG icon

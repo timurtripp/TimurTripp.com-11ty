@@ -1,6 +1,6 @@
 {% from '../icon-macro.njk' import icon %}
 {% macro termLabel(term, asLink = true) %}{% include "./term-label.njk" %}{% endmacro %}
-{% macro termIcon(term) %}{% if term.meta.icon %}{{ icon(term.meta.icon) }}{% elseif term.index %}{{ icon(term.index.meta.icon) }}{% endif %}{% endmacro %}
+{% macro termIcon(term) %}{% if term.meta.icon %}{{ icon(term.meta.icon, term.meta.label) }}{% elseif term.index %}{{ icon(term.index.meta.icon, term.index.meta.label) }}{% endif %}{% endmacro %}
 {% macro termDescription(term, createTerm, termList, asSummary = true, nested = false) %}{% include "./term-description.njk" %}{% endmacro %}
 {% macro termSummary(term, createTerm, termList, nested = false) %}{% include "./term-summary.njk" %}{% endmacro %}
 {% macro termPage(term, createTerm, termList) %}{% include "./term-page.njk" %}{% endmacro %}

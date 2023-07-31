@@ -4,6 +4,8 @@ projects:
     description: 'The goal is to play as a dinosaur and climb the food chain to dominate the island. Players can interact with and chase each other in real-time, as well as create an account to earn badges and track their highest scores. The game is a resposive web app compatible with both desktop and mobile devices, and makes use of a custom engine written in Java with a PostgreSQL database for storing player account information.'
     website: 'https://playground.iiod.io'
     icon:
+      imageurl: 'https://assets.timurtripp.com/portfolio/iiod.io.png'
+      imagecrop: true
       faSolid: Star
     start: '01-2018'
     _tags: ['personal-project', 'java', 'javascript', 'web-development', 'sql', 'api-development', 'html', 'css', 'websocket', 'spring-framework', 'apache-tomcat', 'postgresql', 'git', 'gitlab', 'docker', 'nodejs']
@@ -21,6 +23,8 @@ projects:
     name: '[TB] Mods'
     description: '[TB] Mods, or Teddy Bear Mod Pack, was a set of modifications for the online multiplayer game mope.io. A PHP script used regular expressions to programmatically modify the game‘s client JavaScript. A lot of functionality was added, such as skin and theme features, that wasn‘t there by default.'
     icon:
+      imageurl: 'https://assets.timurtripp.com/portfolio/TB.png'
+      imagecrop: true
       faSolid: Star
     start: '01-2017'
     end: '05-2018'

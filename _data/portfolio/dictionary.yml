@@ -69,6 +69,8 @@ tags:
     related: ['web-development', 'api-development', 'heroku']
   collaboration:
     label: 'Collaboration'
+    icon:
+      faSolid: Handshake
     descriptors:
       - collection: _tagCategories
         term: personal-skill
@@ -76,6 +78,8 @@ tags:
     related: ['communication']
   communication:
     label: 'Communication'
+    icon:
+      faSolid: Bullhorn
     descriptors:
       - collection: _tagCategories
         term: personal-skill
@@ -115,12 +119,16 @@ tags:
     related: ['python', 'web-development', '11ty']
   docker:
     label: 'Docker'
+    icon:
+      faBrand: Docker
     descriptors:
       - collection: _tagCategories
         term: platform
         summary: true
   drupal:
     label: 'Drupal'
+    icon:
+      faBrand: Drupal
     descriptors:
       - collection: _tagCategories
         term: platform
@@ -135,6 +143,8 @@ tags:
     related: ['web-development', 'api-development', 'cloudflare']
   git:
     label: 'Git'
+    icon:
+      faBrand: GitAlt
     descriptors:
       - collection: _tagCategories
         term: technical-skill
@@ -142,6 +152,8 @@ tags:
     related: ['github', 'gitlab']
   github:
     label: 'GitHub'
+    icon:
+      faBrand: Github
     descriptors:
       - collection: _tagCategories
         term: platform
@@ -149,6 +161,8 @@ tags:
     related: ['git']
   gitlab:
     label: 'GitLab'
+    icon:
+      faBrand: Gitlab
     descriptors:
       - collection: _tagCategories
         term: platform
@@ -170,6 +184,8 @@ tags:
     related: ['mobile-development', 'macos', 'xcode']
   java:
     label: 'Java'
+    icon:
+      faBrand: Java
     descriptors:
       - collection: _tagCategories
         term: programming-language
@@ -177,6 +193,8 @@ tags:
     related: ['spring-framework', 'apache-tomcat']
   javascript:
     label: 'JavaScript'
+    icon:
+      faBrand: Js
     descriptors:
       - collection: _tagCategories
         term: programming-language
@@ -205,6 +223,8 @@ tags:
     related: ['sql']
   nodejs:
     label: 'Node.js'
+    icon:
+      faBrand: NodeJs
     descriptors:
       - collection: _tagCategories
         term: platform
@@ -212,6 +232,8 @@ tags:
     related: ['javascript', '11ty']
   personal-project:
     label: 'Personal Project'
+    icon:
+      faSolid: Lightbulb
     descriptors: []
     related: ['coursework']
   postgresql:
@@ -222,6 +244,8 @@ tags:
         summary: true
   python:
     label: 'Python'
+    icon:
+      faBrand: Python
     descriptors:
       - collection: _tagCategories
         term: programming-language
@@ -264,18 +288,24 @@ tags:
     related: ['sql']
   swift:
     label: 'Swift'
+    icon:
+      faBrand: Swift
     descriptors:
       - collection: _tagCategories
         term: programming-language
         summary: true
   teaching-others:
     label: 'Teaching Others'
+    icon:
+      faSolid: PersonChalkboard
     descriptors:
       - collection: _tagCategories
         term: personal-skill
         summary: true
   php:
     label: 'PHP'
+    icon:
+      faBrand: Php
     descriptors:
       - collection: _tagCategories
         term: programming-language
