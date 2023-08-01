@@ -8,6 +8,7 @@
 
 a.navbar-brand::after {
 	display: none;
+	margin-bottom: 0;
 }
 
 .tt-logo-main {
@@ -15,6 +16,7 @@ a.navbar-brand::after {
 	font-family: var(--font-emphasis);
 	font-weight: 900;
 	font-size: 1.1em;
+	line-height: 1.1em;
 }
 
 .tt-logo-est {
@@ -31,6 +33,10 @@ a.navbar-brand::after {
 .tt-nav {
 	font-family: var(--font-normal);
 	font-size: 1em;
+}
+
+.tt-nav .navbar-nav {
+	margin: 0;
 }
 
 .tt-nav a, .tt-nav a:hover, .tt-nav a:active, .tt-nav a:focus {
@@ -76,6 +82,13 @@ a.navbar-brand::after {
 	background-color: transparent;
 	border: none;
 	padding: 4px 16px;
+}
+
+.tt-nav .theme-mode-toggle-container {
+	font-size: 1rem;
+	margin-left: 16px;
+	padding-left: 0;
+	padding-right: 0;
 }
 
 .tt-nav .nav-link *, .tt-nav .theme-mode-toggle-container * {

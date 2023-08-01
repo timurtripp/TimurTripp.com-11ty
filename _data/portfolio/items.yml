@@ -7,7 +7,7 @@ projects:
       imageurl: 'https://assets.timurtripp.com/portfolio/iiod.io.png'
       imagecrop: true
       faSolid: Star
-    start: '01-2018'
+    start: '2018-01'
     _tags: ['personal-project', 'java', 'javascript', 'web-development', 'sql', 'api-development', 'html', 'css', 'websocket', 'spring-framework', 'apache-tomcat', 'postgresql', 'git', 'gitlab', 'docker', 'nodejs']
   pride:
     name: 'Utah Pride Center Youth & Family Check-in'
@@ -15,8 +15,8 @@ projects:
     institution: westminster
     icon:
       faSolid: Star
-    start: '09-2021'
-    end: '12-2021'
+    start: '2021-09'
+    end: '2021-12'
     _institutions: ['westminster']
     _tags: ['coursework', 'django', 'python', 'web-development', 'collaboration', 'communication', 'application-design', 'html', 'css']
   tb:
@@ -26,8 +26,8 @@ projects:
       imageurl: 'https://assets.timurtripp.com/portfolio/TB.png'
       imagecrop: true
       faSolid: Star
-    start: '01-2017'
-    end: '05-2018'
+    start: '2017-01'
+    end: '2018-05'
     _tags: ['personal-project', 'javascript', 'web-development', 'html', 'css', 'php']
 
 education:
@@ -37,7 +37,7 @@ education:
     institution: westminster
     icon:
       faSolid: GraduationCap
-    end: '05-2022'
+    end: '2022-05'
     _institutions: ['westminster']
     _tags: []
   associate-of-science-degree:
@@ -46,7 +46,7 @@ education:
     institution: slcc
     icon:
       faSolid: GraduationCap
-    end: '07-2020'
+    end: '2020-07'
     _institutions: ['slcc']
     _tags: []
   software-development-certificate:
@@ -57,7 +57,7 @@ education:
       faSolid: Award
     end: '2020'
     _institutions: ['slcc']
-    _tags: []
+    _tags: ['java']
   web-development-certificate:
     award: 'Certificate of Proficiency'
     field: 'Web Development'
@@ -66,7 +66,7 @@ education:
       faSolid: Award
     end: '2019'
     _institutions: ['slcc']
-    _tags: ['web-development', 'html', 'css', 'javascript', 'php']
+    _tags: ['web-development', 'html', 'css', 'javascript', 'php', 'sql', 'mysql']
 
 work:
   cu-boulder-software-engineer:
@@ -76,7 +76,7 @@ work:
     description: I work on a team developing the next generation of website management tools for CU Boulder and migrating colorado.edu's hundreds of individually-managed websites to Drupal 10.
     icon:
       faSolid: Code
-    start: '06-2022'
+    start: '2022-06'
     partTime: false
     _institutions: ['cu-boulder']
     _tags: ['php', 'javascript', 'drupal', 'docker', 'web-development', 'software-engineering', 'collaboration', 'communication', 'html', 'css', 'git', 'github']
@@ -87,8 +87,8 @@ work:
     description: I assisted students at SLCC with the first steps of their coding journey, not only helping with assignments but also breaking down programming concepts in easy to understand ways.
     icon:
       faSolid: Chalkboard
-    start: '02-2022'
-    end: '05-2022'
+    start: '2022-02'
+    end: '2022-05'
     partTime: true
     _institutions: ['slcc']
     _tags: ['java', 'php', 'teaching-others', 'communication']
@@ -98,8 +98,8 @@ work:
     description: IntroCS-POGIL is an NSF-funded project on the adoption of POGIL in introductory programming courses. I wrote several scripts to automate the process of adding CSV data to an SQLite database.
     icon:
       faSolid: Database
-    start: '12-2021'
-    end: '04-2022'
+    start: '2021-12'
+    end: '2022-04'
     partTime: true
     _institutions: ['introcs-pogil']
     _tags: ['research', 'data-processing', 'python', 'sql', 'sqlite', 'csv', 'communication']
@@ -110,8 +110,8 @@ work:
     description: I provided students and faculty of the college with assistance regarding their school account or other technical issues.
     icon:
       faSolid: ConciergeBell
-    start: '05-2021'
-    end: '12-2021'
+    start: '2021-06'
+    end: '2021-12'
     partTime: true
     _institutions: ['westminster']
     _tags: ['communication']

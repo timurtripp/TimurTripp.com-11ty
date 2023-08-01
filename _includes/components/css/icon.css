@@ -1,0 +1,56 @@
+.icon-container {
+	width: 2em;
+}
+
+.icon {
+	position: relative;
+	display: block;
+	width: 2em;
+	height: 2em;
+	text-align: left;
+}
+
+.icon.icon-monochrome {
+	color: var(--theme-text-strong);
+}
+
+.icon.icon-framed {
+	margin-bottom: .15em;
+}
+
+.icon svg, .icon img {
+	position: absolute;
+	display: inline-block;
+	top: 50%;
+	width: 100%;
+	transform: translateY(-50%);
+	max-height: 2em;
+	object-fit: contain;
+}
+
+.icon.icon-framed.icon-cropped img {
+	transform: translateY(-50%) rotate(-3deg);
+	outline: .1em solid var(--theme-color, --default-theme-color);
+}
+
+.icon.icon-framed::before, .icon.icon-framed::after {
+	position: absolute;
+	display: block;
+	width: 2em;
+	height: 2em;
+	top: .15em;
+	left: .15em;
+	background-color: var(--theme-color-alt, --default-theme-color-alt);
+	transform: rotate(6deg);
+	z-index: -999;
+	content: '';
+}
+
+.icon.icon-framed::after {
+	background-color: var(--theme-color-text);
+	outline: .1em solid var(--theme-color, --default-theme-color);
+	box-sizing: content-box;
+	top: 0;
+	left: 0;
+	transform: rotate(-3deg);
+}

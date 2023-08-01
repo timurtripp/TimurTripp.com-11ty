@@ -52,3 +52,9 @@
 .theme-mode-toggle .theme-mode-toggle-inner-right .theme-mode-toggle-line.theme-mode-toggle-line-1 {
 	margin-top: 0;
 }
+
+.theme-mode-tooltip-container {
+	position: absolute;
+	transform: translateX(39px) translateY(10px) rotate(-40deg);
+	z-index: 98;
+}

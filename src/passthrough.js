@@ -26,8 +26,8 @@ module.exports = {
 	'node_modules/@fontsource/cutive-mono/files/*cyrillic-400-*.woff2': 'assets/theme/fonts/files',
 
 	// Passthrough of Bootstrap files 
-	'node_modules/bootstrap/dist/js/bootstrap.min.js': 'assets/theme/bootstrap/' + bootstrapVersion + '/bootstrap.min.js',
-	'node_modules/bootstrap/dist/js/bootstrap.min.js.map': 'assets/theme/bootstrap/' + bootstrapVersion + '/bootstrap.min.js.map',
+	'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js': 'assets/theme/bootstrap/' + bootstrapVersion + '/bootstrap.bundle.min.js',
+	'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js.map': 'assets/theme/bootstrap/' + bootstrapVersion + '/bootstrap.bundle.min.js.map',
 	'node_modules/bootstrap/dist/css/bootstrap.min.css': 'assets/theme/bootstrap/' + bootstrapVersion + '/bootstrap.min.css',
 	'node_modules/bootstrap/dist/css/bootstrap.min.css.map': 'assets/theme/bootstrap/' + bootstrapVersion + '/bootstrap.min.css.map',
 

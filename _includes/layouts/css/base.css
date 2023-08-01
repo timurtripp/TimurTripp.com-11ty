@@ -9,6 +9,7 @@ body {
     background: var(--theme-background-bg);
     font-family: var(--font-normal);
 	font-size: 1.2rem;
+	line-height: 1.2em;
 }
 
 h1, .h1 {
@@ -99,7 +100,7 @@ a:link, a:visited {
 	color: var(--theme-color-alt, --default-theme-color-alt);
 	text-decoration: none;
 	border-bottom: 1px dotted transparent;
-	margin-bottom: -1px;
+	margin-bottom: -.125em;
 }
 
 a:hover, a:focus, a:active {
@@ -151,7 +152,6 @@ blockquote p {
 	color: var(--theme-text-strong);
 	background-color: var(--theme-foreground-bg);
 	padding: 0 1em;
-	
 }
 
 blockquote p:first-child {
@@ -209,7 +209,7 @@ a::after {
 	mask-repeat: repeat;
 	border-radius: .125em;
 	margin-bottom: 0;
-	margin-top: -.25em;
+	margin-top: -.2em;
 	z-index: 99;
 	content: '';
 }
@@ -274,6 +274,14 @@ h1, .h1, .h1-like, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, hr, ul, ol, t
 	margin: 0;
 }
 
+.tooltip {
+	--bs-tooltip-color: var(--theme-text-strong);
+	--bs-tooltip-bg: var(--theme-foreground-translucent-bg);
+	--bs-tooltip-opacity: 1;
+	font-family: var(--font-normal);
+	font-size: 1rem;
+}
+
 .nested-content {
 	font-size: 1rem;
 }
@@ -288,63 +296,6 @@ h1, .h1, .h1-like, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, hr, ul, ol, t
 
 .section-block {
 	margin: 2rem 0;
-}
-
-.icon-container {
-	width: 2em;
-}
-
-.icon {
-	position: relative;
-	display: block;
-	width: 2em;
-	height: 2em;
-	text-align: left;
-}
-
-.icon.icon-monochrome {
-	color: var(--theme-text-strong);
-}
-
-.icon.icon-framed {
-	margin-bottom: .15em;
-}
-
-.icon svg, .icon img {
-	position: absolute;
-	display: inline-block;
-	top: 50%;
-	width: 100%;
-	transform: translateY(-50%);
-	max-height: 2em;
-	object-fit: contain;
-}
-
-.icon.icon-framed.icon-cropped img {
-	transform: translateY(-50%) rotate(-3deg);
-	outline: .1em solid var(--theme-color, --default-theme-color);
-}
-
-.icon.icon-framed::before, .icon.icon-framed::after {
-	position: absolute;
-	display: block;
-	width: 2em;
-	height: 2em;
-	top: .15em;
-	left: .15em;
-	background-color: var(--theme-color-alt, --default-theme-color-alt);
-	transform: rotate(6deg);
-	z-index: -999;
-	content: '';
-}
-
-.icon.icon-framed::after {
-	background-color: var(--theme-color-text);
-	outline: .1em solid var(--theme-color, --default-theme-color);
-	box-sizing: content-box;
-	top: 0;
-	left: 0;
-	transform: rotate(-3deg);
 }
 
 @media (max-width: 1199px) {

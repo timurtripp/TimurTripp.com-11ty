@@ -6,7 +6,36 @@ const
 	readFileSync = require('fs').readFileSync,
 	fg = require('fast-glob'),
 	faBrands = require('@fortawesome/free-brands-svg-icons').fab,
-	faSolid = require('@fortawesome/free-solid-svg-icons').fas;
+	faSolids = require('@fortawesome/free-solid-svg-icons').fas;
+
+/**
+ * Constructs an SVG icon from a FontAwesome IconPack.
+ * @param {import('@fortawesome/fontawesome-common-types').IconPack} iconPack The IconPack
+ * @returns {string} The HTML code for the SVG icon
+ */
+function toIcon(iconPack) {
+	if(iconPack)
+		return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ' + iconPack.icon[0] + ' ' + iconPack.icon[1] + '"><path fill="currentColor" d="' + iconPack.icon[4] + '"/></svg>';
+	return '';
+}
+
+/**
+ * Constructs an SVG icon from the FontAwesome brand icon set.
+ * @param {string} iconName The name of the icon
+ * @returns {string} The HTML code for the SVG icon
+ */
+function faBrand(iconName) {
+	return toIcon(faBrands['fa' + iconName]);
+}
+
+/**
+ * Constructs an SVG icon from the FontAwesome solid icon set.
+ * @param {string} iconName The name of the icon
+ * @returns {string} The HTML code for the SVG icon
+ */
+function faSolid(iconName) {
+	return toIcon(faSolids['fa' + iconName]);
+}
 
 /**
  * Shortcodes (can be called in templates)
@@ -46,33 +75,10 @@ module.exports = {
 			default:
 				siteName.split(' ').forEach(word => iconName = iconName + word[0].toUpperCase() + word.substr(1).toLowerCase());
 		}
-		const iconData = faBrands['fa' + iconName];
-		if(iconData)
-			return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ' + iconData.icon[0] + ' ' + iconData.icon[1] + '"><path fill="currentColor" d="' + iconData.icon[4] + '"/></svg>';
-		return '';
+		return faBrand(iconName);
 	},
 
-	/**
-	 * Constructs an SVG icon from the FontAwesome brand icon set.
-	 * @param {string} iconName The name of the icon
-	 * @returns {string} The HTML code for the SVG icon
-	 */
-	faBrand: function(iconName) {
-		const iconData = faBrands['fa' + iconName];
-		if(iconData)
-			return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ' + iconData.icon[0] + ' ' + iconData.icon[1] + '"><path fill="currentColor" d="' + iconData.icon[4] + '"/></svg>';
-		return '';
-	},
+	faBrand: faBrand,
 
-	/**
-	 * Constructs an SVG icon from the FontAwesome solid icon set.
-	 * @param {string} iconName The name of the icon
-	 * @returns {string} The HTML code for the SVG icon
-	 */
-	faSolid: function(iconName) {
-		const iconData = faSolid['fa' + iconName];
-		if(iconData)
-			return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ' + iconData.icon[0] + ' ' + iconData.icon[1] + '"><path fill="currentColor" d="' + iconData.icon[4] + '"/></svg>';
-		return '';
-	}
+	faSolid: faSolid
 };

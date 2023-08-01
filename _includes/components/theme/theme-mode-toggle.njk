@@ -1,4 +1,5 @@
-<button class="theme-mode-toggle-container" onclick="toggleThemeMode()">
+<div class="theme-mode-tooltip-container"></div>
+<button class="theme-mode-toggle-container" onclick="toggleThemeMode()" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-trigger="hover" data-bs-container=".theme-mode-tooltip-container" title="Theme">
 	<div class="theme-mode-toggle">
 		<div class="theme-mode-toggle-circle-inner">
 			<div class="theme-mode-toggle-inner-left">
@@ -8,4 +9,5 @@
 			</div>
 		</div>
 	</div>
+	<span aria-hidden="false" class="align-text-top d-md-none">Theme</span>
 </button>

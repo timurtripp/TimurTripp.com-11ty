@@ -1,9 +1,9 @@
 {% from '../dictionary/term-macros.njk' import termList as renderTermList %}
 {% from '../icon-macro.njk' import icon %}
 
-<div class="summary large-text d-sm-flex gap-4 flex-row item-{{ index }} item-{{ index }}-{{ id }}">
-	{% block itemIcon %}{{ icon(item.icon) }}{% endblock %}
-	<div class="normal-text">
+<div class="summary d-sm-flex gap-4 flex-row item-{{ index }} item-{{ index }}-{{ id }}">
+	{% block itemIcon %}{% if item.icon %}<div class="large-text my-2">{{ icon(item.icon) }}</div>{% endif %}{% endblock %}
+	<div>
 		<div class="item-header compact-content">
 			{% block itemHeader %}
 			<h3 class="item-name">{% block itemName %}{{ item.name }}{% endblock %}</h3>
