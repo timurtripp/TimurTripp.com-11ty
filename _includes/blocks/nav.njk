@@ -14,7 +14,7 @@
 				</button>
 				<div class="p-0 container collapse navbar-collapse" id="navMenu">
 					<ul class="navbar-nav ml-auto">
-						{% for sectionClass, section in site.sections %}<li class="nav-item opt opt-{{ sectionClass }}">
+						{% for sectionClass, section in site.sections %}<li class="nav-item opt opt-{{ sectionClass }} theme-{{ sectionClass }}">
 							<a class="nav-link" href="{{ section.url }}">{{ section.name }}<div class="underbar"></div></a>
 						</li>{% endfor %}
 						<li class="nav-item">{% include 'components/theme/theme-mode-toggle.njk' %}</li>

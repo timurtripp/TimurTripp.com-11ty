@@ -30,7 +30,7 @@
 
 .icon.icon-framed.icon-cropped img {
 	transform: translateY(-50%) rotate(-3deg);
-	outline: .1em solid var(--theme-color, --default-theme-color);
+	outline: .1em solid var(--theme-color);
 }
 
 .icon.icon-framed::before, .icon.icon-framed::after {
@@ -40,7 +40,7 @@
 	height: 2em;
 	top: .15em;
 	left: .15em;
-	background-color: var(--theme-color-alt, --default-theme-color-alt);
+	background-color: var(--theme-color-contrasty);
 	transform: rotate(6deg);
 	z-index: -999;
 	content: '';
@@ -48,7 +48,7 @@
 
 .icon.icon-framed::after {
 	background-color: var(--theme-color-text);
-	outline: .1em solid var(--theme-color, --default-theme-color);
+	outline: .1em solid var(--theme-color);
 	box-sizing: content-box;
 	top: 0;
 	left: 0;

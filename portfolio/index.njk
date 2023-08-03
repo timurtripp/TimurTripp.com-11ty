@@ -7,6 +7,8 @@ layout: 'layouts/base.njk'
 
 <h1>Portfolio</h1>
 {% for indexItem in portfolio.index %}
-<h2 id="{{ indexItem.id }}">{{ indexItem.label }}</h2>
-<ul class="list-unstyled">{% for itemid, item in portfolio.items[indexItem.id] %}<li class="section-block">{% include '../_includes/components/item/' + indexItem.templates.summary %}</li>{% endfor %}</ul>
+<div{% if indexItem.theme %} class="theme-{{ indexItem.theme }}"{% endif %}>
+	<h2 id="{{ indexItem.id }}">{{ indexItem.label }}</h2>
+	<ul class="list-unstyled">{% for itemid, item in portfolio.items[indexItem.id] %}<li class="section-block">{% include '../_includes/components/item/' + indexItem.templates.summary %}</li>{% endfor %}</ul>
+</div>
 {% endfor %}

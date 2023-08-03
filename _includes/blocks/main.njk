@@ -1,4 +1,4 @@
-<main class="content tt-main">
+<main class="content tt-main {% if section %}theme-{{ section }}{% endif %}">
     {% block content %}
 		{% if sectionedContent %}
 			{{ content | safe }}

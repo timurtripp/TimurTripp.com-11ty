@@ -6,13 +6,16 @@ keywords: ['software engineer', 'web developer', 'personal website', 'portfolio'
 authorBio: 'I’m a software enginner and graduate student based in Denver, Colorado.'
 authorTagline: Software engineer
 email: 'timur@timurtripp.com'
+color: '#0080ff'
 sections: # Sections of the site navigation
   home:
     name: Home
     url: '/'
+    color: '#0080ff'
   portfolio:
     name: Portfolio
     url: '/portfolio'
+    color: '#ff370f'
   # archive:
   #   name: Archive
   #   url: '/archive'

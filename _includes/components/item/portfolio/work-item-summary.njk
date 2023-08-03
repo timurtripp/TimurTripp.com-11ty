@@ -5,6 +5,16 @@
 
 {% block itemHeader %}
 {{ super() }}
-{% if item.department %}<span class="d-block">{{ item.department }}</span>{% endif %}
 {{ termSummary(createTerm(item.institution, 'institutions'), createTerm, termList, true) }}
+{% endblock %}
+
+{% block itemBelowName %}
+{% if item.department %}<span class="h4">{{ item.department }}</span>{% endif %}
+{{ super() }}
+{% endblock %}
+
+{% block itemBelowNameList %}
+{% if item.fullTime %}<li class="my-1"><span>Full time</span></li>{% endif %}
+{% if item.partTime %}<li class="my-1"><span>Part time</span></li>{% endif %}
+{{ super() }}
 {% endblock %}

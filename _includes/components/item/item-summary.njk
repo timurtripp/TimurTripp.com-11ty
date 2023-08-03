@@ -7,6 +7,13 @@
 		<div class="item-header compact-content">
 			{% block itemHeader %}
 			<h3 class="item-name">{% block itemName %}{{ item.name }}{% endblock %}</h3>
+			{% block itemBelowName %}
+			<ul class="list-unstyled item-attributes">
+			{% block itemBelowNameList %}
+			{% set endDate = item.end if item.end else ('present' if item.start) %}{% if endDate %}<li class="item-date my-1"><span>{% if item.start %}{% dateFormatted item.start %}{% if endDate %} <span class="theme-color-text" aria-label="to">{% include 'components/theme/triangle-left.njk' %}</span> {% endif %}{% endif %}{% dateFormatted endDate %}</span></li>{% endif %}
+			{% endblock %}
+			</ul>
+			{% endblock %}
 			{% endblock %}
 		</div>
 		<div class="item-body">

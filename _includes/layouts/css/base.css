@@ -58,6 +58,7 @@ h3, .h3, h4, .h4, h5, .h5, h6, .h6, th {
 	font-weight: 400;
 	transform: scale(.75, 1);
 	transform-origin: 0;
+	padding-bottom: .1em;
 }
 
 .text-like, .text-like svg {

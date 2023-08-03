@@ -55,7 +55,7 @@ education:
     institution: slcc
     icon:
       faSolid: Award
-    end: '2020'
+    end: '2020-05'
     _institutions: ['slcc']
     _tags: ['java']
   web-development-certificate:
@@ -64,7 +64,7 @@ education:
     institution: slcc
     icon:
       faSolid: Award
-    end: '2019'
+    end: '2019-12'
     _institutions: ['slcc']
     _tags: ['web-development', 'html', 'css', 'javascript', 'php', 'sql', 'mysql']
 
@@ -77,7 +77,7 @@ work:
     icon:
       faSolid: Code
     start: '2022-06'
-    partTime: false
+    fullTime: true
     _institutions: ['cu-boulder']
     _tags: ['php', 'javascript', 'drupal', 'docker', 'web-development', 'software-engineering', 'collaboration', 'communication', 'html', 'css', 'git', 'github']
   slcc-tutor:
@@ -102,7 +102,7 @@ work:
     end: '2022-04'
     partTime: true
     _institutions: ['introcs-pogil']
-    _tags: ['research', 'data-processing', 'python', 'sql', 'sqlite', 'csv', 'communication']
+    _tags: ['research', 'data-processing', 'python', 'sql', 'sqlite', 'csv']
   westminster-lab-assistant:
     title: 'Computer Lab Assistant'
     department: 'Computer Support'

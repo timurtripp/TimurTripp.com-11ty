@@ -6,7 +6,8 @@ const
 	readFileSync = require('fs').readFileSync,
 	fg = require('fast-glob'),
 	faBrands = require('@fortawesome/free-brands-svg-icons').fab,
-	faSolids = require('@fortawesome/free-solid-svg-icons').fas;
+	faSolids = require('@fortawesome/free-solid-svg-icons').fas,
+	months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
 /**
  * Constructs an SVG icon from a FontAwesome IconPack.
@@ -80,5 +81,14 @@ module.exports = {
 
 	faBrand: faBrand,
 
-	faSolid: faSolid
+	faSolid: faSolid,
+
+	dateFormatted: function(date) {
+		const dateSplit = date.split('-');
+		if (dateSplit.length == 3) // "2023-08-01" to "August 1, 2023"
+			return months[parseInt(dateSplit[1]) - 1] + ' ' + parseInt(dateSplit[2]) + ', ' +  parseInt(dateSplit[0]);
+		if (dateSplit.length == 2) // "2023-08" to "August 2023"
+			return months[parseInt(dateSplit[1]) - 1] + ' ' + parseInt(dateSplit[0]);
+		return date; // "2023" or other fallback
+	}
 };
