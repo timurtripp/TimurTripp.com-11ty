@@ -7,16 +7,21 @@ const
 	fg = require('fast-glob'),
 	faBrands = require('@fortawesome/free-brands-svg-icons').fab,
 	faSolids = require('@fortawesome/free-solid-svg-icons').fas,
+	icons = require('./theme/icons.json'),
 	months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+function toSVG(viewBoxWidth, viewBoxHeight, svgPath) {
+	return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ' + viewBoxWidth + ' ' + viewBoxHeight + '"><path fill="currentColor" d="' + svgPath + '"/></svg>';
+}
 
 /**
  * Constructs an SVG icon from a FontAwesome IconPack.
  * @param {import('@fortawesome/fontawesome-common-types').IconPack} iconPack The IconPack
  * @returns {string} The HTML code for the SVG icon
  */
-function toIcon(iconPack) {
+function faIconPackToSVG(iconPack) {
 	if(iconPack)
-		return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ' + iconPack.icon[0] + ' ' + iconPack.icon[1] + '"><path fill="currentColor" d="' + iconPack.icon[4] + '"/></svg>';
+		return toSVG(iconPack.icon[0], iconPack.icon[1], iconPack.icon[4]);
 	return '';
 }
 
@@ -26,7 +31,7 @@ function toIcon(iconPack) {
  * @returns {string} The HTML code for the SVG icon
  */
 function faBrand(iconName) {
-	return toIcon(faBrands['fa' + iconName]);
+	return faIconPackToSVG(faBrands['fa' + iconName]);
 }
 
 /**
@@ -35,7 +40,7 @@ function faBrand(iconName) {
  * @returns {string} The HTML code for the SVG icon
  */
 function faSolid(iconName) {
-	return toIcon(faSolids['fa' + iconName]);
+	return faIconPackToSVG(faSolids['fa' + iconName]);
 }
 
 /**
@@ -82,6 +87,11 @@ module.exports = {
 	faBrand: faBrand,
 
 	faSolid: faSolid,
+
+	icon: function(iconName) {
+		const icon = icons[iconName];
+		return icon ? toSVG(icon[0], icon[1], icon[2]) : '';
+	},
 
 	dateFormatted: function(date) {
 		const dateSplit = date.split('-');

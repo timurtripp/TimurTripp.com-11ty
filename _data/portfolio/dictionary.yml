@@ -60,6 +60,13 @@ tags:
         term: programming-language
         summary: true
     related: ['java']
+  ckeditor:
+    label: 'CKEditor 5'
+    descriptors:
+      - collection: _tagCategories
+        term: platform
+        summary: true
+    related: ['drupal', 'javascript', 'web-development']
   cloudflare:
     label: 'Cloudflare'
     descriptors:
@@ -133,7 +140,7 @@ tags:
       - collection: _tagCategories
         term: platform
         summary: true
-    related: ['php', 'mysql', 'web-development']
+    related: ['php', 'ckeditor', 'web-development']
   heroku:
     label: 'Heroku'
     descriptors:
@@ -317,7 +324,7 @@ tags:
       - collection: _tagCategories
         term: technical-skill
         summary: true
-    related: ['html', 'css', 'php']
+    related: ['html', 'css', 'javascript', 'php']
   websocket:
     label: 'WebSocket'
     descriptors:

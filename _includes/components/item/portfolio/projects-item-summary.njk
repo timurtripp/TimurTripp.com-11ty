@@ -1,1 +1,7 @@
 {% extends '../item-summary.njk' %}
+{% from '../../icon-macro.njk' import icon %}
+
+{% block itemBelowDescription %}
+{{ super() }}
+{% if item.website %}<div class="d-flex gap-1"><div>{{ icon({ 'icon': 'demo' }) }}</div><div>View project at<br><a target="_blank" href="//{{ item.website }}">{{ item.website }}</a></div></div>{% endif %}
+{% endblock %}

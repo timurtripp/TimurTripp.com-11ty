@@ -2,13 +2,21 @@ projects:
   iiod.io:
     name: 'iiod.io'
     description: 'The goal is to play as a dinosaur and climb the food chain to dominate the island. Players can interact with and chase each other in real-time, as well as create an account to earn badges and track their highest scores. The game is a resposive web app compatible with both desktop and mobile devices, and makes use of a custom engine written in Java with a PostgreSQL database for storing player account information.'
-    website: 'https://playground.iiod.io'
+    website: 'playground.iiod.io'
     icon:
       imageurl: 'https://assets.timurtripp.com/portfolio/iiod.io.png'
       imagecrop: true
       faSolid: Star
     start: '2018-01'
     _tags: ['personal-project', 'java', 'javascript', 'web-development', 'sql', 'api-development', 'html', 'css', 'websocket', 'spring-framework', 'apache-tomcat', 'postgresql', 'git', 'gitlab', 'docker', 'nodejs']
+  timurtripp.com:
+    name: 'TimurTripp.com 11ty Redesign'
+    description: 'The retro-inspired redesign of TimurTripp.com is my newest passion project. The website is compiled using 11ty, deployed to production automatically using workflows and GitHub Pages, and fully open-source.'
+    website: 'timurtripp.com'
+    icon:
+      faSolid: Star
+    start: '2022-08'
+    _tags: ['personal-project', 'javascript', 'web-development', 'html', 'css', '11ty', 'nodejs', 'git', 'github']
   pride:
     name: 'Utah Pride Center Youth & Family Check-in'
     description: 'This was a collaborative group project in CMPT 375 Web Applications to create a purpose-driven check-in app for our clients at Utah Pride Center. Administrators can manage users, sections, and programs, as well as generate a unique and secure join link for each user in Django admin. The user clicks the link to check-in to a meeting and obtain a Zoom link, and may optionally also edit their display name and pronouns from the user portal.'
@@ -79,7 +87,7 @@ work:
     start: '2022-06'
     fullTime: true
     _institutions: ['cu-boulder']
-    _tags: ['php', 'javascript', 'drupal', 'docker', 'web-development', 'software-engineering', 'collaboration', 'communication', 'html', 'css', 'git', 'github']
+    _tags: ['php', 'javascript', 'drupal', 'docker', 'web-development', 'software-engineering', 'collaboration', 'communication', 'html', 'css', 'git', 'github', 'ckeditor']
   slcc-tutor:
     title: 'Tutor'
     department: 'Computer Science and Information Systems'

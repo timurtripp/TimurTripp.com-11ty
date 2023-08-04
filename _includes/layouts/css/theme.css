@@ -16,9 +16,9 @@
 	--theme-color-light-red: #ff6a4d;
 	--theme-fill-red: #ff2b00;
 
-	--theme-color-orange: hsl(31, 100%, 50%);
-	--theme-color-dark-orange: hsl(31, 100%, 35%);
-	--theme-color-light-orange: hsl(31, 100%, 65%);
+	--theme-color-orange: #ff8400;
+	--theme-color-dark-orange: #b35c00;
+	--theme-color-light-orange: #ffa94d;
 	--theme-fill-orange: #ec8313;
 
 	--theme-color-brown: #ba7d40;
@@ -178,7 +178,7 @@
 	color: var(--theme-text-black);
 }
 
-.theme-blue, .theme-home {
+.theme-blue {
 	--theme-light-color: var(--theme-color-dark-blue);
 	--theme-light-color-alt: var(--theme-color-blue);
 	--theme-light-color-contrasty: var(--theme-color-light-blue);
@@ -189,7 +189,7 @@
 	--theme-dark-fill: var(--theme-fill-blue);
 }
 
-.theme-red, .theme-portfolio {
+.theme-red {
 	--theme-light-color: var(--theme-color-dark-red);
 	--theme-light-color-alt: var(--theme-color-red);
 	--theme-light-color-contrasty: var(--theme-color-light-red);
