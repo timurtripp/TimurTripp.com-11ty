@@ -10,10 +10,6 @@
 	text-align: left;
 }
 
-.icon.icon-monochrome {
-	color: var(--theme-color);
-}
-
 .icon.icon-framed {
 	margin-bottom: .15em;
 }

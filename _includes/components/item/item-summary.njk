@@ -2,7 +2,7 @@
 {% from '../icon-macro.njk' import icon %}
 
 <div class="summary d-sm-flex gap-4 flex-row item-{{ index }} item-{{ index }}-{{ id }}">
-	{% block itemIcon %}{% if item.icon %}<div class="large-text my-2">{{ icon(item.icon) }}</div>{% endif %}{% endblock %}
+	{% block itemIcon %}{% if item.icon %}<div class="large-text my-2 theme-color-text">{{ icon(item.icon) }}</div>{% endif %}{% endblock %}
 	<div>
 		<div class="item-header compact-content">
 			{% block itemHeader %}
