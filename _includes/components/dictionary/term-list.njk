@@ -2,6 +2,6 @@
 
 <ul class="term-list{% if nested %} d-inline{% endif %} list-unstyled">
 	{% for term in terms %}
-	{% if nested %}<li class="d-inline-flex me-2"><div aria-hidden="true" class="tiny-text me-1">{{ termIcon(term) }}</div><div>{{ termLabel(term) }}</div></li>{% else %}<li class="section-block">{{ termSummary(term, createTerm, termList) }}</li>{% endif %}
+	{% if nested %}<li class="d-inline-flex me-2"><div aria-hidden="true" class="me-1">{{ termIcon(term) }}</div><div>{{ termLabel(term) }}</div></li>{% else %}<li class="section-block">{{ termSummary(term, createTerm, termList) }}</li>{% endif %}
 	{% endfor %}
 </ul>

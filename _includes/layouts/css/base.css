@@ -69,6 +69,10 @@ h3, .h3, h4, .h4, h5, .h5, h6, .h6, th {
 	font-size: 1.2rem;
 }
 
+.enlarged-text {
+	font-size: 2em;
+}
+
 .tiny-text {
 	font-size: .6rem;
 }
@@ -194,6 +198,10 @@ h1::after {
 	mask-position: center center;
 	margin-bottom: 2rem;
 	content: '';
+}
+
+h1.no-underline::after {
+	display: none;
 }
 
 .item-underline, .item-underline:link, .item-underline:visited {
