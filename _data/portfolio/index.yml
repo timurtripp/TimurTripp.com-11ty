@@ -1,15 +1,18 @@
 - label: 'Projects'
   id: projects
   theme: brown
+  expandedItems: 2
   templates:
     summary: 'portfolio/projects-item-summary.njk'
 - label: 'Education'
   id: education
   theme: purple
+  expandedItems: 2
   templates:
     summary: 'portfolio/education-item-summary.njk'
 - label: 'Work Experience'
   id: work
   theme: cyan
+  expandedItems: 1
   templates:
     summary: 'portfolio/work-item-summary.njk'

@@ -1,16 +1,18 @@
 {% extends './main.njk' %}
 {% from 'components/icon-macro.njk' import icon %}
 {% block content %}
-<h1 class="no-underline">
-	<div class="d-flex flex-row gap-4 justify-content-center align-items-center">
-		<div>{{ icon({ icon: 'bomb' }) }}</div>
-		<div>{{ errorCode }}</div>
+<div class="hero">
+	<h1 class="no-underline">
+		<div class="d-flex flex-row gap-4 justify-content-center align-items-center">
+			<div>{{ icon({ icon: 'bomb' }) }}</div>
+			<div>{{ errorCode }}</div>
+		</div>
+	</h1>
+	<div class="section-block">
+		<div class="d-flex flex-row gap-2 justify-content-center align-items-center">
+			<div><a class="d-block no-underline" href="/">{{ icon({ icon: 'triangleLeft' }) }}</a></div>
+			<div><a href="/">Reset</a></div>
+		</div>
 	</div>
-</h1>
-<p>
-	<div class="d-flex flex-row gap-2 justify-content-center align-items-center">
-		<div class="theme-color-text">{{ icon({ icon: 'triangleLeft' }) }}</div>
-		<div><a href="/">Reset</a></div>
-	</div>
-</p>
+</div>
 {% endblock %}

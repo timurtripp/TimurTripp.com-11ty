@@ -1,5 +1,8 @@
 {
 	"bomb": [32, 32, "m9 11h-3v3h-2v1h-2v2h-1v2h-1v7h1v2h1v2h2v1h2v1h7v-1h2v-1h2v-2h1v-2h1v-7h-1v-2h-1v-2h-2v-1h-2v-3h-3v-3h-1v3zm4 16h-1v1h1v-1zm2-2h-1v1h1v-1zm1-4h-1v3h1v-3zm-1-2h-1v1h1v-1zm9-5h-1v1h1v-1zm6-2h-1v1h1v-1zm-11 0h-1v1h1v-1zm5 0h-1v1h1v-1zm-4-1h-1v1h1v-1zm9 0h-1v1h1v-1zm-8-1h-1v1h1v-1zm3 0h-1v1h1v-1zm4 0h-1v1h1v-1zm-1-1h-1v1h1v-1zm-6-1h-3v1h3v-1zm-3-1h-2v1h2v-1zm-7 0h-1v1h1v-1zm13 0h-3v1h3v-1zm5 0v-1h-1v1h1zm2 0v-1h-1v1h1zm-15-1h-5v1h5v-1zm11 1v-1h-1v1h1zm-6-2h-1v1h1v-1zm-2-1h-1v1h1v-1zm4 0h-1v1h1v-1zm-6-1h-1v1h1v-1zm9 0h-1v1h1v-1zm-4-1h-1v1h1v-1zm5 0h-1v1h1v-1zm1-1h-1v1h1v-1zm-7-1h-1v1h1v-1zm8 0h-1v1h1v-1z"],
 	"demo": [32, 32, "M0,12L20,32L20,12L0,12ZM26,-0L27.063,5.948L32,7.229L27.063,8.511L26,14.459L24.937,8.511L20,7.229L24.937,5.948L26,-0Z"],
-	"triangleLeft": [32, 32, "M5,16L27,0L27,32L5,16Z"]
+	"triangleDown": [32, 22, "M16,22L0,-0L32,-0L16,22Z"],
+	"triangleLeft": [22, 32, "M0,16L22,0L22,32L0,16Z"],
+	"triangleRight": [22, 32, "M22,16L0,32L0,0L22,16Z"],
+	"triangleUp": [32, 22, "M16,-0L32,22L0,22L16,-0Z"]
 }

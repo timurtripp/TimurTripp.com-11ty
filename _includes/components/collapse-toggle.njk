@@ -1,0 +1,17 @@
+{#
+/**
+ * @file
+ * Contains the template to display a collapsable section "Show more" toggle.
+ * 
+ * Variables:
+ * - collapseid: The id of the collapsable section.
+*/
+#}
+{% from './icon-macro.njk' import icon %}
+<div class="collapse-toggle">
+	<a class="d-flex flex-row gap-2 justify-content-center align-items-center no-underline collapsed" data-bs-toggle="collapse" href="#{{ collapseid }}" role="button" aria-expanded="false" aria-controls="{{ collapseid }}">
+		<div class="flip-when-collapsed">{{ icon({ icon: 'triangleUp' }) }}</div>
+		<div><div class="h4 text-nowrap">Show <span class="show-when-collapsed">more</span><span class="hide-when-collapsed">less</span></div></div>
+		<div class="w-100">{% include 'components/theme/three-horizontal-lines.njk' %}</div>
+	</a>
+</div>

@@ -1,0 +1,20 @@
+.collapse-toggle .collapsed.hide-when-collapsed, .collapse-toggle .collapsed .hide-when-collapsed {
+	display: none;
+}
+
+.collapse-toggle .show-when-collapsed {
+	display: none;
+}
+
+.collapse-toggle .collapsed.show-when-collapsed, .collapse-toggle .collapsed .show-when-collapsed {
+	display: initial;
+}
+
+.collapse-toggle .flip-when-collapsed {
+	transform: rotate(0deg);
+	transition: transform .35s ease;
+}
+
+.collapse-toggle .collapsed.flip-when-collapsed, .collapse-toggle .collapsed .flip-when-collapsed {
+	transform: rotate(180deg);
+}

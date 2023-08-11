@@ -1,8 +1,18 @@
+{#
+/**
+ * @file
+ * Contains the template to display an item summary. Blocks can be overriden to display different information for different items.
+ * 
+ * Variables:
+ * - index
+ * - itemid
+ * - item
+ */
+#}
 {% from '../dictionary/term-macros.njk' import termList as renderTermList %}
 {% from '../icon-macro.njk' import icon %}
-
-<div class="summary d-sm-flex gap-4 flex-row item-{{ index }} item-{{ index }}-{{ id }}">
-	{% block itemIcon %}{% if item.icon %}<div class="large-text my-2 theme-color-text"><div class="enlarged-text">{{ icon(item.icon) }}</div></div>{% endif %}{% endblock %}
+<div class="summary d-sm-flex gap-3 flex-row item-{{ itemid|classify }}">
+	{% block itemIcon %}{% if item.icon %}<div class="large-text my-2 px-2 theme-color-text"><div class="enlarged-text">{{ icon(item.icon) }}</div></div>{% endif %}{% endblock %}
 	<div>
 		<div class="item-header compact-content">
 			{% block itemHeader %}
@@ -10,7 +20,7 @@
 			{% block itemBelowName %}
 			<ul class="list-unstyled item-attributes">
 			{% block itemBelowNameList %}
-			{% set endDate = item.end if item.end else ('present' if item.start) %}{% if endDate %}<li class="item-date my-1"><span>{% if item.start %}{% dateFormatted item.start %}{% if endDate %} <span class="theme-color-text" aria-label="to">{% include 'components/theme/triangle-left.njk' %}</span> {% endif %}{% endif %}{% dateFormatted endDate %}</span></li>{% endif %}
+			{% set endDate = item.end if item.end else ('present' if item.start) %}{% if endDate %}<li class="item-date my-1"><span>{% if item.start %}{% dateFormatted item.start %}{% if endDate %} <span class="d-none" aria-hidden="false">to</span><span class="theme-color-text">{% include 'components/theme/triangle-left.njk' %}</span> {% endif %}{% endif %}{% dateFormatted endDate %}</span></li>{% endif %}
 			{% endblock %}
 			</ul>
 			{% endblock %}

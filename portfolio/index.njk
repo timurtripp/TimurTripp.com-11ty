@@ -6,9 +6,9 @@ layout: 'layouts/base.njk'
 {% from '../_includes/components/dictionary/portfolio/term-factory.njk' import createTerm, termList with context %}
 
 <h1>Portfolio</h1>
-{% for indexItem in portfolio.index %}
-<div{% if indexItem.theme %} class="theme-{{ indexItem.theme }}"{% endif %}>
-	<h2 id="{{ indexItem.id }}">{{ indexItem.label }}</h2>
-	<ul class="list-unstyled">{% for itemid, item in portfolio.items[indexItem.id] %}<li class="section-block">{% include '../_includes/components/item/' + indexItem.templates.summary %}</li>{% endfor %}</ul>
+{% for index in portfolio.index %}{% set items = portfolio.items[index.id] %}
+<div{% if index.theme %} class="theme-{{ index.theme }}"{% endif %}>
+	<h2 id="{{ index.id }}">{{ index.label }}</h2>
+	{% include 'components/item/item-list.njk' %}
 </div>
 {% endfor %}

@@ -87,7 +87,7 @@ work:
     start: '2022-06'
     fullTime: true
     _institutions: ['cu-boulder']
-    _tags: ['php', 'javascript', 'drupal', 'docker', 'web-development', 'software-engineering', 'collaboration', 'communication', 'html', 'css', 'git', 'github', 'ckeditor']
+    _tags: ['php', 'javascript', 'drupal', 'docker', 'ckeditor', 'web-development', 'software-engineering', 'collaboration', 'communication', 'html', 'css', 'git', 'github']
   slcc-tutor:
     title: 'Tutor'
     department: 'Computer Science and Information Systems'

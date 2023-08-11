@@ -51,12 +51,23 @@ module.exports = {
 	 * @param {string} text The original text
 	 * @returns {string} The text converted to a CSS class name
 	 */
-	classify: text => text.toLowerCase().replace(' ', '-'),
+	classify: text => text.toLowerCase().replace(/ /g, '-').replace(/\./g, ''),
 
 	/**
 	 * Converts an object to an array of its keys.
 	 * @param {object} object 
 	 * @returns The array of the object's keys.
 	 */
-	keys: object => Object.keys(object)
+	keys: object => Object.keys(object),
+
+	/**
+	 * Selects only the allowed keys of an object.
+	 * @param {object} object 
+	 * @param {string[]} allowedKeys The allowed keys.
+	 * @returns A copy of the object with only the allowed keys included.
+	 */
+	selectkeys: (object, allowedKeys) => Object.keys(object).filter(key => (allowedKeys || []).includes(key)).reduce((newObject, key) => { newObject[key] = object[key]; return newObject }, {}),
+
+	min: array => Math.min(...array),
+	max: array => Math.max(...array)
 };
