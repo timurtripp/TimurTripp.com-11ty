@@ -11,7 +11,7 @@ projects:
     _tags: ['personal-project', 'java', 'javascript', 'web-development', 'sql', 'api-development', 'html', 'css', 'websocket', 'spring-framework', 'apache-tomcat', 'postgresql', 'git', 'gitlab', 'docker', 'nodejs']
   timurtripp.com:
     name: 'TimurTripp.com 11ty Redesign'
-    description: 'The retro-inspired redesign of TimurTripp.com is my newest passion project. The website is compiled using 11ty, deployed to production automatically using workflows and GitHub Pages, and fully open-source.'
+    description: 'This latest iteration of my 14-year-old TimurTripp.com website is 80’s inspired and pure awesomeness. The website is compiled using 11ty, deployed to production automatically using workflows and GitHub Pages, and open-source under the MIT license. Check it out on GitHub!'
     website: 'timurtripp.com'
     icon:
       faSolid: Star
@@ -81,7 +81,7 @@ work:
     title: 'Software Enginner'
     department: 'Strategic Relations'
     institution: cu-boulder
-    description: I work on a team developing the next generation of website management tools for CU Boulder and migrating colorado.edu's hundreds of individually-managed websites to Drupal 10.
+    description: 'As of 2023, a surprisng number of Drupal websites still rely on the ancient Drupal 7 – released in 2011 and reaching EOL at the start of 2025. My team at CU Boulder is responsible for one of the largest Drupal 7 to 10 multisite migrations in the industry. This necessitates a complete redevelopment of the aging tools used by our site managers to utilize the modern APIs and object-oriented principles of Drupal 10 and CKEditor 5.'
     icon:
       faSolid: Code
     start: '2022-06'
