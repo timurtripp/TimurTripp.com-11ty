@@ -1,5 +1,5 @@
 const themeSettings = {
-	// 'mode': 'auto' // Light theme is disabled
+	'mode': 'auto' // Light theme is disabled
 };
 
 function getThemeSettings() {
@@ -71,7 +71,7 @@ function styleJumpableHeadings() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-	changeThemeMode(themeSettings['mode']);
+	// changeThemeMode(themeSettings['mode']);
 	styleJumpableHeadings();
 	window.addEventListener('resize', styleJumpableHeadings);
 });
