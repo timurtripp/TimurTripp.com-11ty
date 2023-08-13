@@ -28,7 +28,7 @@
 		</div>
 		<div class="item-body">
 			{% block itemBody %}
-			<p class="item-description">{% block itemDescription %}{% if item.description %}{{ item.description|markdown|externalLinks|safe }}{% endif %}{% endblock %}</p>
+			{% block itemDescription %}{% if item.description %}{{ item.description|markdown|externalLinks|safe }}{% endif %}{% endblock %}
 			{% block itemBelowDescription %}{% endblock %}
 			{% if item._tags and item._tags|length %}
 			<div class="content-block"><span class="d-none" aria-hidden="false">Tags: </span>{{ renderTermList(termList(item._tags, 'tags'), createTerm, termList, true) }}</div>
