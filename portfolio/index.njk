@@ -32,7 +32,7 @@ resume: ''
 		<h4 class="m-0 p-0">Get in touch</h4>
 		<ul class="m-0 p-0 list-unstyled text-center">
 			{% if site.email %}<li class="my-2"><span aria-hidden="true" class="me-2">{{ icon({ faSolid: 'Envelope' }) }}</span><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>{% endif %}
-			{% if socials.LinkedIn %}<li class="my-2"><span aria-hidden="true" class="me-2">{{ icon({ faBrand: 'Linkedin' }) }}</span><a target="_blank" href="{{ socials.LinkedIn.url }}">LinkedIn</a></li>{% endif %}
+			{% if socials.LinkedIn %}<li class="my-2"><span aria-hidden="true" class="me-2">{{ icon({ faBrand: 'Linkedin' }) }}</span><a class="external-link no-underline" target="_blank" href="{{ socials.LinkedIn.url }}"><span class="underline">LinkedIn</span><span aria-hidden="true" class="ms-1">{{ icon({ icon: 'external' }) }}</span></a></li>{% endif %}
 		</ul>
 	</div>
 </div>

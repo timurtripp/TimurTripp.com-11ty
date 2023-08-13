@@ -16,7 +16,7 @@
 		<script type="text/javascript" src="/assets/theme/bootstrap/{{ bootstrapVersion }}/bootstrap.min.js"></script>
 		<script type="text/javascript" src="/assets/theme/scripts.js?v={{ version }}"></script>
 	{% endblock %}</head>
-	<body class="{% if section %}{{ section }} {% endif %}theme-mode-auto">{% block body %}
+	<body class="{% if section %}{{ section }} {% endif %}theme-mode-dark">{% block body %}
 		{% block page %}
 			{{ content | safe }}
 		{% endblock %}

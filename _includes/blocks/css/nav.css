@@ -77,25 +77,16 @@ a.navbar-brand::after {
 }
 
 .tt-nav .nav-link, .tt-nav .theme-mode-toggle-container {
-	color: var(--theme-text-strong);
 	background-color: transparent;
 	padding: 4px 16px;
 }
 
-.tt-nav .theme-mode-toggle-container {
-	font-size: 1rem;
-	margin-left: 16px;
-	border: none;
-	padding-left: 0;
-	padding-right: 0;
-}
-
 .tt-nav .nav-link *, .tt-nav .theme-mode-toggle-container * {
-	color: var(--theme-text-normal);
+	color: var(--theme-color-alt);
 }
 
 .tt-nav .nav-link:hover, .tt-nav .nav-link:hover *, .tt-nav .theme-mode-toggle-container:hover * {
-	color: var(--theme-text-black);
+	color: var(--theme-color-alt);
 }
 
 .tt-nav-border-block2 {

@@ -51,3 +51,7 @@
 	left: 0;
 	transform: rotate(-3deg);
 }
+
+.external-link .icon {
+	vertical-align: bottom;
+}

@@ -1,3 +1,13 @@
+.theme-mode-toggle-container {
+	display: none; /* Light theme is disabled */
+	color: var(--theme-text-strong);
+	font-size: 1rem;
+	margin-left: 16px;
+	border: none;
+	padding-left: 0;
+	padding-right: 0;
+}
+
 .theme-mode-toggle {
 	display: inline-block;
 	background: transparent;

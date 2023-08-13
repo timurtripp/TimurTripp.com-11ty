@@ -96,8 +96,8 @@ module.exports = {
 		$('a').each(function(index, e) {
 			const $e = $(e), href = e.attribs.href, url = new URL(href);
 			e.attribs.target = '_blank';
-			$e.addClass('external-link');
-			$e.html($e.html() + '<span aria-hidden="true" class="icon ms-1">' + shortcodes.icon('external') + '</span>')
+			$e.addClass('external-link no-underline');
+			$e.html('<span class="underline">' + $e.html() + '</span><span aria-hidden="true" class="icon ms-1">' + shortcodes.icon('external') + '</span>')
 		});
 		return $.html();
 	}

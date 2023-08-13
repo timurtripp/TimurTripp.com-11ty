@@ -1,5 +1,5 @@
 const themeSettings = {
-	'mode': 'auto'
+	// 'mode': 'auto' // Light theme is disabled
 };
 
 function getThemeSettings() {
