@@ -12,7 +12,7 @@ _index:
   _websites:
     label: 'Website'
     icon:
-      faSolid: Globe
+      icon: external
   tags:
     label: 'Tag'
     path: '/portfolio/tags/'
@@ -188,7 +188,7 @@ tags:
       - collection: _tagCategories
         term: platform
         summary: true
-    related: ['mobile-development', 'macos', 'xcode']
+    related: ['mobile-development', 'xcode']
   java:
     label: 'Java'
     icon:
@@ -301,6 +301,16 @@ tags:
       - collection: _tagCategories
         term: programming-language
         summary: true
+    related: ['swiftui', 'xcode']
+  swiftui:
+    label: 'SwiftUI'
+    icon:
+      faBrand: Swift
+    descriptors:
+      - collection: _tagCategories
+        term: programming-language
+        summary: true
+    related: ['swift', 'xcode']
   teaching-others:
     label: 'Teaching Others'
     icon:
@@ -309,6 +319,13 @@ tags:
       - collection: _tagCategories
         term: personal-skill
         summary: true
+  twig:
+    label: 'Twig'
+    descriptors:
+      - collection: _tagCategories
+        term: programming-language
+        summary: true
+    related: ['php', 'html', 'drupal', 'web-development']
   php:
     label: 'PHP'
     icon:

@@ -88,11 +88,19 @@ module.exports = {
 
 	faSolid: faSolid,
 
+	/**
+	 * @param {string} iconName The key for an icon defined in `icons.json`.
+	 * @returns {string} The full SVG icon.
+	 */
 	icon: function(iconName) {
 		const icon = icons[iconName];
 		return icon ? toSVG(icon[0], icon[1], icon[2]) : '';
 	},
 
+	/**
+	 * @param {string} date A date in the `YYYY-mm-dd format`. Day or day and months may be ommitted.
+	 * @returns {string} A human-readable date such as `August 1, 2023`.
+	 */
 	dateFormatted: function(date) {
 		const dateSplit = date.split('-');
 		if (dateSplit.length == 3) // "2023-08-01" to "August 1, 2023"

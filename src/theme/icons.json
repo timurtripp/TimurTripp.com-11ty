@@ -1,7 +1,8 @@
 {
 	"bomb": [31, 32, "m20 0v1h1v-1h-1zm8 0v1h1v-1h-1zm0 1h-1v1h1v-1zm-1 1h-1v1h1v-1zm-1 1h-1v1h1v-1zm-5-1v1h1v-1h-1zm-5 1v1h1v-1h-1zm2 1v1h1v-1h-1zm4 0v1h1v-1h-1zm-2 1v1h1v-1h-1zm-9 1v1h5v-1h-5zm5 1v1h2v-1h-2zm2 1v1h3v-1h-3zm3 0h3v-1h-3v1zm-10-1h-1v1h1v-1zm-1 1h-1v3h-3v3h-2v1h-2v2h-1v2h-1v7h1v2h1v2h2v1h2v1h7v-1h2v-1h2v-2h1v-2h1v-7h-1v-2h-1v-2h-2v-1h-2v-3h-3v-3zm16-2v1h1v-1h-1zm2 0v1h1v-1h-1zm2 0v1h1v-1h-1zm-4 3v1h1v-1h-1zm1 1v1h1v-1h-1zm1 1v1h1v-1h-1zm1 1v1h1v-1h-1zm-9-2v1h1v-1h-1zm0 1h-1v1h1v-1zm-1 1h-1v1h1v-1zm4-2v1h1v-1h-1zm0 2v1h1v-1h-1zm0 2v1h1v-1h-1zm-9 5h1v1h-1v-1zm1 2h1v3h-1v-3zm-1 4h1v1h-1v-1zm-2 2h1v1h-1v-1z"],
 	"demo": [32, 32, "M0,12L20,32L20,12L0,12ZM26,-0L27.063,5.948L32,7.229L27.063,8.511L26,14.459L24.937,8.511L20,7.229L24.937,5.948L26,-0Z"],
-	"floppyDisk": [27, 27, "m4 26h-3v1h25v-1h-3v-12h-1v12h-17v-12h-1v12zm23-23h-1v23h1v-23zm-26 23v-25h5v8h1v-8h13v8h1v-8h3v-1h-23v1h-1v25h1zm21-13h-17v1h17v-1zm-2-4h-13v1h13v-1zm-3-2h-3v1h3v-1zm1-4h-1v4h1v-4zm-4 0h-1v4h1v-4zm3-1h-3v1h3v-1zm9 0h-1v1h1v-1zm-1-1h-1v1h1v-1z"],
+	"external": [32, 32, "M0,12L20,32L20,12L0,12ZM26,3C28.208,3 30,4.792 30,7C30,9.208 28.208,11 26,11C23.792,11 22,9.208 22,7C22,4.792 23.792,3 26,3Z"],
+	"floppy": [27, 27, "m4 26h-3v1h25v-1h-3v-12h-1v12h-17v-12h-1v12zm23-23h-1v23h1v-23zm-26 23v-25h5v8h1v-8h13v8h1v-8h3v-1h-23v1h-1v25h1zm21-13h-17v1h17v-1zm-2-4h-13v1h13v-1zm-3-2h-3v1h3v-1zm1-4h-1v4h1v-4zm-4 0h-1v4h1v-4zm3-1h-3v1h3v-1zm9 0h-1v1h1v-1zm-1-1h-1v1h1v-1z"],
 	"triangleDown": [32, 22, "M16,22L0,-0L32,-0L16,22Z"],
 	"triangleLeft": [22, 32, "M0,16L22,0L22,32L0,16Z"],
 	"triangleRight": [22, 32, "M22,16L0,32L0,0L22,16Z"],

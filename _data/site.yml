@@ -1,9 +1,9 @@
 # Site-wide metadata
 name: TimurTripp.com
 author: Timur Tripp
-description: 'Timur Tripp is a software enginner and graduate stuent based in Denver, Colorado.'
+description: 'Timur Tripp is a software enginner and graduate stuent based in Denver, Colorado, USA.'
 keywords: ['software engineer', 'web developer', 'personal website', 'portfolio', 'project', 'projects', 'project showcase']
-authorBio: 'I’m a software enginner and graduate student based in Denver, Colorado.'
+authorBio: 'I’m a software enginner and graduate student based in Denver, Colorado, USA.'
 authorTagline: Software engineer
 email: 'timur@timurtripp.com'
 color: '#0080ff'

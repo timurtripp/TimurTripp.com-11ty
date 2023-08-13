@@ -1,13 +1,10 @@
-.icon-container {
-	width: 1em;
-}
-
 .icon {
 	position: relative;
-	display: block;
+	display: inline-block;
 	width: 1em;
 	height: 1em;
 	text-align: left;
+	vertical-align: top;
 }
 
 .icon.icon-framed {

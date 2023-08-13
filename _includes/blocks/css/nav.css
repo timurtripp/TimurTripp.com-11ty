@@ -39,9 +39,8 @@ a.navbar-brand::after {
 	margin: 0;
 }
 
-.tt-nav a, .tt-nav a:hover, .tt-nav a:active, .tt-nav a:focus {
+.tt-nav .navbar-brand {
 	border-bottom: none;
-	text-decoration: none;
 }
 
 .tt-nav .navbar-toggler {
@@ -78,15 +77,15 @@ a.navbar-brand::after {
 }
 
 .tt-nav .nav-link, .tt-nav .theme-mode-toggle-container {
-	color: var(--theme-text-normal);
+	color: var(--theme-text-strong);
 	background-color: transparent;
-	border: none;
 	padding: 4px 16px;
 }
 
 .tt-nav .theme-mode-toggle-container {
 	font-size: 1rem;
 	margin-left: 16px;
+	border: none;
 	padding-left: 0;
 	padding-right: 0;
 }

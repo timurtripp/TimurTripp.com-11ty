@@ -5,7 +5,15 @@
 const
 	DateTime = require('luxon').DateTime, 
 	CleanCSS = require('clean-css'),
-	terser = require('terser');
+	terser = require('terser'),
+	markdownIt = require('markdown-it')({
+		html: false,
+		breaks: true,
+  		linkify: false,
+		typographer:  true
+	}),
+	cheerio = require('cheerio'),
+	shortcodes = require('./shortcodes');
 
 /**
  * Filters (can be called in templates)
@@ -69,5 +77,28 @@ module.exports = {
 	selectkeys: (object, allowedKeys) => Object.keys(object).filter(key => (allowedKeys || []).includes(key)).reduce((newObject, key) => { newObject[key] = object[key]; return newObject }, {}),
 
 	min: array => Math.min(...array),
-	max: array => Math.max(...array)
+	max: array => Math.max(...array),
+
+	/**
+	 * @param {string} markdown The markdown to render.
+	 * @returns The rendered markdown.
+	 */
+	markdown: function(markdown) {
+		return markdownIt.render(markdown);
+	},
+
+	/**
+	 * @param {string} content The HTML content to parse.
+	 * @returns {string} The HTML content with all links marked external and `target="_blank"` added.
+	 */
+	externalLinks: function(content) {
+		const $ = cheerio.load(content);
+		$('a').each(function(index, e) {
+			const $e = $(e), href = e.attribs.href, url = new URL(href);
+			e.attribs.target = '_blank';
+			$e.addClass('external-link');
+			$e.html($e.html() + '<span aria-hidden="true" class="icon ms-1">' + shortcodes.icon('external') + '</span>')
+		});
+		return $.html();
+	}
 };

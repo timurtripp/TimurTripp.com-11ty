@@ -1,0 +1,17 @@
+{% extends 'layouts/base.njk' %}
+{% block head %}{{ super() }}
+<style type="text/css">
+.portfolio-download-resume-icon {
+	transform: rotate(-45deg);
+}
+.portfolio-download-resume-lines {
+	height: .5em;
+}
+.portfolio-download-resume-floppy {
+	transform: scaleY(-1);
+}
+.portfolio-download-resume-floppy .icon {
+	vertical-align: middle;
+}
+</style>
+{% endblock %}

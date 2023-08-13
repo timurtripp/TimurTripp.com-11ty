@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html lang="{{ lang or "en" }}">
-	<head>
+	<head>{% block head %}
 		<title>{{ title }}</title>
 		<meta name="author" content="{{ author }}">
 		<meta name="description" content="{{ description }}">
@@ -15,10 +15,10 @@
 		<link rel="stylesheet" type="text/css" href="/assets/theme/styles.css?v={{ version }}">
 		<script type="text/javascript" src="/assets/theme/bootstrap/{{ bootstrapVersion }}/bootstrap.min.js"></script>
 		<script type="text/javascript" src="/assets/theme/scripts.js?v={{ version }}"></script>
-	</head>
-	<body class="{% if section %}{{ section }} {% endif %}theme-mode-auto">
+	{% endblock %}</head>
+	<body class="{% if section %}{{ section }} {% endif %}theme-mode-auto">{% block body %}
 		{% block page %}
 			{{ content | safe }}
 		{% endblock %}
-	</body>
+	{% endblock %}</body>
 </html>

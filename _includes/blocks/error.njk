@@ -3,16 +3,10 @@
 {% block content %}
 <div class="hero">
 	<h1 class="no-underline">
-		<div class="d-flex flex-row gap-4 justify-content-center align-items-center">
-			<div>{{ icon({ icon: 'bomb' }) }}</div>
-			<div>{{ errorCode }}</div>
-		</div>
+		<span class="me-2">{{ icon({ icon: 'bomb' }) }}</span><span>{{ errorCode }}</span>
 	</h1>
 	<div class="section-block">
-		<div class="d-flex flex-row gap-2 justify-content-center align-items-center">
-			<div><a class="d-block no-underline" href="/">{{ icon({ icon: 'triangleLeft' }) }}</a></div>
-			<div><a href="/">Reset</a></div>
-		</div>
+		<a aria-hidden="true" class="no-underline" href="/">{{ icon({ icon: 'triangleLeft' }) }}<span class="ms-2 underline" href="/">Reset</span></a>
 	</div>
 </div>
 {% endblock %}

@@ -101,13 +101,17 @@ h3, .h3, h4, .h4, h5, .h5, h6, .h6, th {
 }
 
 a:link, a:visited {
-	display: inline-block;
 	color: var(--theme-color-alt);
 	text-decoration: none;
+}
+
+a:link, a:visited, a.no-underline .underline {
+	display: inline-block;
+	border-bottom: 1px solid transparent; 
 	margin-bottom: -.125em;
 }
 
-a:hover, a:focus, a:active {
+a:hover, a:focus, a:active, a:hover.no-underline .underline, a:focus.no-underline .underline, a:active.no-underline .underline {
 	border-bottom: 1px solid var(--theme-color-alt); 
 }
 
@@ -203,7 +207,7 @@ h1::after {
 	color: var(--theme-text-strong);
 }
 
-a::after {
+a::after, a.no-underline .underline::after {
 	display: block;
 	height: .25em;
 	background-color: var(--theme-color-alt);
@@ -218,8 +222,9 @@ a::after {
 	content: '';
 }
 
-a.no-underline:hover, a.no-underline:focus, a.no-underline:active {
+a.no-underline:link, a.no-underline:visited, a.no-underline:hover, a.no-underline:focus, a.no-underline:active {
 	border-bottom: 0;
+	margin-bottom: 0;
 }
 
 h1.no-underline::after, a.no-underline::after {

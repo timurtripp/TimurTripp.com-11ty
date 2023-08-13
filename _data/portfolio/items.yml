@@ -10,16 +10,26 @@ projects:
     start: '2018-01'
     _tags: ['personal-project', 'java', 'javascript', 'web-development', 'sql', 'api-development', 'html', 'css', 'websocket', 'spring-framework', 'apache-tomcat', 'postgresql', 'git', 'gitlab', 'docker', 'nodejs']
   timurtripp.com:
-    name: 'TimurTripp.com 11ty Redesign'
-    description: 'This latest iteration of my 14-year-old TimurTripp.com website is 80’s inspired and pure awesomeness. The website is compiled using 11ty, deployed to production automatically using workflows and GitHub Pages, and open-source under the MIT license. Check it out on GitHub!'
+    name: 'TimurTripp.com'
+    description: "This latest iteration of my 14-year-old TimurTripp.com website is 80's inspired and pure awesomeness. The website is compiled using 11ty, deployed to production automatically using workflows and GitHub Pages, and open-source under the MIT license. [Check it out on GitHub!](https://github.com/TeddyBearX/TimurTripp.com-11ty)"
     website: 'timurtripp.com'
     icon:
       faSolid: Star
     start: '2022-08'
     _tags: ['personal-project', 'javascript', 'web-development', 'html', 'css', '11ty', 'nodejs', 'git', 'github']
+  iiod.io-ios:
+    name: 'iiod.io for iOS'
+    description: 'For my senior capstone project, a native iOS and macOS application was built for iiod.io using Swift and SwiftUI.'
+    icon:
+      imageurl: 'https://assets.timurtripp.com/portfolio/iiod.io.png'
+      imagecrop: true
+      faSolid: Star
+    start: '2021-11'
+    end: '2022-04'
+    _tags: ['coursework', 'swift', 'swiftui', 'mobile-development', 'ios', 'macos', 'xcode']
   pride:
     name: 'Utah Pride Center Youth & Family Check-in'
-    description: 'This was a collaborative group project in CMPT 375 Web Applications to create a purpose-driven check-in app for our clients at Utah Pride Center. Administrators can manage users, sections, and programs, as well as generate a unique and secure join link for each user in Django admin. The user clicks the link to check-in to a meeting and obtain a Zoom link, and may optionally also edit their display name and pronouns from the user portal.'
+    description: 'This was a group project in CMPT 375 Web Applications to create a check-in app for our clients at Utah Pride Center. Administrators can manage users, sections, and programs, as well as generate a unique and secure join link for each user in Django admin.'
     institution: westminster
     icon:
       faSolid: Star
@@ -29,7 +39,7 @@ projects:
     _tags: ['coursework', 'django', 'python', 'web-development', 'collaboration', 'communication', 'application-design', 'html', 'css']
   tb:
     name: '[TB] Mods'
-    description: '[TB] Mods, or Teddy Bear Mod Pack, was a set of modifications for the online multiplayer game mope.io. A PHP script used regular expressions to programmatically modify the game‘s client JavaScript. A lot of functionality was added, such as skin and theme features, that wasn‘t there by default.'
+    description: "[TB] Mods, or Teddy Bear Mod Pack, was a set of modifications for the online multiplayer game mope.io. A PHP script used regular expressions to programmatically modify the game's client JavaScript. A lot of functionality was added, such as skin and theme features, that wasn't there by default. [More info &amp; source code](https://gitlab.teddybear.pro/TeddyBearX/tb-mods-mopeio)"
     icon:
       imageurl: 'https://assets.timurtripp.com/portfolio/TB.png'
       imagecrop: true
@@ -47,7 +57,7 @@ education:
       faSolid: GraduationCap
     end: '2022-05'
     _institutions: ['westminster']
-    _tags: []
+    _tags: ['python', 'c', 'sql', 'java', 'html', 'css', 'javascript', 'mysql', 'software-engineering', 'web-development']
   associate-of-science-degree:
     award: 'Associate of Science'
     field: 'Computer Science'
@@ -56,7 +66,7 @@ education:
       faSolid: GraduationCap
     end: '2020-07'
     _institutions: ['slcc']
-    _tags: []
+    _tags: ['java', 'html', 'css', 'javascript', 'php', 'sql', 'mysql', 'web-development']
   software-development-certificate:
     award: 'Certificate of Proficiency'
     field: 'Software Development'
@@ -81,18 +91,21 @@ work:
     title: 'Software Enginner'
     department: 'Strategic Relations'
     institution: cu-boulder
-    description: 'As of 2023, a surprisng number of Drupal websites still rely on the ancient Drupal 7 – released in 2011 and reaching EOL at the start of 2025. My team at CU Boulder is responsible for one of the largest Drupal 7 to 10 multisite migrations in the industry. This necessitates a complete redevelopment of the aging tools used by our site managers to utilize the modern APIs and object-oriented principles of Drupal 10 and CKEditor 5.'
+    description: |
+      As of 2023, a surprisng number of Drupal websites still rely on the ancient Drupal 7 &#8211; released in 2011 and reaching EOL at the start of 2025. My team at CU Boulder is responsible for one of the largest Drupal 7 to 10 multisite migrations in the industry. This necessitates a complete redevelopment of the aging tools used by our site managers to utilize the modern APIs and object-oriented principles of Drupal 10 and CKEditor 5.
+      
+      I consistently stepped up to take on difficult projects and contributed substantially to the modules and plugins used by our site maintainers and editors, including the [CKEditor 5 Plugin Collection](https://github.com/CuBoulder/ucb_ckeditor_plugins) and [Site Configuration](https://github.com/CuBoulder/ucb_site_configuration) modules.
     icon:
       faSolid: Code
     start: '2022-06'
     fullTime: true
     _institutions: ['cu-boulder']
-    _tags: ['php', 'javascript', 'drupal', 'docker', 'ckeditor', 'web-development', 'software-engineering', 'collaboration', 'communication', 'html', 'css', 'git', 'github']
+    _tags: ['php', 'javascript', 'drupal', 'docker', 'ckeditor', 'web-development', 'software-engineering', 'collaboration', 'communication', 'html', 'css', 'twig', 'git', 'github']
   slcc-tutor:
     title: 'Tutor'
     department: 'Computer Science and Information Systems'
     institution: slcc
-    description: I assisted students at SLCC with the first steps of their coding journey, not only helping with assignments but also breaking down programming concepts in easy to understand ways.
+    description: 'I assisted students at SLCC with the first steps of their coding journey, not only helping with assignments but also breaking down programming concepts in easy to understand ways.'
     icon:
       faSolid: Chalkboard
     start: '2022-02'
@@ -103,7 +116,7 @@ work:
   introcs-pogil:
     title: 'Research Assistant'
     institution: introcs-pogil
-    description: IntroCS-POGIL is an NSF-funded project on the adoption of POGIL in introductory programming courses. I wrote several scripts to automate the process of adding CSV data to an SQLite database.
+    description: 'IntroCS-POGIL is an NSF-funded project on the adoption of POGIL in introductory programming courses. I wrote several scripts to automate the process of adding CSV data to an SQLite database.'
     icon:
       faSolid: Database
     start: '2021-12'
@@ -115,7 +128,7 @@ work:
     title: 'Computer Lab Assistant'
     department: 'Computer Support'
     institution: westminster
-    description: I provided students and faculty of the college with assistance regarding their school account or other technical issues.
+    description: 'I provided students and faculty of the college with assistance regarding their school account or other technical issues.'
     icon:
       faSolid: ConciergeBell
     start: '2021-06'
