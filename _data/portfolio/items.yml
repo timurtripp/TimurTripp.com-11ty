@@ -1,7 +1,10 @@
 projects:
   iiod.io:
     name: 'iiod.io'
-    description: 'The goal is to play as a dinosaur and climb the food chain to dominate the island. Players can interact with and chase each other in real-time, as well as create an account to earn badges and track their highest scores. The game is a resposive web app compatible with both desktop and mobile devices, and makes use of a custom engine written in Java with a PostgreSQL database for storing player account information.'
+    description: |
+      The goal in this MMO browser game to play as a dinosaur and climb the food chain to dominate the island. Players can interact with and chase each other in real-time, as well as create an account to earn badges and track their highest scores. The game is a resposive web app compatible with both desktop and mobile devices, and makes use of a custom engine written in Java with a PostgreSQL database for storing player account information.
+      
+      What does iiod.io look like? Click the link below to play the beta or check out the gameplay videos [1](https://www.youtube.com/watch?v=CLkBZlK56jM) [2](https://www.youtube.com/watch?v=Icrnb6KGSrc) (the gameplay videos are not produced by me).
     website: 'playground.iiod.io'
     icon:
       imageurl: 'https://assets.timurtripp.com/portfolio/iiod.io.png'
@@ -94,7 +97,7 @@ work:
     description: |
       As of 2023, a surprisng number of Drupal websites still rely on the ancient Drupal 7 &#8211; released in 2011 and reaching EOL at the start of 2025. My team at CU Boulder is responsible for one of the largest Drupal 7 to 10 multisite migrations in the industry. This necessitates a complete redevelopment of the aging tools used by our site managers to utilize the modern APIs and object-oriented principles of Drupal 10 and CKEditor 5.
       
-      I consistently stepped up to take on difficult projects and contributed substantially to the modules and plugins used by our site maintainers and editors, including the [CKEditor 5 Plugin Collection](https://github.com/CuBoulder/ucb_ckeditor_plugins) and [Site Configuration](https://github.com/CuBoulder/ucb_site_configuration) modules.
+      I consistently stepped up to take on difficult projects and contributed substantially to the modules and plugins used by our site maintainers and editors, including the [CKEditor 5 Plugin Collection](https://github.com/CuBoulder/ucb_ckeditor_plugins) and [Site Configuration](https://github.com/CuBoulder/ucb_site_configuration) modules. I also attended [DrupalCon Pittsburgh 2023](https://events.drupal.org/pittsburgh2023).
     icon:
       faSolid: Code
     start: '2022-06'
