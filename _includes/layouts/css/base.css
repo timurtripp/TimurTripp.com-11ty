@@ -78,13 +78,20 @@ h3, .h3, h4, .h4, h5, .h5, h6, .h6, th {
 }
 
 .jumpable-heading {
+	white-space: nowrap;
 	padding-top: 2rem;
 }
 
 .jumpable-heading-text {
 	display: inline-block;
+	white-space: normal;
 	box-sizing: content-box;
 	border-bottom: 3px solid var(--theme-color);
+	max-width: calc(100% - 1em);
+}
+
+.jumpable-heading-link {
+	vertical-align: baseline;
 }
 
 .jumpable-heading-link .jumpable-heading-line {
