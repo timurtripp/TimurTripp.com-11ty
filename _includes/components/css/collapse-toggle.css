@@ -18,3 +18,14 @@
 .collapse-toggle .collapsed.flip-when-collapsed, .collapse-toggle .collapsed .flip-when-collapsed {
 	transform: rotate(180deg);
 }
+
+/* Bug fixes */
+
+.collapse-toggle-collapse {
+	border-top: 1px solid transparent;
+	margin-top: -1px;
+}
+
+.collapse-toggle-collapse.collapsing {
+	overflow: visible clip;
+}
