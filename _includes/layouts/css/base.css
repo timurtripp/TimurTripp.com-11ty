@@ -233,8 +233,17 @@ a::after, a.no-underline .underline::after {
 }
 
 a.no-underline:link, a.no-underline:visited, a.no-underline:hover, a.no-underline:focus, a.no-underline:active {
+	display: inline;
 	border-bottom: 0;
 	margin-bottom: 0;
+}
+
+a.external-link.no-underline {
+	white-space: nowrap;
+}
+
+a.external-link.no-underline .underline {
+	white-space: normal;
 }
 
 h1.no-underline::after, a.no-underline::after {

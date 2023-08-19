@@ -12,7 +12,7 @@
 {% from '../dictionary/term-macros.njk' import termList as renderTermList %}
 {% from '../icon-macro.njk' import icon %}
 <div class="summary d-sm-flex gap-3 flex-row item-{{ itemid|classify }}">
-	{% block itemIcon %}{% if item.icon %}<div class="large-text my-2 px-2 theme-color-text"><div class="enlarged-text">{{ icon(item.icon) }}</div></div>{% endif %}{% endblock %}
+	{% block itemIcon %}{% if item.icon %}<div class="large-text my-2 pe-2 theme-color-text"><div class="enlarged-text">{{ icon(item.icon) }}</div></div>{% endif %}{% endblock %}
 	<div>
 		<div class="item-header compact-content">
 			{% block itemHeader %}
