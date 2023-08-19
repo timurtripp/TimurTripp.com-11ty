@@ -66,7 +66,7 @@ function styleJumpableHeadings() {
 	const jumpableHeadings = document.getElementsByClassName('jumpable-heading');
 	for(let index = 0; index < jumpableHeadings.length; index++) {
 		const jumpableHeading = jumpableHeadings[index];
-		jumpableHeading.querySelector('.jumpable-heading-link').style.width = Math.round(jumpableHeading.querySelector('.jumpable-heading-text').getBoundingClientRect().left) + 3 + 'px';
+		jumpableHeading.querySelector('.jumpable-heading-line').style.width = Math.round(jumpableHeading.querySelector('.jumpable-heading-text').getBoundingClientRect().left) + 3 + 'px';
 	}
 }
 

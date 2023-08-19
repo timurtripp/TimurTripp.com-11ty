@@ -87,17 +87,20 @@ h3, .h3, h4, .h4, h5, .h5, h6, .h6, th {
 	border-bottom: 3px solid var(--theme-color);
 }
 
-.jumpable-heading-link:link, .jumpable-heading-link:visited {
+.jumpable-heading-link .jumpable-heading-line {
 	position: absolute;
 	display: block;
 	left: 0;
 	width: 0;
 	height: 3px;
-	background-color: var(--theme-color-alt);
+	background-color: currentColor;
 	overflow: hidden;
-	text-decoration: none;
-	border-bottom: none;
-	margin-top: calc(-0.5rem + 3px);
+	margin-top: calc(3rem - 2px);
+}
+
+.jumpable-heading-link .icon {
+	font-size: .5em;
+	vertical-align: middle;
 }
 
 a:link, a:visited {

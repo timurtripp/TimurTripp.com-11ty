@@ -6,5 +6,6 @@
 	"triangleDown": [32, 22, "M16,22L0,-0L32,-0L16,22Z"],
 	"triangleLeft": [22, 32, "M0,16L22,0L22,32L0,16Z"],
 	"triangleRight": [22, 32, "M22,16L0,32L0,0L22,16Z"],
-	"triangleUp": [32, 22, "M16,-0L32,22L0,22L16,-0Z"]
+	"triangleUp": [32, 22, "M16,-0L32,22L0,22L16,-0Z"],
+	"triangleUpLine": [32, 32, "M16,10L32,32L0,32L16,10ZM32,0L0,0L0,4L32,4L32,0Z"]
 }

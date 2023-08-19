@@ -1,4 +1,4 @@
-const cheerio = require('cheerio'), htmlMinifier = require('html-minifier');
+const cheerio = require('cheerio'), htmlMinifier = require('html-minifier'), { icon } = require('./shortcodes');
 
 module.exports = {
 	/**
@@ -14,7 +14,7 @@ module.exports = {
 			if (id) {
 				e.attribs.id = id;
 				element.addClass('jumpable-heading');
-				element.html('<span class="jumpable-heading-text">' + element.html() + '</span> <a class="jumpable-heading-link" href="#' + id + '"><span aria-hidden="true">Jump to section</span></a>');
+				element.html('<span class="jumpable-heading-text">' + element.html() + '</span> <a aria-label="(Jump to heading)" class="ms-1 no-underline jumpable-heading-link" href="#' + id + '"><span class="jumpable-heading-line"></span><span aria-hidden="true" class="icon">' + icon('triangleUpLine') + '</span></a>');
 			}
 		});
 		return $.html();
