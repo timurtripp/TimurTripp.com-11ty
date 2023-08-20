@@ -22,7 +22,7 @@ projects:
     _tags: ['personal-project', 'javascript', 'web-development', 'html', 'css', '11ty', 'nodejs', 'git', 'github']
   iiod.io-ios:
     name: 'iiod.io for iOS'
-    description: 'For my senior capstone project, a native iOS and macOS application was built for iiod.io using Swift and SwiftUI.'
+    description: 'I built a native iOS and macOS application for iiod.io using Swift and SwiftUI for my undergrad senior capstone. The app is compatible with the same API used by the web version of iiod.io.'
     icon:
       imageurl: 'https://assets.timurtripp.com/portfolio/iiod.io.png'
       imagecrop: true

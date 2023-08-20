@@ -106,8 +106,13 @@ h3, .h3, h4, .h4, h5, .h5, h6, .h6, th {
 }
 
 .jumpable-heading-link .icon {
+	visibility: hidden;
 	font-size: .5em;
 	vertical-align: middle;
+}
+
+.jumpable-heading:hover .jumpable-heading-link .icon {
+	visibility: visible;
 }
 
 a:link, a:visited {

@@ -36,8 +36,10 @@
 	--theme-color-light-cyan: #79d2d2;
 	--theme-fill-cyan: #40bfbf;
 
-	--theme-color-green: #19a643;
-	--theme-fill-green: #19a643;
+	--theme-color-green: #34b25a;
+	--theme-color-dark-green: hsl(138, 55%, 30%);
+	--theme-color-light-green: #61d183;
+	--theme-fill-green: #34b25a;
 
 	--theme-color-gray: #6c757d;
 	--theme-fill-gray: #6c757d;
@@ -242,6 +244,17 @@
 	--theme-dark-color-alt: var(--theme-color-light-cyan);
 	--theme-dark-color-contrasty: var(--theme-color-dark-cyan);
 	--theme-dark-fill: var(--theme-fill-cyan);
+}
+
+.theme-green {
+	--theme-light-color: var(--theme-color-dark-green);
+	--theme-light-color-alt: var(--theme-color-green);
+	--theme-light-color-contrasty: var(--theme-color-light-green);
+	--theme-light-fill: var(--theme-fill-green);
+	--theme-dark-color: var(--theme-color-green);
+	--theme-dark-color-alt: var(--theme-color-light-green);
+	--theme-dark-color-contrasty: var(--theme-color-dark-green);
+	--theme-dark-fill: var(--theme-fill-green);
 }
 
 * { /* Workaround for light mode color issues */
