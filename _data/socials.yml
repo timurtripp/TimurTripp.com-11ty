@@ -3,12 +3,12 @@ LinkedIn:
   url: 'https://www.linkedin.com/in/timur-tripp-1031a61b1/'
   color: '0a66c2'
   footer: true
+GitHub:
+  username: '@TimurTripp'
+  url: 'https://github.com/TimurTripp'
+  footer: true
 GitLab:
   username: '@TeddyBearX'
   url: 'https://gitlab.teddybear.pro/TeddyBearX'
   color: 'e24329'
-  footer: true
-GitHub:
-  username: '@TeddyBearX'
-  url: 'https://github.com/TeddyBearX'
   footer: true

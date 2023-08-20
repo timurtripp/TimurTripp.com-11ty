@@ -14,7 +14,7 @@ projects:
     _tags: ['personal-project', 'java', 'javascript', 'web-development', 'sql', 'api-development', 'html', 'css', 'websocket', 'spring-framework', 'apache-tomcat', 'postgresql', 'git', 'gitlab', 'docker', 'nodejs']
   timurtripp.com:
     name: 'TimurTripp.com'
-    description: "This latest iteration of my 14-year-old TimurTripp.com website is 80's inspired and pure awesomeness. The website is compiled using 11ty, deployed to production automatically using workflows and GitHub Pages, and open-source under the MIT license. [Check it out on GitHub!](https://github.com/TeddyBearX/TimurTripp.com-11ty)"
+    description: "This latest iteration of my 14-year-old TimurTripp.com website is 80's inspired and pure awesomeness. The website is compiled using 11ty, deployed to production automatically using workflows and GitHub Pages, and open-source under the MIT license. [Check it out on GitHub!](https://github.com/TimurTripp/TimurTripp.com-11ty)"
     website: 'timurtripp.com'
     icon:
       faSolid: Star
