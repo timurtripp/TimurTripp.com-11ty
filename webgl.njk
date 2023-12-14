@@ -1,0 +1,101 @@
+---
+title: 'Tabletop Game - WebGL Demo'
+section: portfolio
+layout: 'layouts/html.njk'
+---
+<style type="text/css">
+  body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  #csci5229canvas {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  #csci5229controls {
+    position: absolute;
+    display: flex;
+    bottom: 32px;
+    right: 32px;
+    flex-direction: row;
+    list-style-type: none;
+    background-color: rgba(0, 0, 0, .75);
+    box-shadow: 0 8px 8px rgba(0, 0, 0, .25);
+    border-radius: 8px;
+    margin: 0;
+    padding: 0;
+  }
+  #csci5229controls li {
+    display: block;
+  }
+  #csci5229controls li a {
+    display: block;
+    color: #ebebeb;
+    box-sizing: content-box;
+    border: 0;
+    margin: 0;
+    padding: 14px;
+  }
+  #csci5229controls li a:hover, #csci5229controls li a:active {
+    color: #fff;
+    background-color: rgba(255, 255, 255, .25);
+  }
+  #csci5229controls li:first-child a {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+  #csci5229controls li:last-child a {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  #csci5229controls li a::after {
+    display: none;
+  }
+  #csci5229controls li a svg {
+    display: block;
+    width: 20px;
+    height: 20px;
+  }
+</style>
+<script type="text/javascript" src="https://assets.timurtripp.com/webgl/dist/main.js"></script>
+<canvas id="csci5229canvas"></canvas>
+<ul id="csci5229controls">
+  <li>
+    <a id="csci5229controls_shuffle" title="Shuffle" href="#">
+      <svg aria-label="Shuffle" xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="currentColor" d="M438.6 150.6c12.5-12.5 12.5-32.8 0-45.3l-96-96c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.7 96 32 96C14.3 96 0 110.3 0 128s14.3 32 32 32l306.7 0-41.4 41.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l96-96zm-333.3 352c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 416 416 416c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0 41.4-41.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-96 96c-12.5 12.5-12.5 32.8 0 45.3l96 96z"/></svg>
+    </a>
+  </li>
+  <li>
+    <a id="csci5229controls_zoomin" title="Zoom in" href="#">
+      <svg aria-label="Zoom in" xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="currentColor" d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/></svg>
+    </a>
+  </li>
+  <li>
+    <a id="csci5229controls_zoomout" title="Zoom out" href="#">
+      <svg aria-label="Zoom out" xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="currentColor" d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/></svg>
+    </a>
+  </li>
+</ul>
+<script type="text/javascript">
+  (function () {
+    const scene = new CSCI5229Scene(document.getElementById('csci5229canvas'), window.devicePixelRatio, 'https://assets.timurtripp.com/webgl/');
+    window.addEventListener('resize', function(event) {
+      scene.resize(event.target.devicePixelRatio);
+    });
+    document.getElementById('csci5229controls_shuffle').onclick = function(event) {
+      event.preventDefault();
+      scene.spawnThings();
+    };
+    document.getElementById('csci5229controls_zoomin').onclick = function(event) {
+      event.preventDefault();
+      scene.zoomIn(2);
+    };
+    document.getElementById('csci5229controls_zoomout').onclick = function(event) {
+      event.preventDefault();
+      scene.zoomOut(2);
+    };
+  })();
+</script>
