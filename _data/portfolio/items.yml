@@ -107,7 +107,7 @@ work:
     description: |
       My team at CU Boulder is tasked with one of the largest Drupal 7 to 10 multisite migrations in the industry. This necessitates a complete redevelopment of the aging tools used by our site managers to utilize the modern object-oriented principles of Drupal 10 and CKEditor 5.
       
-      My individual contributions include the [CKEditor 5 Icons](https://www.drupal.org/project/ckeditor5_icons) Drupal module, compatible with Drupal 9.5+ sites using CKEditor 5, and the [Site Configuration](https://github.com/CuBoulder/ucb_site_configuration) module used by CU Boulder internally. I also attended [DrupalCon Pittsburgh 2023](https://events.drupal.org/pittsburgh2023).
+      I consistently stepped up to take on difficult projects. My individual contributions include the [CKEditor 5 Icons](https://www.drupal.org/project/ckeditor5_icons) open-source Drupal module, and the [Site Configuration](https://github.com/CuBoulder/ucb_site_configuration) module used by CU Boulder internally. I also attended [DrupalCon Pittsburgh 2023](https://events.drupal.org/pittsburgh2023).
     icon:
       faSolid: Code
     start: '2022-06'
