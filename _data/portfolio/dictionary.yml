@@ -236,7 +236,7 @@ tags:
       - collection: _tagCategories
         term: platform
         summary: true
-    related: ['javascript', '11ty']
+    related: ['javascript', 'typescript']
   personal-project:
     label: 'Personal Project'
     icon:
@@ -326,6 +326,13 @@ tags:
         term: programming-language
         summary: true
     related: ['php', 'html', 'drupal', 'web-development']
+  typescript:
+    label: 'TypeScript'
+    descriptors:
+      - collection: _tagCategories
+        term: programming-language
+        summary: true
+    related: ['nodejs', 'javascript']
   php:
     label: 'PHP'
     icon:
@@ -342,6 +349,13 @@ tags:
         term: technical-skill
         summary: true
     related: ['html', 'css', 'javascript', 'php']
+  webgl:
+    label: 'WebGL'
+    descriptors:
+      - collection: _tagCategories
+        term: technical-skill
+        summary: true
+    related: ['javascript', 'web-development']
   websocket:
     label: 'WebSocket'
     descriptors:
@@ -349,6 +363,13 @@ tags:
         term: technical-skill
         summary: true
     related: ['api-development']
+  webpack:
+    label: 'Webpack'
+    descriptors:
+      - collection: _tagCategories
+        term: platform
+        summary: true
+    related: ['nodejs', 'web-development']
   xcode:
     label: 'Xcode'
     descriptors:

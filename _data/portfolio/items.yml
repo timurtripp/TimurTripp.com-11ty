@@ -20,6 +20,16 @@ projects:
       faSolid: Star
     start: '2022-08'
     _tags: ['personal-project', 'javascript', 'web-development', 'html', 'css', '11ty', 'nodejs', 'git', 'github']
+  tabletop-game:
+    name: 'Tabletop Game'
+    description: 'A simple demo scene written to showcase WebGL for my computer graphics graduate course at CU Boulder.'
+    website: 'timurtripp.com/webgl'
+    icon:
+      faSolid: Star
+    start: '2023-10'
+    end: '2023-12'
+    _institutions: ['cu-boulder']
+    _tags: ['coursework', 'webgl', 'javascript', 'webpack', 'web-development']
   iiod.io-ios:
     name: 'iiod.io for iOS'
     description: 'I built a native iOS and macOS application for iiod.io using Swift and SwiftUI for my undergrad senior capstone. The app is compatible with the same API used by the web version of iiod.io.'
@@ -95,15 +105,15 @@ work:
     department: 'Strategic Relations'
     institution: cu-boulder
     description: |
-      As of 2023, a surprisng number of Drupal websites still rely on the ancient Drupal 7 &#8211; released in 2011 and reaching EOL at the start of 2025. My team at CU Boulder is responsible for one of the largest Drupal 7 to 10 multisite migrations in the industry. This necessitates a complete redevelopment of the aging tools used by our site managers to utilize the modern APIs and object-oriented principles of Drupal 10 and CKEditor 5.
+      My team at CU Boulder is tasked with one of the largest Drupal 7 to 10 multisite migrations in the industry. This necessitates a complete redevelopment of the aging tools used by our site managers to utilize the modern object-oriented principles of Drupal 10 and CKEditor 5.
       
-      I consistently stepped up to take on difficult projects and contributed substantially to the modules and plugins used by our site maintainers and editors, including the [CKEditor 5 Plugin Collection](https://github.com/CuBoulder/ucb_ckeditor_plugins) and [Site Configuration](https://github.com/CuBoulder/ucb_site_configuration) modules. I also attended [DrupalCon Pittsburgh 2023](https://events.drupal.org/pittsburgh2023).
+      My individual contributions include the [CKEditor 5 Icons](https://www.drupal.org/project/ckeditor5_icons) Drupal module, compatible with Drupal 9.5+ sites using CKEditor 5, and the [Site Configuration](https://github.com/CuBoulder/ucb_site_configuration) module used by CU Boulder internally. I also attended [DrupalCon Pittsburgh 2023](https://events.drupal.org/pittsburgh2023).
     icon:
       faSolid: Code
     start: '2022-06'
     fullTime: true
     _institutions: ['cu-boulder']
-    _tags: ['php', 'javascript', 'drupal', 'docker', 'ckeditor', 'web-development', 'software-engineering', 'collaboration', 'communication', 'html', 'css', 'twig', 'git', 'github']
+    _tags: ['php', 'javascript', 'drupal', 'docker', 'ckeditor', 'typescript', 'web-development', 'software-engineering', 'collaboration', 'communication', 'html', 'css', 'twig', 'git', 'github', 'webpack']
   slcc-tutor:
     title: 'Tutor'
     department: 'Computer Science and Information Systems'
