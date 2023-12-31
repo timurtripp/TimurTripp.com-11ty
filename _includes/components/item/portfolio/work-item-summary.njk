@@ -1,20 +1,16 @@
 {% extends '../item-summary.njk' %}
 {% from '../../dictionary/term-macros.njk' import termSummary %}
-
 {% block itemName %}{{ item.title }}{% endblock %}
-
 {% block itemHeader %}
-{{ super() }}
-{{ termSummary(createTerm(item.institution, 'institutions'), createTerm, termList, true) }}
+  {{ super() }}
+  {{ termSummary(createTerm(item.institution, 'institutions'), createTerm, termList, true) }}
 {% endblock %}
-
 {% block itemBelowName %}
-{% if item.department %}<span class="h4">{{ item.department }}</span>{% endif %}
-{{ super() }}
+  {% if item.department %}<span class="h4">{{ item.department }}</span>{% endif %}
+  {{ super() }}
 {% endblock %}
-
 {% block itemBelowNameList %}
-{% if item.fullTime %}<li class="my-1"><span>Full time</span></li>{% endif %}
-{% if item.partTime %}<li class="my-1"><span>Part time</span></li>{% endif %}
-{{ super() }}
+  {% if item.fullTime %}<li class="my-1"><span>Full time</span></li>{% endif %}
+  {% if item.partTime %}<li class="my-1"><span>Part time</span></li>{% endif %}
+  {{ super() }}
 {% endblock %}

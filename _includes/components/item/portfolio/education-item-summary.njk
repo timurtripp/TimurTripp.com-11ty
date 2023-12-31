@@ -1,9 +1,7 @@
 {% extends '../item-summary.njk' %}
 {% from '../../dictionary/term-macros.njk' import termSummary %}
-
 {% block itemName %}{{ item.award }}, {{ item.field }}{% endblock %}
-
 {% block itemHeader %}
-{{ super() }}
-{{ termSummary(createTerm(item.institution, 'institutions'), createTerm, termList, true) }}
+  {{ super() }}
+  {{ termSummary(createTerm(item.institution, 'institutions'), createTerm, termList, true) }}
 {% endblock %}

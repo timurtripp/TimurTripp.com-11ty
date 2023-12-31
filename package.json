@@ -1,6 +1,6 @@
 {
 	"name": "timurtripp.com",
-	"version": "0.1.1",
+	"version": "0.2",
 	"scripts": {
 		"generate-data": "node -e 'require(\"./src/data-generator.js\")()'",
 		"start": "npx @11ty/eleventy --serve",

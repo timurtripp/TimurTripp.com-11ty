@@ -1,57 +1,57 @@
 .icon {
-	position: relative;
-	display: inline-block;
-	width: 1em;
-	height: 1em;
-	text-align: left;
-	vertical-align: top;
+  position: relative;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  text-align: left;
+  vertical-align: top;
 }
 
 .icon.icon-framed {
-	margin-bottom: .15em;
+  margin-bottom: .15em;
 }
 
 .icon svg, .icon img {
-	position: absolute;
-	display: inline-block;
-	top: 50%;
-	width: 100%;
-	transform: translateY(-50%);
-	max-height: 1em;
-	object-fit: contain;
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  max-height: 1em;
+  object-fit: contain;
 }
 
 .icon svg {
-	fill-rule: evenodd;
+  fill-rule: evenodd;
 }
 
 .icon.icon-framed.icon-cropped img {
-	transform: translateY(-50%) rotate(-3deg);
-	outline: .05em solid var(--theme-color);
+  transform: translateY(-50%) rotate(-3deg);
+  outline: .05em solid var(--theme-color);
 }
 
 .icon.icon-framed::before, .icon.icon-framed::after {
-	position: absolute;
-	display: block;
-	width: 1em;
-	height: 1em;
-	top: .075em;
-	left: .075em;
-	background-color: var(--theme-color-contrasty);
-	transform: rotate(6deg);
-	z-index: -999;
-	content: '';
+  position: absolute;
+  display: block;
+  width: 1em;
+  height: 1em;
+  top: .075em;
+  left: .075em;
+  background-color: var(--theme-color-contrasty);
+  transform: rotate(6deg);
+  z-index: -999;
+  content: '';
 }
 
 .icon.icon-framed::after {
-	background-color: var(--theme-color-text);
-	outline: .05em solid var(--theme-color);
-	box-sizing: content-box;
-	top: 0;
-	left: 0;
-	transform: rotate(-3deg);
+  background-color: var(--theme-color-text);
+  outline: .05em solid var(--theme-color);
+  box-sizing: content-box;
+  top: 0;
+  left: 0;
+  transform: rotate(-3deg);
 }
 
 .external-link .icon {
-	vertical-align: bottom;
+  vertical-align: bottom;
 }

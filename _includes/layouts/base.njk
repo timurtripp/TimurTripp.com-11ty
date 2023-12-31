@@ -1,12 +1,21 @@
 {% extends 'layouts/html.njk' %}
-{% block page %}
-	{% block header %}
-		{% include 'blocks/header.njk' %}
-	{% endblock %}
-	{% block content %}
-		{% include 'blocks/main.njk' %}
-	{% endblock %}
-	{% block footer %}
-		{% include 'blocks/footer.njk' %}
-	{% endblock %} 
+{% block head %}
+  {{ super() }}
+  <link rel="stylesheet" type="text/css" href="/assets/theme/bootstrap/{{ bootstrapVersion }}/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/assets/theme/fonts/eb-garamond-400-400i-700-700i-powerr-400-700-900-cmu-400-400i-700-700i.css">
+  <link rel="stylesheet" type="text/css" href="/assets/theme/syntax/prism-coldark-default.css" id="syntaxCSS">
+  <link rel="stylesheet" type="text/css" href="/assets/theme/styles.css?v={{ version }}">
+  <script type="text/javascript" src="/assets/theme/bootstrap/{{ bootstrapVersion }}/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/assets/theme/scripts.js?v={{ version }}"></script>
+{% endblock %}
+{% block body %}
+  {% block header %}
+    {% include 'blocks/header.njk' %}
+  {% endblock %}
+  {% block content %}
+    {% include 'blocks/main.njk' %}
+  {% endblock %}
+  {% block footer %}
+    {% include 'blocks/footer.njk' %}
+  {% endblock %} 
 {% endblock %}

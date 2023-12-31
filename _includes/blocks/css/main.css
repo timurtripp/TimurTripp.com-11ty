@@ -1,41 +1,41 @@
 .tt-main {
-	display: flex;
-	flex: 1 auto;
-	flex-direction: column;
-	justify-content: center;
+  display: flex;
+  flex: 1 auto;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .tt-main .page-intro-outer {
-	justify-content: center;
-	text-align: left;
-	margin: 4rem auto;
+  justify-content: center;
+  text-align: left;
+  margin: 4rem auto;
 }
 
 .tt-main .page-intro {
-	padding-top: 0.5rem;
-	margin: 4rem 0;
+  padding-top: 0.5rem;
+  margin: 4rem 0;
 }
 
 .tt-main ul {
-	list-style-type: none;
-	display: block;
-	text-align: left;
+  list-style-type: none;
+  display: block;
+  text-align: left;
 }
 
 .tt-main ol {
-	display: block;
-	text-align: left;
+  display: block;
+  text-align: left;
 }
 
 .tt-main ul ul, .tt-main ul ol, .tt-main ol ul, .tt-main ol ol {
-	display: block;
+  display: block;
 }
 
 .tt-main ul:not(.list-unstyled) li::before {
-	content: '\2022';
-	color: var(--theme-color, --default-theme-color);
-	display: block;
-	float: left;
-	width: 1em;
-	margin-left: -1em;
+  content: '\2022';
+  color: var(--theme-color, --default-theme-color);
+  display: block;
+  float: left;
+  width: 1em;
+  margin-left: -1em;
 }

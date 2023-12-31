@@ -1,31 +1,31 @@
 .collapse-toggle .collapsed.hide-when-collapsed, .collapse-toggle .collapsed .hide-when-collapsed {
-	display: none;
+  display: none;
 }
 
 .collapse-toggle .show-when-collapsed {
-	display: none;
+  display: none;
 }
 
 .collapse-toggle .collapsed.show-when-collapsed, .collapse-toggle .collapsed .show-when-collapsed {
-	display: initial;
+  display: initial;
 }
 
 .collapse-toggle .flip-when-collapsed {
-	transform: rotate(0deg);
-	transition: transform .35s ease;
+  transform: rotate(0deg);
+  transition: transform .35s ease;
 }
 
 .collapse-toggle .collapsed.flip-when-collapsed, .collapse-toggle .collapsed .flip-when-collapsed {
-	transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 /* Bug fixes */
 
 .collapse-toggle-collapse {
-	border-top: 1px solid transparent;
-	margin-top: -1px;
+  border-top: 1px solid transparent;
+  margin-top: -1px;
 }
 
 .collapse-toggle-collapse.collapsing {
-	overflow: visible clip;
+  overflow: visible clip;
 }

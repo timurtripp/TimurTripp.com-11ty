@@ -1,7 +1,21 @@
 {% extends '../item-summary.njk' %}
 {% from '../../icon-macro.njk' import icon %}
-
 {% block itemBelowDescription %}
-{{ super() }}
-{% if item.website %}<div class="d-flex gap-1"><div class="theme-color-text enlarged-text">{{ icon({ 'icon': 'demo' }) }}</div><div>View project at<br><a class="external-link no-underline" target="_blank" href="//{{ item.website }}"><span class="underline">{{ item.website }}</span><span class="ms-1">{{ icon({ icon: 'external' }) }}</span></a></div></div>{% endif %}
+  {{ super() }}
+  {% if item.website %}
+    <div class="d-flex gap-1">
+      <div class="theme-color-text enlarged-text" aria-hidden="true">
+        {{ icon({ 'icon': 'demo' }) }}
+      </div>
+      <div>
+        <span class="d-block">View project at</span>
+        <span class="d-block">
+          <a class="d-flex flex-row external-link no-underline" target="_blank" href="//{{ item.website }}">
+            <span class="underline">{{ item.website }}</span>
+            <span class="ms-1">{{ icon({ icon: 'external' }) }}</span>
+          </a>
+        </span>
+      </div>
+    </div>
+  {% endif %}
 {% endblock %}

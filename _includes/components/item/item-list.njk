@@ -11,12 +11,14 @@
 {% from '../icon-macro.njk' import icon %}
 {% set itemids = items|keys %}{% set itemCount = itemids|length %}{% set expandedItemCount = index.expandedItems %}
 <ul class="list-unstyled">{% for n in range(0, [itemCount, expandedItemCount]|min) %}{% set itemid = itemids[n] %}{% set item = items[itemid] %}
-	<li class="section-block">{% include 'components/item/' + index.templates.summary %}</li>{% endfor %}
+  <li class="section-block">{% include 'components/item/' + index.templates.summary %}</li>{% endfor %}
 </ul>
-{% if itemCount - expandedItemCount > 0 %}{% set collapseid %}more-{{ index.id }}{% endset %}
-{% include 'components/collapse-toggle.njk' %}
-<div class="collapse-toggle-collapse collapse" id="{{ collapseid }}">
-	<ul class="list-unstyled">{% for n in range(expandedItemCount, itemCount) %}{% set itemid = itemids[n] %}{% set item = items[itemid] %}
-		<li class="section-block">{% include 'components/item/' + index.templates.summary %}</li>{% endfor %}
-	</ul>
-</div>{% endif %}
+{% if itemCount - expandedItemCount > 0 %}
+  {% set collapseid %}more-{{ index.id }}{% endset %}
+  {% include 'components/collapse-toggle.njk' %}
+  <div class="collapse-toggle-collapse collapse" id="{{ collapseid }}">
+    <ul class="list-unstyled">{% for n in range(expandedItemCount, itemCount) %}{% set itemid = itemids[n] %}{% set item = items[itemid] %}
+      <li class="section-block">{% include 'components/item/' + index.templates.summary %}</li>{% endfor %}
+    </ul>
+  </div>
+{% endif %}

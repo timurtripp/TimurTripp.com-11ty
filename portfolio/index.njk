@@ -2,41 +2,60 @@
 title: 'Portfolio'
 section: portfolio
 layout: 'layouts/custom/portfolio.njk'
-resume: ''
+resume: 'https://assets.timurtripp.com/portfolio/Resume%20Sample-August%202023.pdf'
 ---
 {% from 'components/icon-macro.njk' import icon %}
 {% from 'components/dictionary/portfolio/term-factory.njk' import createTerm, termList with context %}
 <div class="hero">
-	<h1>Portfolio</h1>
-	<div class="content-block">
-		<a aria-label="Load Resume" class="theme-red h2 no-underline d-inline-flex flex-row gap-4 justify-content-center align-items-center portfolio-download-resume-link" href="https://assets.timurtripp.com/portfolio/Resume%20Sample-August%202023.pdf">
-			<div class="no-underline portfolio-download-resume-icon">
-				<div class="portfolio-download-resume-lines text-center">
-					{% include 'components/theme/three-vertical-lines.njk' %}
-				</div>
-				<div class="portfolio-download-resume-floppy">
-					{{ icon({ icon: 'floppy' }) }}
-				</div>
-				<div class="normal-text text-center">
-					<div class="d-inline-block">
-						{{ icon({ icon: 'triangleDown' }) }}
-					</div>
-				</div>
-			</div>
-			<span class="underline">Load Resume</span>
-		</div>
-	</a>
-	<div class="content-block theme-green">
-		<h4 class="m-0 p-0">Get in touch.</h4>
-		<ul class="m-0 p-0 list-unstyled text-center">
-			{% if site.email %}<li class="my-2"><span aria-hidden="true" class="me-2">{{ icon({ faSolid: 'Envelope' }) }}</span><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>{% endif %}
-			{% if socials.LinkedIn %}<li class="my-2"><span aria-hidden="true" class="me-2">{{ icon({ faBrand: 'Linkedin' }) }}</span><a class="external-link no-underline" target="_blank" href="{{ socials.LinkedIn.url }}"><span class="underline">LinkedIn</span><span aria-hidden="true" class="ms-1">{{ icon({ icon: 'external' }) }}</span></a></li>{% endif %}
-		</ul>
-	</div>
+  <h1>Portfolio</h1>
+  <div class="content-block">
+    <a aria-label="Load Resume" class="theme-red h2 no-underline d-inline-flex flex-row gap-4 justify-content-center align-items-center portfolio-download-resume-link" href="{{ resume }}">
+      <div class="no-underline portfolio-download-resume-icon">
+        <div class="portfolio-download-resume-lines text-center">
+          {% include 'components/theme/three-vertical-lines.njk' %}
+        </div>
+        <div class="portfolio-download-resume-floppy">
+          {{ icon({ icon: 'floppy' }) }}
+        </div>
+        <div class="normal-text text-center">
+          <div class="d-inline-block">
+            {{ icon({ icon: 'triangleDown' }) }}
+          </div>
+        </div>
+      </div>
+      <span class="underline">Load Resume</span>
+    </div>
+  </a>
+  <div class="content-block theme-green">
+    <h4 class="m-0 p-0">Get in touch.</h4>
+    <ul class="m-0 p-0 list-unstyled text-center">
+      {% if site.email %}
+        <li class="my-2 d-flex flex-row">
+          <span class="me-2" aria-hidden="true">
+            {{ icon({ faSolid: 'Envelope' }) }}
+          </span>
+          <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+        </li>
+      {% endif %}
+      {% if socials.LinkedIn %}
+        <li class="my-2 d-flex flex-row">
+          <span class="me-2" aria-hidden="true">
+            {{ icon({ faBrand: 'Linkedin' }) }}
+          </span>
+          <a class="d-flex flex-row external-link no-underline" target="_blank" href="{{ socials.LinkedIn.url }}">
+            <span class="underline">LinkedIn</span>
+            <span class="ms-1" aria-hidden="true">
+              {{ icon({ icon: 'external' }) }}
+            </span>
+          </a>
+        </li>
+      {% endif %}
+    </ul>
+  </div>
 </div>
 {% for index in portfolio.index %}{% set items = portfolio.items[index.id] %}
-<div{% if index.theme %} class="theme-{{ index.theme }}"{% endif %}>
-	<h2 id="{{ index.id }}">{{ index.label }}</h2>
-	{% include 'components/item/item-list.njk' %}
-</div>
+  <div{% if index.theme %} class="theme-{{ index.theme }}"{% endif %}>
+    <h2 id="{{ index.id }}">{{ index.label }}</h2>
+    {% include 'components/item/item-list.njk' %}
+  </div>
 {% endfor %}

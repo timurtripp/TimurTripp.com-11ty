@@ -12,7 +12,8 @@ See [TEST](/TEST.md) for a demo of basic CSS elements provided by the theme.
 
 ## Installation
 
-Install [NodeJS](https://nodejs.org/) and [npm](https://www.npmjs.com/), and run `npm i`
+1. Install [NodeJS](https://nodejs.org/) and [npm](https://www.npmjs.com/), and run `npm i`
+2. Run `npm run generate-data` to create the `generated.json` file. This step is recommended but not required.
 
 
 ## Local Testing

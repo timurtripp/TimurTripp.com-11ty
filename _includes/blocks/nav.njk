@@ -1,27 +1,29 @@
 <div class="tt-nav-container">
-	<nav class="navbar tt-navbar tt-nav navbar-expand-md main-nav" id="ttNavbar">
-		<div class="container tt-nav-inner">
-			<div class="container float-left tt-logo">
-				<a class="navbar-brand" href="/">
-					<div class="tt-logo-main">{{ name }}</div>
-				</a>
-			</div>
-			<div class="float-right">
-				<button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="icon-bar top-bar"></span>
-					<span class="icon-bar middle-bar"></span>
-					<span class="icon-bar bottom-bar"></span>
-				</button>
-				<div class="p-0 container collapse navbar-collapse" id="navMenu">
-					<ul class="navbar-nav ml-auto">
-						{% for sectionClass, section in site.sections %}<li class="nav-item opt opt-{{ sectionClass }} theme-{{ sectionClass }}">
-							<a class="d-inline-block nav-link no-underline py-1" href="{{ section.url }}"><span class="underline">{{ section.name }}</span></a>
-						</li>{% endfor %}
-						<li class="nav-item">{% include 'components/theme/theme-mode-toggle.njk' %}</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</nav>
-	{% include 'components/theme/line-left.njk' %}
+  <nav class="navbar tt-navbar tt-nav navbar-expand-md main-nav" id="ttNavbar">
+    <div class="container tt-nav-inner">
+      <div class="container float-left tt-logo">
+        <a class="navbar-brand" href="/">
+          <div class="tt-logo-main">{{ name }}</div>
+        </a>
+      </div>
+      <div class="float-right">
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="icon-bar top-bar"></span>
+          <span class="icon-bar middle-bar"></span>
+          <span class="icon-bar bottom-bar"></span>
+        </button>
+        <div class="p-0 container collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ml-auto">
+            {% for sectionClass, section in site.sections %}
+              <li class="nav-item opt opt-{{ sectionClass }} theme-{{ sectionClass }}">
+                <a class="d-inline-block nav-link no-underline py-1" href="{{ section.url }}"><span class="underline">{{ section.name }}</span></a>
+              </li>
+            {% endfor %}
+            <li class="nav-item">{% include 'components/theme/theme-mode-toggle.njk' %}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  {% include 'components/theme/line-left.njk' %}
 </div>

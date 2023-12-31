@@ -1,7 +1,15 @@
 {% from './term-macros.njk' import termSummary, termIcon %}
-
 <ul class="term-list{% if nested %} d-inline{% endif %} list-unstyled">
-	{% for term in terms %}
-	{% if nested %}<li class="d-inline-flex me-2 mb-1"><div aria-hidden="true" class="me-1">{{ termIcon(term) }}</div><div>{{ termLabel(term) }}</div></li>{% else %}<li class="section-block">{{ termSummary(term, createTerm, termList) }}</li>{% endif %}
-	{% endfor %}
+  {% for term in terms %}
+    {% if nested %}
+      <li class="d-inline-flex me-2 mb-1">
+        <div aria-hidden="true" class="me-1">{{ termIcon(term) }}</div>
+        <div>{{ termLabel(term) }}</div>
+      </li>
+    {% else %}
+      <li class="section-block">
+        {{ termSummary(term, createTerm, termList) }}
+      </li>
+    {% endif %}
+  {% endfor %}
 </ul>

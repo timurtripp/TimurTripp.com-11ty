@@ -1,1 +1,6 @@
-{% set previousTermInline = false %}{% for descriptor in term.meta.descriptors %}{% if not asSummary or descriptor.summary %}{% set inline = descriptor.display == 'inline' or descriptor.display == 'inline-only' %}{% include '_includes/components/dictionary/term-descriptor.njk' %}{% set previousTermInline = inline %}{% endif %}{% endfor %}
+{% set previousTermInline = false %}
+{% for descriptor in term.meta.descriptors %}{% if not asSummary or descriptor.summary %}
+  {% set inline = descriptor.display == 'inline' or descriptor.display == 'inline-only' %}
+  {% include '_includes/components/dictionary/term-descriptor.njk' %}
+  {% set previousTermInline = inline %}
+{% endif %}{% endfor %}

@@ -1,24 +1,16 @@
 <!DOCTYPE HTML>
-<html lang="{{ lang or "en" }}">
-	<head>{% block head %}
-		<title>{{ title }}</title>
-		<meta name="author" content="{{ author }}">
-		<meta name="description" content="{{ description }}">
-		<meta name="keywords" content="{% for keyword in keywords %}{{ ',' if loop.index != 1 }}{{ keyword }}{% endfor %}">
-		<meta name="viewport" content="width=device-width,initial-scale=1">{% if noIndex %}
-		<meta name="robots" content="noindex">{% endif %}
-		<link rel="icon" href="/assets/favicon-32x32.png" sizes="32x32">
-		<link rel="mask-icon" type="image/svg+xml" href="/assets/mask-icon.svg" color="{{ site.color }}">
-		<link rel="stylesheet" type="text/css" href="/assets/theme/bootstrap/{{ bootstrapVersion }}/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="/assets/theme/fonts/eb-garamond-400-400i-700-700i-powerr-400-700-900-cmu-400-400i-700-700i.css">
-		<link rel="stylesheet" type="text/css" href="/assets/theme/syntax/prism-coldark-default.css" id="syntaxCSS">
-		<link rel="stylesheet" type="text/css" href="/assets/theme/styles.css?v={{ version }}">
-		<script type="text/javascript" src="/assets/theme/bootstrap/{{ bootstrapVersion }}/bootstrap.min.js"></script>
-		<script type="text/javascript" src="/assets/theme/scripts.js?v={{ version }}"></script>
-	{% endblock %}</head>
-	<body class="{% if section %}{{ section }} {% endif %}theme-mode-dark">{% block body %}
-		{% block page %}
-			{{ content | safe }}
-		{% endblock %}
-	{% endblock %}</body>
+<html lang="{{ lang or 'en' }}">
+  <head>{% block head %}
+    <title>{{ title }}</title>
+    <meta name="author" content="{{ author }}">
+    <meta name="description" content="{{ description }}">
+    <meta name="keywords" content="{% for keyword in keywords %}{{ ',' if loop.index != 1 }}{{ keyword }}{% endfor %}">
+    <meta name="viewport" content="width=device-width,initial-scale=1">{% if noIndex %}
+    <meta name="robots" content="noindex">{% endif %}
+    <link rel="icon" href="/assets/favicon-32x32.png" sizes="32x32">
+    <link rel="mask-icon" type="image/svg+xml" href="/assets/mask-icon.svg" color="{{ site.color }}">
+  {% endblock %}</head>
+  <body class="{% if section %}{{ section }} {% endif %}theme-mode-dark">{% block body %}
+    {{ content|safe }}
+  {% endblock %}</body>
 </html>
