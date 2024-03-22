@@ -3,7 +3,7 @@
   {% for term in terms %}
     {% if nested %}
       <li class="d-inline-flex me-2 mb-1">
-        <div aria-hidden="true" class="me-1">{{ termIcon(term) }}</div>
+        <div class="me-1">{{ termIcon(term) }}</div>
         <div>{{ termLabel(term) }}</div>
       </li>
     {% else %}

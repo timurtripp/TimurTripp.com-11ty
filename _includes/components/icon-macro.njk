@@ -1,11 +1,15 @@
 {% macro icon(data, name) %}
 {% if data.imageurl %}
-  <span class="icon icon-framed{% if data.imagecrop %} icon-cropped{% endif %}"><img {% if name %}alt="{{ name }}" {% endif %}src="{{ data.imageurl }}"></span>
+  {% if data.imageicon %}
+    <span aria-hidden="true" class="icon theme-color-bg" style="mask-image: url({{ data.imageurl }})"></span>
+  {% else %}
+    <span aria-hidden="true" class="icon icon-framed{% if data.imagecrop %} icon-cropped{% endif %}"><img {% if name %}alt="{{ name }}" {% endif %}src="{{ data.imageurl }}"></span>
+  {% endif %}
 {% elseif data.icon %}
-  <span class="icon icon-monochrome">{% icon data.icon %}</span>
+  <span aria-hidden="true" class="icon icon-monochrome">{% icon data.icon %}</span>
 {% elseif data.faSolid %}
-  <span class="icon icon-monochrome">{% faSolid data.faSolid %}</span>
+  <span aria-hidden="true" class="icon icon-monochrome">{% faSolid data.faSolid %}</span>
 {% elseif data.faBrand %}
-  <span class="icon icon-monochrome">{% faBrand data.faBrand %}</span>
+  <span ≈ class="icon icon-monochrome">{% faBrand data.faBrand %}</span>
 {% endif %}
 {% endmacro %}
