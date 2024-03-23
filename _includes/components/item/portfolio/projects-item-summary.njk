@@ -1,21 +1,41 @@
 {% extends '../item-summary.njk' %}
 {% from '../../icon-macro.njk' import icon %}
+{% from '../../dictionary/term-macros.njk' import termLabel, termIcon %}
 {% block itemBelowDescription %}
   {{ super() }}
-  {% if item.website %}
-    <div class="d-flex gap-1">
-      <div class="theme-color-text enlarged-text" aria-hidden="true">
-        {{ icon({ 'icon': 'demo' }) }}
+  <div class="d-flex flex-wrap gap-3">
+    {% if item.website %}
+      <div class="d-flex gap-1">
+        <div class="theme-color-text enlarged-text" aria-hidden="true">
+          {{ icon({ icon: 'demo' }) }}
+        </div>
+        <div>
+          <span class="d-block">View project at</span>
+          <span class="d-block">
+            <a class="d-flex flex-row external-link no-underline" target="_blank" href="//{{ item.website }}">
+              <span class="underline">{{ item.website }}</span>
+              <span class="ms-1">{{ icon({ icon: 'external' }) }}</span>
+            </a>
+          </span>
+        </div>
       </div>
-      <div>
-        <span class="d-block">View project at</span>
-        <span class="d-block">
-          <a class="d-flex flex-row external-link no-underline" target="_blank" href="//{{ item.website }}">
-            <span class="underline">{{ item.website }}</span>
-            <span class="ms-1">{{ icon({ icon: 'external' }) }}</span>
-          </a>
-        </span>
+    {% endif %}
+    {% for termName, href in item.source %}
+      {% set term = createTerm(termName, 'tags') %}
+      <div class="d-flex gap-1">
+        <div class="theme-color-text enlarged-text" aria-hidden="true">
+          {{ icon({ faSolid: 'Code' }) }}
+        </div>
+        <div>
+          <span class="d-block">View source on</span>
+          <span class="d-block">
+            <a class="d-flex flex-row external-link no-underline" target="_blank" href="//{{ href }}">
+              <span class="underline">{{ termLabel(term, false) }}</span>
+              <span class="ms-1">{{ icon({ icon: 'external' }) }}</span>
+            </a>
+          </span>
+        </div>
       </div>
-    </div>
-  {% endif %}
+    {% endfor %}
+  </div>
 {% endblock %}
