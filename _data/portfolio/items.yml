@@ -28,6 +28,8 @@ projects:
     name: 'Tabletop Game'
     description: 'A simple demo scene written to showcase WebGL for my computer graphics graduate course at CU Boulder.'
     website: 'timurtripp.com/webgl'
+    source:
+      github: 'github.com/timurtripp/tabletop-game'
     icon:
       imageurl: 'https://assets.timurtripp.com/portfolio/d20-webgl.png'
       imagecrop: true

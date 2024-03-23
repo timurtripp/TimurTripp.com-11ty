@@ -22,16 +22,16 @@
     {% endif %}
     {% for termName, href in item.source %}
       {% set term = createTerm(termName, 'tags') %}
-        <div>
-          <span class="d-block">View source on</span>
-          <span class="d-block d-flex flex-row gap-1">
-            {{ termIcon(term) }}
-            <a class="d-flex flex-row external-link no-underline" target="_blank" href="//{{ href }}">
-              <span class="underline">{{ termLabel(term, false) }}</span>
-              <span class="ms-1">{{ icon({ icon: 'external' }) }}</span>
-            </a>
-          </span>
-        </div>
+      <div>
+        <span class="d-block">View source on</span>
+        <span class="d-block d-flex flex-row gap-1">
+          {{ termIcon(term) }}
+          <a class="d-flex flex-row external-link no-underline" target="_blank" href="//{{ href }}">
+            <span class="underline">{{ termLabel(term, false) }}</span>
+            <span class="ms-1">{{ icon({ icon: 'external' }) }}</span>
+          </a>
+        </span>
+      </div>
     {% endfor %}
   </div>
 {% endblock %}
