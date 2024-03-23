@@ -14,7 +14,7 @@ projects:
     _tags: ['personal-project', 'java', 'javascript', 'web-development', 'sql', 'api-development', 'html', 'css', 'websocket', 'spring-framework', 'apache-tomcat', 'postgresql', 'git', 'gitlab', 'docker', 'nodejs']
   timurtripp.com:
     name: 'TimurTripp.com'
-    description: My personal website was first registered back in 2009 and has stayed close to my heart ever since. This nifty 80s-inspired static site is open-source with continuous deployment via GitHub pages.
+    description: My personal website was first registered back in 2009 and has stayed close to my heart ever since. This nifty 80s-inspired static site is open-source with continuous deployment via GitHub Pages.
     website: 'timurtripp.com'
     source:
       github: https://github.com/TimurTripp/TimurTripp.com-11ty
@@ -39,7 +39,7 @@ projects:
     start: '2023-10'
     end: '2023-12'
     _institutions: ['cu-boulder']
-    _tags: ['coursework', 'webgl', 'javascript', 'webpack', 'web-development']
+    _tags: ['coursework', 'webgl', 'javascript', 'webpack', 'web-development', 'computer-graphics']
   iiod.io-ios:
     name: 'iiod.io for iOS'
     description: 'I built a native iOS and macOS application for iiod.io using Swift and SwiftUI for my undergrad senior capstone. The app is compatible with the same API used by the web version of iiod.io.'
@@ -76,6 +76,15 @@ projects:
     _tags: ['personal-project', 'javascript', 'web-development', 'html', 'css', 'php']
 
 education:
+  master-of-science-degree:
+    award: 'Master of Science'
+    field: 'Computer Science'
+    institution: cu-boulder
+    icon:
+      faSolid: GraduationCap
+    start: '2023-08'
+    _institutions: ['cu-boulder']
+    _tags: ['software-engineering', 'computer-graphics', 'machine-learning', 'system-administration']
   bachleor-of-science-degree:
     award: 'Bachelor of Science'
     field: 'Computer Science'

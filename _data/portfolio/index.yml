@@ -7,7 +7,7 @@
 - label: 'Education'
   id: education
   theme: purple
-  expandedItems: 1
+  expandedItems: 2
   templates:
     summary: 'portfolio/education-item-summary.njk'
 - label: 'Work Experience'

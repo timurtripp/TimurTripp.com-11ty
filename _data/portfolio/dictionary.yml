@@ -92,6 +92,13 @@ tags:
         term: personal-skill
         summary: true
     related: ['collaboration']
+  computer-graphics:
+    label: 'Computer Graphics'
+    descriptors:
+      - collection: _tagCategories
+        term: technical-skill
+        summary: true
+    related: ['software-engineering']
   coursework:
     label: 'Coursework'
     descriptors: []
@@ -207,6 +214,13 @@ tags:
         term: programming-language
         summary: true
     related: ['web-development', 'nodejs']
+  machine-learning:
+    label: 'Machine Learning'
+    descriptors:
+      - collection: _tagCategories
+        term: technical-skill
+        summary: true
+    related: ['software-engineering']
   macos:
     label: 'macOS'
     descriptors:
@@ -311,6 +325,13 @@ tags:
         term: programming-language
         summary: true
     related: ['swift', 'xcode']
+  system-administration:
+    label: 'System Administration'
+    descriptors:
+      - collection: _tagCategories
+        term: technical-skill
+        summary: true
+    related: ['software-engineering']
   teaching-others:
     label: 'Teaching Others'
     icon:
