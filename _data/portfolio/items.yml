@@ -14,7 +14,7 @@ projects:
     _tags: ['personal-project', 'java', 'javascript', 'web-development', 'sql', 'api-development', 'html', 'css', 'websocket', 'spring-framework', 'apache-tomcat', 'postgresql', 'git', 'gitlab', 'docker', 'nodejs']
   timurtripp.com:
     name: 'TimurTripp.com'
-    description: My personal website was first registered back in 2009 and has stayed close to my heart ever since. This nifty 80s-inspired static site is open-source with continous deployment via GitHub pages.
+    description: My personal website was first registered back in 2009 and has stayed close to my heart ever since. This nifty 80s-inspired static site is open-source with continuous deployment via GitHub pages.
     website: 'timurtripp.com'
     source:
       github: https://github.com/TimurTripp/TimurTripp.com-11ty
