@@ -21,13 +21,13 @@
       </div>
     {% endif %}
     {% for termName, href in item.source %}
-      {% set term = createTerm(termName, 'tags') %}
+      {% set _term = createTerm(termName, 'tags') %}
       <div>
         <span class="d-block">View source on</span>
         <span class="d-block d-flex flex-row gap-1">
-          {{ termIcon(term) }}
+          {{ termIcon(_term) }}
           <a class="d-flex flex-row external-link no-underline" target="_blank" href="{{ href }}">
-            <span class="underline">{{ termLabel(term, false) }}</span>
+            <span class="underline">{{ termLabel(_term, false) }}</span>
             <span class="ms-1">{{ icon({ icon: 'external' }) }}</span>
           </a>
         </span>
