@@ -67,6 +67,13 @@ tags:
         term: platform
         summary: true
     related: ['drupal', 'javascript', 'web-development']
+  cli:
+    label: 'Command-Line Interface'
+    descriptors:
+      - collection: _tagCategories
+        term: technical-skill
+        summary: true
+    related: ['software-engineering', 'system-administration']
   cloudflare:
     label: 'Cloudflare'
     descriptors:
@@ -117,6 +124,20 @@ tags:
         term: technical-skill
         summary: true
     related: ['data-processing']
+  cybersecurity:
+    label: 'Cybersecurity'
+    descriptors:
+      - collection: _tagCategories
+        term: technical-skill
+        summary: true
+    related: ['networking']
+  database-administration:
+    label: 'Database Administration'
+    descriptors:
+      - collection: _tagCategories
+        term: technical-skill
+        summary: true
+    related: ['sql', 'mysql', 'postgresql']
   data-processing:
     label: 'Data Processing'
     descriptors:
@@ -215,7 +236,7 @@ tags:
         summary: true
     related: ['web-development', 'nodejs']
   machine-learning:
-    label: 'Machine Learning'
+    label: 'AI / Machine Learning'
     descriptors:
       - collection: _tagCategories
         term: technical-skill
@@ -251,6 +272,13 @@ tags:
         term: platform
         summary: true
     related: ['javascript', 'typescript']
+  networking:
+    label: 'Networking'
+    descriptors:
+      - collection: _tagCategories
+        term: technical-skill
+        summary: true
+    related: ['cybersecurity', 'system-administration']
   personal-project:
     label: 'Personal Project'
     icon:
@@ -331,7 +359,7 @@ tags:
       - collection: _tagCategories
         term: technical-skill
         summary: true
-    related: ['software-engineering']
+    related: ['networking']
   teaching-others:
     label: 'Teaching Others'
     icon:
