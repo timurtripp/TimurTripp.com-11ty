@@ -7,7 +7,7 @@
         <div class="theme-color-text" style="transform: scale(-1, -1);">
           {% include 'components/theme/jagged.njk' %}
         </div>
-        <div class="content page-intro">
+        <div class="content page-intro{{ ' text-center' if centerContent }}">
           {{ content | safe }}
         </div>
         <div class="theme-color-text">
