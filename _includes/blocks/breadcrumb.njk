@@ -1,0 +1,18 @@
+{% macro breadcrumbDepth(section, depth) %}{% if section.parent %}{{ breadcrumbDepth(sections[section.parent], depth + 1) }}{% else %}{{ depth }}{% endif %}{% endmacro %}
+{% macro breadcrumb(section, depth, maxDepth) %}
+  {% if section.parent %}
+    {{ breadcrumb(sections[section.parent], depth + 1, maxDepth) }}
+  {% endif %}
+  <li class="breadcrumb-depth-{{ maxDepth - depth }}"><a class="no-underline" href="{{ section.url }}"><span aria-hidden="true">{% include 'components/theme/triangle-right.njk' %} </span><span class="underline">{{ section.name }}</span></a></li>
+{% endmacro %}
+{% if section %}
+  {% set section = sections[section] %}
+  {% set maxDepth = breadcrumbDepth(section, 0) | int %}
+  <div class="container block-breadcrumbs">
+    <h2 class="visually-hidden">Parent pages</h2>
+    <ul>
+      {{ breadcrumb(section, 0, maxDepth) }}
+      {# <li class="breadcrumb-depth-{{ maxDepth + 1 }}">{{ pageTitle }}</li> #}
+    </ul>
+  </div>
+{% endif %}

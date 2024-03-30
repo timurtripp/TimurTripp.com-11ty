@@ -2,7 +2,7 @@
 title: 'Tabletop Game - WebGL Demo'
 section: portfolio
 layout: 'layouts/custom/webgl.njk'
-centerContent: true
+align: center
 ---
 # Tabletop Game
 

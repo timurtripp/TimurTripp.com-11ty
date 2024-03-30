@@ -1,6 +1,5 @@
 ---
 title: 'Portfolio'
-section: portfolio
 layout: 'layouts/custom/portfolio.njk'
 resume: 'https://assets.timurtripp.com/portfolio/Resume%20Sample-August%202023.pdf'
 ---
@@ -29,12 +28,12 @@ resume: 'https://assets.timurtripp.com/portfolio/Resume%20Sample-August%202023.p
   <div class="content-block theme-green">
     <h4 class="m-0 p-0">Get in touch.</h4>
     <ul class="m-0 p-0 list-unstyled text-center">
-      {% if site.email %}
+      {% if metadata.email %}
         <li class="my-2 d-flex flex-row">
           <span class="me-2" aria-hidden="true">
             {{ icon({ faSolid: 'Envelope' }) }}
           </span>
-          <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+          <a href="mailto:{{ metadata.email }}">{{ metadata.email }}</a>
         </li>
       {% endif %}
       {% if socials.LinkedIn %}

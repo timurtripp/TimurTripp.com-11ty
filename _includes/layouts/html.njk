@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="{{ lang or 'en' }}">
   <head>{% block head %}
-    <title>{{ title }}</title>
+    <title>{{ siteTitle }}</title>
     <meta name="author" content="{{ author }}">
     <meta name="description" content="{{ description }}">
     <meta name="keywords" content="{% for keyword in keywords %}{{ ',' if loop.index != 1 }}{{ keyword }}{% endfor %}">

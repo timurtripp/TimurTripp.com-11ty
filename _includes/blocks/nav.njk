@@ -14,11 +14,11 @@
         </button>
         <div class="p-0 container collapse navbar-collapse" id="navMenu">
           <ul class="navbar-nav ml-auto">
-            {% for sectionClass, section in site.sections %}
+            {% for sectionClass, section in sections %}{% if not section.parent %}
               <li class="nav-item opt opt-{{ sectionClass }} theme-{{ sectionClass }}">
                 <a class="d-inline-block nav-link no-underline py-1" href="{{ section.url }}"><span class="underline">{{ section.name }}</span></a>
               </li>
-            {% endfor %}
+            {% endif %}{% endfor %}
             <li class="nav-item">{% include 'components/theme/theme-mode-toggle.njk' %}</li>
           </ul>
         </div>
