@@ -9,7 +9,7 @@ module.exports = {
 	htmltransform: content => {
 		const $ = cheerio.load(content);
 		let h2Index = 0;
-		$('h2').each(function(index, e) {
+		$('main h2').each(function(index, e) {
 			const element = $(e), id = e.attribs.id || (element.text().toLowerCase().replace(/ /g, '-').replace(/[^a-z0-9_\-]/g, '') + '-' + (++h2Index));
 			if (id) {
 				e.attribs.id = id;
