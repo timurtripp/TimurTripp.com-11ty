@@ -1,7 +1,8 @@
 ---
 title: 'Tabletop Game - WebGL Demo'
 section: portfolio
-layout: 'layouts/custom/webgl.njk'
+layout: 'layouts/base.njk'
+noIndex: true
 align: center
 ---
 # Tabletop Game
