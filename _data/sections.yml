@@ -4,20 +4,20 @@ home:
   url: '/'
 portfolio:
   name: Portfolio
-  url: '/portfolio'
+  url: '/portfolio/'
 portfolio.institutions:
   name: Institutions
-  url: '/portfolio/institutions'
+  url: '/portfolio/institutions/'
   parent: portfolio
 portfolio.locations:
   name: Locations
-  url: '/portfolio/locations'
+  url: '/portfolio/locations/'
   parent: portfolio
 portfolio.tags:
   name: Tags
-  url: '/portfolio/tags'
+  url: '/portfolio/tags/'
   parent: portfolio
 portfolio.tags.categories:
   name: Categories
-  url: '/portfolio/tags/categories'
+  url: '/portfolio/tags/categories/'
   parent: portfolio.tags
