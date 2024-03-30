@@ -1,36 +1,36 @@
-.block-breadcrumbs>ul {
+.block-breadcrumb>ul {
   list-style-type: none;
   margin-bottom: 0;
   padding: 0;
 }
 
-.block-breadcrumbs>ul>li {
+.block-breadcrumb>ul>li {
   font-size: .8em;
   line-height: 1.2em;
   padding: .1em 0;
   --breadcrumb-padding-left: .5em;
 }
 
-.block-breadcrumbs .breadcrumb-depth-1 {
+.block-breadcrumb .breadcrumb-depth-1 {
   padding-left: var(--breadcrumb-padding-left);
 }
 
-.block-breadcrumbs .breadcrumb-depth-2 {
+.block-breadcrumb .breadcrumb-depth-2 {
   padding-left: calc(var(--breadcrumb-padding-left) * 2);
 }
 
-.block-breadcrumbs .breadcrumb-depth-3 {
+.block-breadcrumb .breadcrumb-depth-3 {
   padding-left: calc(var(--breadcrumb-padding-left) * 3);
 }
 
-.block-breadcrumbs .breadcrumb-depth-4 {
+.block-breadcrumb .breadcrumb-depth-4 {
   padding-left: calc(var(--breadcrumb-padding-left) * 4);
 }
 
-.block-breadcrumbs .breadcrumb-depth-5 {
+.block-breadcrumb .breadcrumb-depth-5 {
   padding-left: calc(var(--breadcrumb-padding-left) * 5);
 }
 
-.block-breadcrumbs .breadcrumb-depth-6 {
+.block-breadcrumb .breadcrumb-depth-6 {
   padding-left: calc(var(--breadcrumb-padding-left) * 6);
 }

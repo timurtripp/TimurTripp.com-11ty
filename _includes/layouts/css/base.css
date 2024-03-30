@@ -339,6 +339,23 @@ h1, .h1, .h1-like, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, hr, ul, ol, t
   margin: 2rem 0;
 }
 
+.triangle-left, .triangle-right {
+  display: inline-block;
+  vertical-align: baseline;
+  width: 0; 
+  height: 0; 
+  border-top: .33em solid transparent;
+  border-bottom: .33em solid transparent;
+}
+
+.triangle-left {
+  border-right: .4em solid currentColor;
+}
+
+.triangle-right {
+  border-left: .4em solid currentColor;
+}
+
 @media (max-width: 1199px) {
   h1, .h1, .h1-like {
     font-size: calc(3rem + 1.2vw);

@@ -23,7 +23,7 @@
             {% set endDate = item.end if item.end else ('present' if item.start) %}
             {% if endDate %}
               <li class="item-date my-1">
-                <span>{% if item.start %}{% dateFormatted item.start %} <span aria-label="to" class="theme-color-text">{% include 'components/theme/triangle-left.njk' %}</span> {% endif %}{% dateFormatted endDate %}</span>
+                <span>{% if item.start %}{% dateFormatted item.start %} <span aria-label="to" class="theme-color-text triangle-right"></span> {% endif %}{% dateFormatted endDate %}</span>
               </li>
             {% endif %}
           {% endblock %}
