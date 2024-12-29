@@ -13,6 +13,7 @@ stages:
 test:
   stage: test
   script:
+    - npm install
     - npx @11ty/eleventy --input=. --output=public
   rules:
   - if: $CI_COMMIT_REF_NAME != $CI_DEFAULT_BRANCH
@@ -21,6 +22,7 @@ test:
 pages:
   stage: pages
   script:
+    - npm install
     - npx @11ty/eleventy --input=. --output=public
 
   artifacts:
