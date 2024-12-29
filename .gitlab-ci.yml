@@ -1,0 +1,33 @@
+# A Docker image to be used to build your app
+image: node:lts
+
+workflow:
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+
+stages:
+  - test
+  - pages
+
+test:
+  stage: test
+  script:
+    - npx @11ty/eleventy --input=. --output=public
+  rules:
+  - if: $CI_COMMIT_REF_NAME != $CI_DEFAULT_BRANCH
+
+
+pages:
+  stage: pages
+  script:
+    - npx @11ty/eleventy --input=. --output=public
+
+  artifacts:
+    paths:
+      # The folder that contains the built files to be published. This
+      # must be called "public".
+      - public
+  
+  rules:
+    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
