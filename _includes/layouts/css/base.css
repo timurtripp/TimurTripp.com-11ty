@@ -130,6 +130,10 @@ a:hover, a:focus, a:active, a:hover.no-underline .underline, a:focus.no-underlin
   border-bottom: 1px solid var(--theme-color-alt); 
 }
 
+img {
+  max-width: 100%;
+}
+
 code {
   display: inline-block;
   color: var(--theme-text-strong);
@@ -311,7 +315,7 @@ h1, .h1, .h1-like, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, hr, ul, ol, t
   margin: 1rem 0;
 }
 
-.compact-content h1, .compact-content .h1, .compact-content .h1-like, .compact-content h2, .compact-content .h2, .compact-content h3, .compact-content .h3, .compact-content h4, .compact-content .h4, .compact-content h5, .compact-content .h5, .compact-content h6, .compact-content .h6, .compact-content p, .compact-content ul, .compact-content ol, .compact-content table, .compact-content pre, .compact-content pre[class*='language-'], .compact-content .content-block {
+li > ul, li > ol, .compact-content h1, .compact-content .h1, .compact-content .h1-like, .compact-content h2, .compact-content .h2, .compact-content h3, .compact-content .h3, .compact-content h4, .compact-content .h4, .compact-content h5, .compact-content .h5, .compact-content h6, .compact-content .h6, .compact-content p, .compact-content ul, .compact-content ol, .compact-content table, .compact-content pre, .compact-content pre[class*='language-'], .compact-content .content-block {
   margin: 0;
 }
 

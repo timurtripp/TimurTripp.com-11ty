@@ -31,56 +31,72 @@ tags:
       - collection: _tagCategories
         term: platform
         summary: true
-    related: ['web-development', 'nodejs', 'django']
+    related:
+      - web-development
+      - nodejs
+      - django
   apache-tomcat:
     label: 'Apache Tomcat'
     descriptors:
       - collection: _tagCategories
         term: platform
         summary: true
-    related: ['java', 'web-development']
+    related:
+      - java
+      - web-development
   api-development:
     label: 'API Development'
     descriptors:
       - collection: _tagCategories
         term: technical-skill
         summary: true
-    related: ['websocket']
+    related: 
+      - websocket
   application-design:
     label: 'Application Design'
     descriptors:
       - collection: _tagCategories
         term: technical-skill
         summary: true
-    related: ['software-engineering']
+    related: 
+      - software-engineering
   c:
     label: 'C'
     descriptors:
       - collection: _tagCategories
         term: programming-language
         summary: true
-    related: ['java']
+    related: 
+      - java
   ckeditor:
     label: 'CKEditor 5'
     descriptors:
       - collection: _tagCategories
         term: platform
         summary: true
-    related: ['drupal', 'javascript', 'web-development']
+    related:
+      - drupal
+      - javascript
+      - web-development
   cli:
     label: 'Command-Line Interface'
     descriptors:
       - collection: _tagCategories
         term: technical-skill
         summary: true
-    related: ['software-engineering', 'system-administration']
+    related:
+      - software-engineering
+      - system-administration
   cloudflare:
     label: 'Cloudflare'
     descriptors:
       - collection: _tagCategories
         term: platform
         summary: true
-    related: ['web-development', 'api-development', 'heroku']
+    related:
+      - web-development
+      - api-development
+      - heroku
   collaboration:
     label: 'Collaboration'
     icon:
@@ -89,7 +105,8 @@ tags:
       - collection: _tagCategories
         term: personal-skill
         summary: true
-    related: ['communication']
+    related: 
+      - communication
   communication:
     label: 'Communication'
     icon:
@@ -98,60 +115,86 @@ tags:
       - collection: _tagCategories
         term: personal-skill
         summary: true
-    related: ['collaboration']
+    related: 
+      - collaboration
   computer-graphics:
     label: 'Computer Graphics'
     descriptors:
       - collection: _tagCategories
         term: technical-skill
         summary: true
-    related: ['software-engineering']
+    related: 
+      - software-engineering
   coursework:
     label: 'Coursework'
     descriptors: []
-    related: ['personal-project']
+    related: 
+      - personal-project
   css:
     label: 'CSS'
     descriptors:
       - collection: _tagCategories
         term: programming-language
         summary: true
-    related: ['html', 'web-development']
+    related:
+      - html
+      - web-development
   csv:
     label: 'CSV'
     descriptors:
       - collection: _tagCategories
         term: technical-skill
         summary: true
-    related: ['data-processing']
+    related: 
+      - data-processing
   cybersecurity:
     label: 'Cybersecurity'
     descriptors:
       - collection: _tagCategories
         term: technical-skill
         summary: true
-    related: ['networking']
+    related: 
+      - networking
   database-administration:
     label: 'Database Administration'
     descriptors:
       - collection: _tagCategories
         term: technical-skill
         summary: true
-    related: ['sql', 'mysql', 'postgresql']
+    related:
+      - sql
+      - mysql
+      - postgresql
+  data-mining:
+    label: 'Data Mining'
+    descriptors:
+      - collection: _tagCategories
+        term: technical-skill
+        summary: true
+    related:
+      - sql
+      - csv
+      - data-processing
   data-processing:
     label: 'Data Processing'
     descriptors:
       - collection: _tagCategories
         term: technical-skill
         summary: true
-    related: ['sql', 'csv', 'research']
+    related:
+      - sql
+      - csv
+      - research
   django:
     label: 'Django'
     descriptors:
       - collection: _tagCategories
         term: platform
         summary: true
-    related: ['python', 'web-development', '11ty']
+    related:
+      - python
+      - web-development
+      - 11ty
   docker:
     label: 'Docker'
     icon:
@@ -168,14 +211,20 @@ tags:
       - collection: _tagCategories
         term: platform
         summary: true
-    related: ['php', 'ckeditor', 'web-development']
+    related:
+      - php
+      - ckeditor
+      - web-development
   heroku:
     label: 'Heroku'
     descriptors:
       - collection: _tagCategories
         term: platform
         summary: true
-    related: ['web-development', 'api-development', 'cloudflare']
+    related:
+      - web-development
+      - api-development
+      - cloudflare
   git:
     label: 'Git'
     icon:
@@ -184,7 +233,9 @@ tags:
       - collection: _tagCategories
         term: technical-skill
         summary: true
-    related: ['github', 'gitlab']
+    related:
+      - github
+      - gitlab
   github:
     label: 'GitHub'
     icon:
@@ -193,7 +244,8 @@ tags:
       - collection: _tagCategories
         term: platform
         summary: true
-    related: ['git']
+    related: 
+      - git
   gitlab:
     label: 'GitLab'
     icon:
@@ -202,21 +254,26 @@ tags:
       - collection: _tagCategories
         term: platform
         summary: true
-    related: ['git']
+    related: 
+      - git
   html:
     label: 'HTML'
     descriptors:
       - collection: _tagCategories
         term: programming-language
         summary: true
-    related: ['css', 'web-development']
+    related:
+      - css
+      - web-development
   ios:
     label: 'iOS'
     descriptors:
       - collection: _tagCategories
         term: platform
         summary: true
-    related: ['mobile-development', 'xcode']
+    related:
+      - mobile-development
+      - xcode
   java:
     label: 'Java'
     icon:
@@ -225,7 +282,9 @@ tags:
       - collection: _tagCategories
         term: programming-language
         summary: true
-    related: ['spring-framework', 'apache-tomcat']
+    related:
+      - spring-framework
+      - apache-tomcat
   javascript:
     label: 'JavaScript'
     icon:
@@ -234,35 +293,43 @@ tags:
       - collection: _tagCategories
         term: programming-language
         summary: true
-    related: ['web-development', 'nodejs']
+    related:
+      - web-development
+      - nodejs
   machine-learning:
     label: 'AI / Machine Learning'
     descriptors:
       - collection: _tagCategories
         term: technical-skill
         summary: true
-    related: ['software-engineering']
+    related: 
+      - software-engineering
   macos:
     label: 'macOS'
     descriptors:
       - collection: _tagCategories
         term: platform
         summary: true
-    related: ['ios', 'xcode']
+    related:
+      - ios
+      - xcode
   mobile-development:
     label: 'Mobile Development'
     descriptors:
       - collection: _tagCategories
         term: technical-skill
         summary: true
-    related: ['ios', 'xcode']
+    related:
+      - ios
+      - xcode
   mysql:
     label: 'MySQL'
     descriptors:
       - collection: _tagCategories
         term: platform
         summary: true
-    related: ['sql']
+    related: 
+      - sql
   nodejs:
     label: 'Node.js'
     icon:
@@ -271,20 +338,25 @@ tags:
       - collection: _tagCategories
         term: platform
         summary: true
-    related: ['javascript', 'typescript']
+    related:
+      - javascript
+      - typescript
   networking:
     label: 'Networking'
     descriptors:
       - collection: _tagCategories
         term: technical-skill
         summary: true
-    related: ['cybersecurity', 'system-administration']
+    related:
+      - cybersecurity
+      - system-administration
   personal-project:
     label: 'Personal Project'
     icon:
       faSolid: Lightbulb
     descriptors: []
-    related: ['coursework']
+    related: 
+      - coursework
   postgresql:
     label: 'PostgreSQL'
     descriptors:
@@ -299,42 +371,54 @@ tags:
       - collection: _tagCategories
         term: programming-language
         summary: true
-    related: ['django']
+    related: 
+      - django
   research:
     label: 'Research'
     descriptors:
       - collection: _tagCategories
         term: technical-skill
         summary: true
-    related: ['data-processing']
+    related: 
+      - data-processing
   spring-framework:
     label: 'Spring Framework'
     descriptors:
       - collection: _tagCategories
         term: platform
         summary: true
-    related: ['java', 'web-development', 'api-development']
+    related:
+      - java
+      - web-development
+      - api-development
   software-engineering:
     label: 'Software Engineering'
     descriptors:
       - collection: _tagCategories
         term: technical-skill
         summary: true
-    related: ['web-development', 'mobile-development', 'application-design']
+    related:
+      - web-development
+      - mobile-development
+      - application-design
   sql:
     label: 'SQL'
     descriptors:
       - collection: _tagCategories
         term: programming-language
         summary: true
-    related: ['mysql', 'postgresql', 'sqlite']
+    related:
+      - mysql
+      - postgresql
+      - sqlite
   sqlite:
     label: 'SQLite'
     descriptors:
       - collection: _tagCategories
         term: platform
         summary: true
-    related: ['sql']
+    related: 
+      - sql
   swift:
     label: 'Swift'
     icon:
@@ -343,7 +427,9 @@ tags:
       - collection: _tagCategories
         term: programming-language
         summary: true
-    related: ['swiftui', 'xcode']
+    related:
+      - swiftui
+      - xcode
   swiftui:
     label: 'SwiftUI'
     icon:
@@ -352,14 +438,17 @@ tags:
       - collection: _tagCategories
         term: programming-language
         summary: true
-    related: ['swift', 'xcode']
+    related:
+      - swift
+      - xcode
   system-administration:
     label: 'System Administration'
     descriptors:
       - collection: _tagCategories
         term: technical-skill
         summary: true
-    related: ['networking']
+    related: 
+      - networking
   teaching-others:
     label: 'Teaching Others'
     icon:
@@ -374,14 +463,20 @@ tags:
       - collection: _tagCategories
         term: programming-language
         summary: true
-    related: ['php', 'html', 'drupal', 'web-development']
+    related:
+      - php
+      - html
+      - drupal
+      - web-development
   typescript:
     label: 'TypeScript'
     descriptors:
       - collection: _tagCategories
         term: programming-language
         summary: true
-    related: ['nodejs', 'javascript']
+    related:
+      - nodejs
+      - javascript
   php:
     label: 'PHP'
     icon:
@@ -390,42 +485,56 @@ tags:
       - collection: _tagCategories
         term: programming-language
         summary: true
-    related: ['web-development', 'drupal']
+    related:
+      - web-development
+      - drupal
   web-development:
     label: 'Web Development'
     descriptors:
       - collection: _tagCategories
         term: technical-skill
         summary: true
-    related: ['html', 'css', 'javascript', 'php']
+    related:
+      - html
+      - css
+      - javascript
+      - php
   webgl:
     label: 'WebGL'
     descriptors:
       - collection: _tagCategories
         term: technical-skill
         summary: true
-    related: ['javascript', 'web-development']
+    related:
+      - javascript
+      - web-development
   websocket:
     label: 'WebSocket'
     descriptors:
       - collection: _tagCategories
         term: technical-skill
         summary: true
-    related: ['api-development']
+    related: 
+      - api-development
   webpack:
     label: 'Webpack'
     descriptors:
       - collection: _tagCategories
         term: platform
         summary: true
-    related: ['nodejs', 'web-development']
+    related:
+      - nodejs
+      - web-development
   xcode:
     label: 'Xcode'
     descriptors:
       - collection: _tagCategories
         term: platform
         summary: true
-    related: ['ios', 'macos', 'mobile-development']
+    related:
+      - ios
+      - macos
+      - mobile-development
 
 institutions:
   cu-boulder:

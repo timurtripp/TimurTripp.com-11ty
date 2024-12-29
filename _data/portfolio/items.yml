@@ -11,7 +11,23 @@ projects:
       imagecrop: true
       faSolid: Star
     start: '2018-01'
-    _tags: ['personal-project', 'java', 'javascript', 'web-development', 'sql', 'api-development', 'html', 'css', 'websocket', 'spring-framework', 'apache-tomcat', 'postgresql', 'git', 'gitlab', 'docker', 'nodejs']
+    _tags:
+      - personal-project
+      - java
+      - javascript
+      - web-development
+      - sql
+      - api-development
+      - html
+      - css
+      - websocket
+      - spring-framework
+      - apache-tomcat
+      - postgresql
+      - git
+      - gitlab
+      - docker
+      - nodejs
   timurtripp.com:
     name: 'TimurTripp.com'
     description: My personal website was first registered back in 2009 and has stayed close to my heart ever since. This nifty 80s-inspired static site is open-source with continuous deployment via GitHub Pages.
@@ -24,7 +40,16 @@ projects:
       imageicon: true
       faSolid: Star
     start: '2022-08'
-    _tags: ['personal-project', 'javascript', 'web-development', 'html', 'css', '11ty', 'nodejs', 'git', 'github']
+    _tags:
+      - personal-project
+      - javascript
+      - web-development
+      - html
+      - css
+      - 11ty
+      - nodejs
+      - git
+      - github
   tabletop-game:
     name: 'Tabletop Game'
     description: 'A simple demo scene written to showcase WebGL for my computer graphics graduate course at CU Boulder.'
@@ -38,8 +63,15 @@ projects:
       faSolid: Star
     start: '2023-10'
     end: '2023-12'
-    _institutions: ['cu-boulder']
-    _tags: ['coursework', 'webgl', 'javascript', 'webpack', 'web-development', 'computer-graphics']
+    _institutions:
+      - cu-boulder
+    _tags:
+      - coursework
+      - webgl
+      - javascript
+      - webpack
+      - web-development
+      - computer-graphics
   iiod.io-ios:
     name: 'iiod.io for iOS'
     description: 'I built a native iOS and macOS application for iiod.io using Swift and SwiftUI for my undergrad senior capstone. The app is compatible with the same API used by the web version of iiod.io.'
@@ -51,7 +83,14 @@ projects:
       faSolid: Star
     start: '2021-11'
     end: '2022-04'
-    _tags: ['coursework', 'swift', 'swiftui', 'mobile-development', 'ios', 'macos', 'xcode']
+    _tags:
+      - coursework
+      - swift
+      - swiftui
+      - mobile-development
+      - ios
+      - macos
+      - xcode
   pride:
     name: 'Utah Pride Center Youth & Family Check-in'
     description: 'This was a group project in CMPT 375 Web Applications to create a check-in app for our clients at Utah Pride Center. Administrators can manage users, sections, and programs, as well as generate a unique and secure join link for each user in Django admin.'
@@ -60,8 +99,18 @@ projects:
       faSolid: Star
     start: '2021-09'
     end: '2021-12'
-    _institutions: ['westminster']
-    _tags: ['coursework', 'django', 'python', 'web-development', 'collaboration', 'communication', 'application-design', 'html', 'css']
+    _institutions: 
+      - westminster
+    _tags:
+      - coursework
+      - django
+      - python
+      - web-development
+      - collaboration
+      - communication
+      - application-design
+      - html
+      - css
   tb:
     name: '[TB] Mods'
     description: "[TB] Mods, or Teddy Bear Mod Pack, was a set of modifications for the online multiplayer game mope.io. A PHP script used regular expressions to programmatically modify the game's client JavaScript. A lot of functionality was added, such as skin and theme features, that wasn't there by default."
@@ -73,7 +122,13 @@ projects:
       faSolid: Star
     start: '2017-01'
     end: '2018-05'
-    _tags: ['personal-project', 'javascript', 'web-development', 'html', 'css', 'php']
+    _tags:
+      - personal-project
+      - javascript
+      - web-development
+      - html
+      - css
+      - php
 
 education:
   master-of-science-degree:
@@ -83,8 +138,15 @@ education:
     icon:
       faSolid: GraduationCap
     start: '2023-08'
-    _institutions: ['cu-boulder']
-    _tags: ['software-engineering', 'computer-graphics', 'machine-learning', 'system-administration', 'cybersecurity']
+    _institutions: 
+      - cu-boulder
+    _tags:
+      - software-engineering
+      - computer-graphics
+      - machine-learning
+      - system-administration
+      - cybersecurity
+      - data-mining
   bachleor-of-science-degree:
     award: 'Bachelor of Science'
     field: 'Computer Science'
@@ -93,8 +155,14 @@ education:
       faSolid: GraduationCap
     start: '2020-08'
     end: '2022-05'
-    _institutions: ['westminster']
-    _tags: ['software-engineering', 'web-development', 'database-administration', 'networking', 'machine-learning']
+    _institutions: 
+      - westminster
+    _tags:
+      - software-engineering
+      - web-development
+      - database-administration
+      - networking
+      - machine-learning
   associate-of-science-degree:
     award: 'Associate of Science'
     field: 'Computer Science'
@@ -102,8 +170,17 @@ education:
     icon:
       faSolid: GraduationCap
     end: '2020-07'
-    _institutions: ['slcc']
-    _tags: ['java', 'html', 'css', 'javascript', 'php', 'sql', 'mysql', 'web-development']
+    _institutions: 
+      - slcc
+    _tags:
+      - java
+      - html
+      - css
+      - javascript
+      - php
+      - sql
+      - mysql
+      - web-development
   software-development-certificate:
     award: 'Certificate of Proficiency'
     field: 'Software Development'
@@ -111,8 +188,10 @@ education:
     icon:
       faSolid: Award
     end: '2020-05'
-    _institutions: ['slcc']
-    _tags: ['java']
+    _institutions: 
+      - slcc
+    _tags: 
+      - java
   web-development-certificate:
     award: 'Certificate of Proficiency'
     field: 'Web Development'
@@ -120,8 +199,16 @@ education:
     icon:
       faSolid: Award
     end: '2019-12'
-    _institutions: ['slcc']
-    _tags: ['web-development', 'html', 'css', 'javascript', 'php', 'sql', 'mysql']
+    _institutions: 
+      - slcc
+    _tags:
+      - web-development
+      - html
+      - css
+      - javascript
+      - php
+      - sql
+      - mysql
 
 work:
   cu-boulder-software-engineer:
@@ -136,8 +223,25 @@ work:
       faSolid: Code
     start: '2022-06'
     fullTime: true
-    _institutions: ['cu-boulder']
-    _tags: ['php', 'javascript', 'drupal', 'docker', 'ckeditor', 'typescript', 'web-development', 'software-engineering', 'collaboration', 'communication', 'html', 'css', 'twig', 'git', 'github', 'webpack']
+    _institutions: 
+      - cu-boulder
+    _tags:
+      - php
+      - javascript
+      - drupal
+      - docker
+      - ckeditor
+      - typescript
+      - web-development
+      - software-engineering
+      - collaboration
+      - communication
+      - html
+      - css
+      - twig
+      - git
+      - github
+      - webpack
   slcc-tutor:
     title: 'Tutor'
     department: 'Computer Science and Information Systems'
@@ -148,8 +252,13 @@ work:
     start: '2022-02'
     end: '2022-05'
     partTime: true
-    _institutions: ['slcc']
-    _tags: ['java', 'php', 'teaching-others', 'communication']
+    _institutions: 
+      - slcc
+    _tags:
+      - java
+      - php
+      - teaching-others
+      - communication
   introcs-pogil:
     title: 'Research Assistant'
     institution: introcs-pogil
@@ -159,8 +268,15 @@ work:
     start: '2021-12'
     end: '2022-04'
     partTime: true
-    _institutions: ['introcs-pogil']
-    _tags: ['research', 'data-processing', 'python', 'sql', 'sqlite', 'csv']
+    _institutions: 
+      - introcs-pogil
+    _tags:
+      - research
+      - data-processing
+      - python
+      - sql
+      - sqlite
+      - csv
   westminster-lab-assistant:
     title: 'Computer Lab Assistant'
     department: 'Computer Support'
@@ -171,5 +287,7 @@ work:
     start: '2021-06'
     end: '2021-12'
     partTime: true
-    _institutions: ['westminster']
-    _tags: ['communication']
+    _institutions: 
+      - westminster
+    _tags: 
+      - communication
