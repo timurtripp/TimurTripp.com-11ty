@@ -3,7 +3,7 @@ projects:
     name: 'iiod.io'
     description: |
       The goal in this MMO browser game to play as a dinosaur and climb the food chain to dominate the island. Players can interact with and chase each other in real-time, as well as create an account to earn badges and track their highest scores. The game is a resposive web app compatible with both desktop and mobile devices, and makes use of a custom engine written in Java with a PostgreSQL database for storing player account information.
-      
+
       What does iiod.io look like? Click the link below to play the beta or check out the gameplay videos [1](https://www.youtube.com/watch?v=CLkBZlK56jM) [2](https://www.youtube.com/watch?v=Icrnb6KGSrc) (the gameplay videos are not produced by me).
     website: 'playground.iiod.io'
     icon:
@@ -33,8 +33,7 @@ projects:
     description: My personal website was first registered back in 2009 and has stayed close to my heart ever since. This nifty 80s-inspired static site is open-source with continuous deployment via GitHub Pages.
     website: 'timurtripp.com'
     source:
-      github: https://github.com/TimurTripp/TimurTripp.com-11ty
-      gitlab: https://gitlab.silvercrater.dev/TimurTripp/TimurTripp.com-11ty
+      gitlab: https://silvercrater.dev/tt/timurtripp.com-11ty
     icon:
       imageurl: '/assets/mask-icon.svg'
       imageicon: true
@@ -55,8 +54,7 @@ projects:
     description: 'A simple demo scene written to showcase WebGL for my computer graphics graduate course at CU Boulder.'
     website: 'timurtripp.com/tabletop-game'
     source:
-      github: https://github.com/timurtripp/tabletop-game
-      gitlab: https://gitlab.silvercrater.dev/timurtripp/tabletop-game
+      gitlab: https://silvercrater.dev/tt/tabletop-game
     icon:
       imageurl: 'https://assets.timurtripp.com/portfolio/d20-webgl.png'
       imagecrop: true
@@ -76,7 +74,7 @@ projects:
     name: 'iiod.io for iOS'
     description: 'I built a native iOS and macOS application for iiod.io using Swift and SwiftUI for my undergrad senior capstone. The app is compatible with the same API used by the web version of iiod.io.'
     source:
-      gitlab: https://gitlab.silvercrater.dev/iiod.io/app
+      gitlab: https://silvercrater.dev/iiod.io/app
     icon:
       imageurl: 'https://assets.timurtripp.com/portfolio/iiod.io.png'
       imagecrop: true
@@ -94,12 +92,12 @@ projects:
   pride:
     name: 'Utah Pride Center Youth & Family Check-in'
     description: 'This was a group project in CMPT 375 Web Applications to create a check-in app for our clients at Utah Pride Center. Administrators can manage users, sections, and programs, as well as generate a unique and secure join link for each user in Django admin.'
-    source: {} # Source made private to prevent use in phishing attacks
+    source: { }
     icon:
       faSolid: Star
     start: '2021-09'
     end: '2021-12'
-    _institutions: 
+    _institutions:
       - westminster
     _tags:
       - coursework
@@ -115,7 +113,7 @@ projects:
     name: '[TB] Mods'
     description: "[TB] Mods, or Teddy Bear Mod Pack, was a set of modifications for the online multiplayer game mope.io. A PHP script used regular expressions to programmatically modify the game's client JavaScript. A lot of functionality was added, such as skin and theme features, that wasn't there by default."
     source:
-      gitlab: https://gitlab.silvercrater.dev/TimurTripp/tb-mods-mopeio
+      gitlab: https://silvercrater.dev/tt/tb-mods-mopeio
     icon:
       imageurl: 'https://assets.timurtripp.com/portfolio/TB.png'
       imagecrop: true
@@ -138,7 +136,7 @@ education:
     icon:
       faSolid: GraduationCap
     start: '2023-08'
-    _institutions: 
+    _institutions:
       - cu-boulder
     _tags:
       - software-engineering
@@ -155,7 +153,7 @@ education:
       faSolid: GraduationCap
     start: '2020-08'
     end: '2022-05'
-    _institutions: 
+    _institutions:
       - westminster
     _tags:
       - software-engineering
@@ -170,7 +168,7 @@ education:
     icon:
       faSolid: GraduationCap
     end: '2020-07'
-    _institutions: 
+    _institutions:
       - slcc
     _tags:
       - java
@@ -188,9 +186,9 @@ education:
     icon:
       faSolid: Award
     end: '2020-05'
-    _institutions: 
+    _institutions:
       - slcc
-    _tags: 
+    _tags:
       - java
   web-development-certificate:
     award: 'Certificate of Proficiency'
@@ -199,7 +197,7 @@ education:
     icon:
       faSolid: Award
     end: '2019-12'
-    _institutions: 
+    _institutions:
       - slcc
     _tags:
       - web-development
@@ -217,13 +215,13 @@ work:
     institution: cu-boulder
     description: |
       My team at CU Boulder is tasked with one of the largest Drupal 7 to 10 multisite migrations in the industry. This necessitates a complete redevelopment of the aging tools used by our site managers to utilize the modern object-oriented principles of Drupal 10 and CKEditor 5.
-      
+
       I consistently stepped up to take on difficult projects. My individual contributions include the [CKEditor 5 Icons](https://www.drupal.org/project/ckeditor5_icons) open-source Drupal module, and the [Site Configuration](https://github.com/CuBoulder/ucb_site_configuration) module used by CU Boulder internally. I also attended [DrupalCon Pittsburgh 2023](https://events.drupal.org/pittsburgh2023).
     icon:
       faSolid: Code
     start: '2022-06'
     fullTime: true
-    _institutions: 
+    _institutions:
       - cu-boulder
     _tags:
       - php
@@ -252,7 +250,7 @@ work:
     start: '2022-02'
     end: '2022-05'
     partTime: true
-    _institutions: 
+    _institutions:
       - slcc
     _tags:
       - java
@@ -268,7 +266,7 @@ work:
     start: '2021-12'
     end: '2022-04'
     partTime: true
-    _institutions: 
+    _institutions:
       - introcs-pogil
     _tags:
       - research
@@ -287,7 +285,7 @@ work:
     start: '2021-06'
     end: '2021-12'
     partTime: true
-    _institutions: 
+    _institutions:
       - westminster
-    _tags: 
+    _tags:
       - communication

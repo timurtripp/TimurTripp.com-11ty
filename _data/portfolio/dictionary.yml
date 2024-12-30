@@ -50,7 +50,7 @@ tags:
       - collection: _tagCategories
         term: technical-skill
         summary: true
-    related: 
+    related:
       - websocket
   application-design:
     label: 'Application Design'
@@ -58,7 +58,7 @@ tags:
       - collection: _tagCategories
         term: technical-skill
         summary: true
-    related: 
+    related:
       - software-engineering
   c:
     label: 'C'
@@ -66,7 +66,7 @@ tags:
       - collection: _tagCategories
         term: programming-language
         summary: true
-    related: 
+    related:
       - java
   ckeditor:
     label: 'CKEditor 5'
@@ -105,7 +105,7 @@ tags:
       - collection: _tagCategories
         term: personal-skill
         summary: true
-    related: 
+    related:
       - communication
   communication:
     label: 'Communication'
@@ -115,7 +115,7 @@ tags:
       - collection: _tagCategories
         term: personal-skill
         summary: true
-    related: 
+    related:
       - collaboration
   computer-graphics:
     label: 'Computer Graphics'
@@ -123,12 +123,12 @@ tags:
       - collection: _tagCategories
         term: technical-skill
         summary: true
-    related: 
+    related:
       - software-engineering
   coursework:
     label: 'Coursework'
     descriptors: []
-    related: 
+    related:
       - personal-project
   css:
     label: 'CSS'
@@ -145,7 +145,7 @@ tags:
       - collection: _tagCategories
         term: technical-skill
         summary: true
-    related: 
+    related:
       - data-processing
   cybersecurity:
     label: 'Cybersecurity'
@@ -153,7 +153,7 @@ tags:
       - collection: _tagCategories
         term: technical-skill
         summary: true
-    related: 
+    related:
       - networking
   database-administration:
     label: 'Database Administration'
@@ -244,7 +244,7 @@ tags:
       - collection: _tagCategories
         term: platform
         summary: true
-    related: 
+    related:
       - git
   gitlab:
     label: 'GitLab'
@@ -254,7 +254,7 @@ tags:
       - collection: _tagCategories
         term: platform
         summary: true
-    related: 
+    related:
       - git
   html:
     label: 'HTML'
@@ -302,7 +302,7 @@ tags:
       - collection: _tagCategories
         term: technical-skill
         summary: true
-    related: 
+    related:
       - software-engineering
   macos:
     label: 'macOS'
@@ -328,7 +328,7 @@ tags:
       - collection: _tagCategories
         term: platform
         summary: true
-    related: 
+    related:
       - sql
   nodejs:
     label: 'Node.js'
@@ -355,7 +355,7 @@ tags:
     icon:
       faSolid: Lightbulb
     descriptors: []
-    related: 
+    related:
       - coursework
   postgresql:
     label: 'PostgreSQL'
@@ -371,7 +371,7 @@ tags:
       - collection: _tagCategories
         term: programming-language
         summary: true
-    related: 
+    related:
       - django
   research:
     label: 'Research'
@@ -379,7 +379,7 @@ tags:
       - collection: _tagCategories
         term: technical-skill
         summary: true
-    related: 
+    related:
       - data-processing
   spring-framework:
     label: 'Spring Framework'
@@ -417,7 +417,7 @@ tags:
       - collection: _tagCategories
         term: platform
         summary: true
-    related: 
+    related:
       - sql
   swift:
     label: 'Swift'
@@ -447,7 +447,7 @@ tags:
       - collection: _tagCategories
         term: technical-skill
         summary: true
-    related: 
+    related:
       - networking
   teaching-others:
     label: 'Teaching Others'
@@ -514,7 +514,7 @@ tags:
       - collection: _tagCategories
         term: technical-skill
         summary: true
-    related: 
+    related:
       - api-development
   webpack:
     label: 'Webpack'
@@ -559,7 +559,7 @@ institutions:
         summary: false
   introcs-pogil:
     label: 'IntroCS-POGIL'
-    icon: 
+    icon:
       imageurl: 'https://assets.timurtripp.com/portfolio/IntroCS%20POGIL.png'
     descriptors:
       - collection: _locations
