@@ -33,6 +33,7 @@ projects:
     description: My personal website was first registered back in 2009 and has stayed close to my heart ever since. This nifty 80s-inspired static site is open-source with continuous deployment via GitHub Pages.
     website: 'timurtripp.com'
     source:
+      github: https://github.com/TimurTripp/TimurTripp.com-11ty
       gitlab: https://silvercrater.dev/tt/timurtripp.com-11ty
     icon:
       imageurl: '/assets/mask-icon.svg'
@@ -54,6 +55,7 @@ projects:
     description: 'A simple demo scene written to showcase WebGL for my computer graphics graduate course at CU Boulder.'
     website: 'timurtripp.com/tabletop-game'
     source:
+      github: https://github.com/TimurTripp/tabletop-game
       gitlab: https://silvercrater.dev/tt/tabletop-game
     icon:
       imageurl: 'https://assets.timurtripp.com/portfolio/d20-webgl.png'
