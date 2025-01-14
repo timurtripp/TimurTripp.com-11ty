@@ -35,6 +35,26 @@ tags:
       - web-development
       - nodejs
       - django
+  acceptance-testing:
+    label: 'Acceptance Testing'
+    descriptors:
+      - collection: _tagCategories
+        term: technical-skill
+        summary: true
+    related:
+      - unit-testing
+      - integration-testing
+      - tdd
+  agile-methodology:
+    label: 'Agile Methodology'
+    descriptors:
+      - collection: _tagCategories
+        term: technical-skill
+        summary: true
+    related:
+      - tdd
+      - ci-cd
+      - user-story
   apache-tomcat:
     label: 'Apache Tomcat'
     descriptors:
@@ -60,6 +80,26 @@ tags:
         summary: true
     related:
       - software-engineering
+  aws:
+    label: 'Amazon Web Services (AWS)'
+    descriptors:
+      - collection: _tagCategories
+        term: platform
+        summary: true
+    related:
+      - azure
+      - cloudflare
+      - heroku
+  azure:
+    label: 'Microsoft Azure'
+    descriptors:
+      - collection: _tagCategories
+        term: platform
+        summary: true
+    related:
+      - aws
+      - cloudflare
+      - heroku
   c:
     label: 'C'
     descriptors:
@@ -68,6 +108,14 @@ tags:
         summary: true
     related:
       - java
+  ci-cd:
+    label: 'Continuous Integration / Continuous Deployment (CI/CD)'
+    descriptors:
+      - collection: _tagCategories
+        term: technical-skill
+        summary: true
+    related:
+      - agile-methodology
   ckeditor:
     label: 'CKEditor 5'
     descriptors:
@@ -256,6 +304,15 @@ tags:
         summary: true
     related:
       - git
+  grafana:
+    label: 'Grafana'
+    descriptors:
+      - collection: _tagCategories
+        term: platform
+        summary: true
+    related:
+      - prometheus
+      - production-monitoring
   html:
     label: 'HTML'
     descriptors:
@@ -274,6 +331,16 @@ tags:
     related:
       - mobile-development
       - xcode
+  integration-testing:
+    label: 'Integration Testing'
+    descriptors:
+      - collection: _tagCategories
+        term: technical-skill
+        summary: true
+    related:
+      - unit-testing
+      - acceptance-testing
+      - tdd
   java:
     label: 'Java'
     icon:
@@ -313,6 +380,25 @@ tags:
     related:
       - ios
       - xcode
+  matplotlib:
+    label: 'Matplotlib'
+    descriptors:
+      - collection: _tagCategories
+        term: platform
+        summary: true
+    related:
+      - python
+      - numpy
+      - scipy
+  microservice-archiecture:
+    label: 'Microservice Archiecture'
+    descriptors:
+      - collection: _tagCategories
+        term: technical-skill
+        summary: true
+    related:
+      - aws
+      - azure
   mobile-development:
     label: 'Mobile Development'
     descriptors:
@@ -350,6 +436,26 @@ tags:
     related:
       - cybersecurity
       - system-administration
+  numpy:
+    label: 'Numpy'
+    descriptors:
+      - collection: _tagCategories
+        term: platform
+        summary: true
+    related:
+      - python
+      - pandas
+      - scipy
+  pandas:
+    label: 'Pandas'
+    descriptors:
+      - collection: _tagCategories
+        term: platform
+        summary: true
+    related:
+      - python
+      - numpy
+      - scipy
   personal-project:
     label: 'Personal Project'
     icon:
@@ -357,12 +463,41 @@ tags:
     descriptors: []
     related:
       - coursework
+  php:
+    label: 'PHP'
+    icon:
+      faBrand: Php
+    descriptors:
+      - collection: _tagCategories
+        term: programming-language
+        summary: true
+    related:
+      - web-development
+      - drupal
   postgresql:
     label: 'PostgreSQL'
     descriptors:
       - collection: _tagCategories
         term: platform
         summary: true
+  production-monitoring:
+    label: 'Production Monitoring'
+    descriptors:
+      - collection: _tagCategories
+        term: technical-skill
+        summary: true
+    related:
+      - prometheus
+      - grafana
+  prometheus:
+    label: 'Prometheus'
+    descriptors:
+      - collection: _tagCategories
+        term: platform
+        summary: true
+    related:
+      - grafana
+      - production-monitoring
   python:
     label: 'Python'
     icon:
@@ -373,6 +508,16 @@ tags:
         summary: true
     related:
       - django
+  react:
+    label: 'React'
+    descriptors:
+      - collection: _tagCategories
+        term: platform
+        summary: true
+    related:
+      - javascript
+      - nodejs
+      - web-development
   research:
     label: 'Research'
     descriptors:
@@ -381,6 +526,16 @@ tags:
         summary: true
     related:
       - data-processing
+  scipy:
+    label: 'Scipy'
+    descriptors:
+      - collection: _tagCategories
+        term: platform
+        summary: true
+    related:
+      - python
+      - numpy
+      - pandas
   spring-framework:
     label: 'Spring Framework'
     descriptors:
@@ -449,6 +604,16 @@ tags:
         summary: true
     related:
       - networking
+  tailwind:
+    label: 'Tailwind CSS'
+    descriptors:
+      - collection: _tagCategories
+        term: platform
+        summary: true
+    related:
+      - css
+      - web-development
+      - react
   teaching-others:
     label: 'Teaching Others'
     icon:
@@ -457,6 +622,16 @@ tags:
       - collection: _tagCategories
         term: personal-skill
         summary: true
+  tdd:
+    label: 'Test-Driven Development (TDD)'
+    descriptors:
+      - collection: _tagCategories
+        term: technical-skill
+        summary: true
+    related:
+      - agile-methodology
+      - unit-testing
+      - integration-testing
   twig:
     label: 'Twig'
     descriptors:
@@ -477,17 +652,24 @@ tags:
     related:
       - nodejs
       - javascript
-  php:
-    label: 'PHP'
-    icon:
-      faBrand: Php
+  unit-testing:
+    label: 'Unit Testing'
     descriptors:
       - collection: _tagCategories
-        term: programming-language
+        term: technical-skill
         summary: true
     related:
-      - web-development
-      - drupal
+      - integration-testing
+      - acceptance-testing
+      - tdd
+  user-story:
+    label: 'User Story Creation'
+    descriptors:
+      - collection: _tagCategories
+        term: technical-skill
+        summary: true
+    related:
+      - agile-methodology
   web-development:
     label: 'Web Development'
     descriptors:
@@ -661,7 +843,7 @@ _locations:
 
 _tagCategories:
   platform:
-    label: 'Platform'
+    label: 'Platform or Framework'
   programming-language:
     label: 'Programming Language'
   personal-skill:

@@ -4,7 +4,7 @@
 {% block itemBelowDescription %}
   {{ super() }}
   <div class="d-flex flex-wrap gap-4">
-    {% if item.website %}
+    {% if item.url or item.website %}
       <div class="d-flex gap-1">
         <div class="theme-color-text enlarged-text" aria-hidden="true">
           {{ icon({ icon: 'demo' }) }}
@@ -12,8 +12,8 @@
         <div>
           <span class="d-block">View project at</span>
           <span class="d-block">
-            <a class="d-flex flex-row external-link no-underline" target="_blank" href="//{{ item.website }}">
-              <span class="underline">{{ item.website }}</span>
+            <a class="d-flex flex-row external-link no-underline" target="_blank" href="{{ item.url if item.url else '//' ~ item.website }}">
+              <span class="underline">{{ item.name if item.url else item.website }}</span>
               <span class="ms-1">{{ icon({ icon: 'external' }) }}</span>
             </a>
           </span>

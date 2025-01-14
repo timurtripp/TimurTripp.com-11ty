@@ -319,6 +319,10 @@ li > ul, li > ol, .compact-content h1, .compact-content .h1, .compact-content .h
   margin: 0;
 }
 
+ol ol, ol ul, ul ol, ul ul {
+  margin-bottom: 1rem;
+}
+
 .tooltip {
   --bs-tooltip-color: var(--theme-text-strong);
   --bs-tooltip-bg: var(--theme-foreground-translucent-bg);

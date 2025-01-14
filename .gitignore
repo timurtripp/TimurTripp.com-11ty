@@ -1,4 +1,5 @@
-*.DS_Store
+.DS_Store
 node_modules
 _site
 _data/generated.json
+package-lock.json

@@ -11,6 +11,7 @@ projects:
       imagecrop: true
       faSolid: Star
     start: '2018-01'
+    end: '2024-07'
     _tags:
       - personal-project
       - java
@@ -28,18 +29,88 @@ projects:
       - gitlab
       - docker
       - nodejs
+  fitness-dashboard:
+    name: 'Fitness Dashboard'
+    description: |
+      - Created a decoupled microservices-based fitness news web app using Tailwind, React, and Spring Boot.
+      - Developed using Agile concepts, including user stories, TDD, and CI/CD pipelines.
+      - Features acceptance testing with Selenium and production monitoring with Prometheus and Grafana.
+    icon:
+      faSolid: Star
+    source:
+      gitlab: https://gitlab.silvercrater.dev/explore?name=team-strength
+    start: '2024-03'
+    end: '2024-05'
+    _tags:
+      - coursework
+      - web-development
+      - api-development
+      - software-engineering
+      - agile-methodology
+      - java
+      - javascript
+      - react
+      - tailwind
+      - spring-framework
+      - tdd
+      - unit-testing
+      - integration-testing
+      - acceptance-testing
+      - production-monitoring
+      - prometheus
+      - grafana
+      - docker
+      - user-story
+      - ci-cd
+      - microservice-archiecture
+  predictors-of-nfl-tackles:
+    name: 'Predictors of NFL Tackles'
+    description: |
+      - Mined a large-scale dataset using modern Python tools including Pandas, SciPy, and Matplotlib.
+      - Delivered insights through visualization and statistical modeling.
+    url: 'https://assets.timurtripp.com/portfolio/Predictors%20of%20NFL%20Tackles.pdf'
+    icon:
+      faSolid: Star
+    source:
+      github: https://github.com/sesh9096/csci4502project
+      gitlab: https://gitlab.silvercrater.dev/tt/predictors-of-nfl-tackles
+    start: '2024-08'
+    end: '2024-12'
+    _tags:
+      - coursework
+      - data-mining
+      - python
+      - csv
+      - numpy
+      - pandas
+      - scipy
+      - matplotlib
+  risk-profiling:
+    name: 'Alliant National Risk Profiling'
+    description: |
+      - Building a Risk Profiling tool for Alliant National Title Insurance Co. to be deployed on Microsoft Azure.
+    icon:
+      faSolid: Star
+    start: '2024-09'
+    end: '2025-05'
+    _tags:
+      - coursework
+      - python
+      - machine-learning
+      - microservice-archiecture
+      - azure
   timurtripp.com:
     name: 'TimurTripp.com'
     description: My personal website was first registered back in 2009 and has stayed close to my heart ever since. This nifty 80s-inspired static site is open-source with continuous deployment via GitHub Pages.
     website: 'timurtripp.com'
     source:
       github: https://github.com/TimurTripp/TimurTripp.com-11ty
-      gitlab: https://silvercrater.dev/tt/timurtripp.com-11ty
+      gitlab: https://gitlab.silvercrater.dev/tt/timurtripp.com-11ty
     icon:
       imageurl: '/assets/mask-icon.svg'
       imageicon: true
       faSolid: Star
-    start: '2022-08'
+    start: '2009-01'
     _tags:
       - personal-project
       - javascript
@@ -50,13 +121,14 @@ projects:
       - nodejs
       - git
       - github
+      - ci-cd
   tabletop-game:
     name: 'Tabletop Game'
     description: 'A simple demo scene written to showcase WebGL for my computer graphics graduate course at CU Boulder.'
     website: 'timurtripp.com/tabletop-game'
     source:
       github: https://github.com/TimurTripp/tabletop-game
-      gitlab: https://silvercrater.dev/tt/tabletop-game
+      gitlab: https://gitlab.silvercrater.dev/tt/tabletop-game
     icon:
       imageurl: 'https://assets.timurtripp.com/portfolio/d20-webgl.png'
       imagecrop: true
@@ -76,7 +148,7 @@ projects:
     name: 'iiod.io for iOS'
     description: 'I built a native iOS and macOS application for iiod.io using Swift and SwiftUI for my undergrad senior capstone. The app is compatible with the same API used by the web version of iiod.io.'
     source:
-      gitlab: https://silvercrater.dev/iiod.io/app
+      gitlab: https://gitlab.silvercrater.dev/iiod.io/app
     icon:
       imageurl: 'https://assets.timurtripp.com/portfolio/iiod.io.png'
       imagecrop: true
@@ -105,17 +177,19 @@ projects:
       - coursework
       - django
       - python
+      - heroku
       - web-development
       - collaboration
       - communication
       - application-design
+      - user-story
       - html
       - css
   tb:
     name: '[TB] Mods'
     description: "[TB] Mods, or Teddy Bear Mod Pack, was a set of modifications for the online multiplayer game mope.io. A PHP script used regular expressions to programmatically modify the game's client JavaScript. A lot of functionality was added, such as skin and theme features, that wasn't there by default."
     source:
-      gitlab: https://silvercrater.dev/tt/tb-mods-mopeio
+      gitlab: https://gitlab.silvercrater.dev/tt/tb-mods-mopeio
     icon:
       imageurl: 'https://assets.timurtripp.com/portfolio/TB.png'
       imagecrop: true
@@ -138,6 +212,7 @@ education:
     icon:
       faSolid: GraduationCap
     start: '2023-08'
+    end: '2025-05'
     _institutions:
       - cu-boulder
     _tags:
@@ -216,22 +291,24 @@ work:
     department: 'Strategic Relations'
     institution: cu-boulder
     description: |
-      My team at CU Boulder is tasked with one of the largest Drupal 7 to 10 multisite migrations in the industry. This necessitates a complete redevelopment of the aging tools used by our site managers to utilize the modern object-oriented principles of Drupal 10 and CKEditor 5.
-
-      I consistently stepped up to take on difficult projects. My individual contributions include the [CKEditor 5 Icons](https://www.drupal.org/project/ckeditor5_icons) open-source Drupal module, and the [Site Configuration](https://github.com/CuBoulder/ucb_site_configuration) module used by CU Boulder internally. I also attended [DrupalCon Pittsburgh 2023](https://events.drupal.org/pittsburgh2023).
+      - Modernized CU Boulder’s [Web Express](https://www.colorado.edu/webcentral/) CMS, leveraging object-oriented design principles and interactive API-driven web components to enhance performance and usability.
+      - Made FOSS contributions built with TypeScript / JavaScript, including [CKEditor 5 Icons](https://www.drupal.org/project/ckeditor5_icons), used by thousands of websites in production.
+      - Collaborated within and between teams using GitHub and Asana for project management.
+      - Attended [DrupalCon Pittsburgh 2023](https://events.drupal.org/pittsburgh2023).
     icon:
       faSolid: Code
     start: '2022-06'
+    end: '2024-02'
     fullTime: true
     _institutions:
       - cu-boulder
     _tags:
       - php
       - javascript
+      - typescript
       - drupal
       - docker
       - ckeditor
-      - typescript
       - web-development
       - software-engineering
       - collaboration

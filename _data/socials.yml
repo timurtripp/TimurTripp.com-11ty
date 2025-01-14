@@ -1,6 +1,6 @@
 LinkedIn:
   username: 'Timur Tripp'
-  url: 'https://www.linkedin.com/in/timur-tripp-1031a61b1/'
+  url: 'https://www.linkedin.com/in/timur-tripp/'
   color: '0a66c2'
   footer: true
 GitHub:
@@ -9,6 +9,6 @@ GitHub:
   footer: true
 GitLab:
   username: '@tt'
-  url: 'https://silvercrater.dev/tt'
+  url: 'https://gitlab.silvercrater.dev/tt'
   color: 'e24329'
   footer: true
