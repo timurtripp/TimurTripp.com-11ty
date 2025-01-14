@@ -80,6 +80,12 @@ tags:
         summary: true
     related:
       - software-engineering
+  asana:
+    label: 'Asana'
+    descriptors:
+      - collection: _tagCategories
+        term: platform
+        summary: true
   aws:
     label: 'Amazon Web Services (AWS)'
     descriptors:

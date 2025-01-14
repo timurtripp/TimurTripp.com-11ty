@@ -11,7 +11,7 @@ projects:
       imagecrop: true
       faSolid: Star
     start: '2018-01'
-    end: '2024-07'
+    end: '2024-06'
     _tags:
       - personal-project
       - java
@@ -298,7 +298,7 @@ work:
     icon:
       faSolid: Code
     start: '2022-06'
-    end: '2024-02'
+    end: '2025-02'
     fullTime: true
     _institutions:
       - cu-boulder
@@ -319,6 +319,7 @@ work:
       - git
       - github
       - webpack
+      - asana
   slcc-tutor:
     title: 'Tutor'
     department: 'Computer Science and Information Systems'
