@@ -94,10 +94,13 @@ module.exports = {
 	externalLinks: function(content) {
 		const $ = cheerio.load(content);
 		$('a').each(function(index, e) {
-			const $e = $(e), href = e.attribs.href, url = new URL(href);
-			e.attribs.target = '_blank';
-			$e.addClass('external-link no-underline');
-			$e.html('<span class="underline">' + $e.html() + '</span><span aria-hidden="true" class="icon ms-1">' + shortcodes.icon('external') + '</span>')
+			const $e = $(e);
+			try {
+				const href = e.attribs.href, url = new URL(href);
+				e.attribs.target = '_blank';
+				$e.addClass('external-link no-underline');
+				$e.html('<span class="underline">' + $e.html() + '</span><span aria-hidden="true" class="icon ms-1">' + shortcodes.icon('external') + '</span>');
+			} catch (error) { }
 		});
 		return $.html();
 	}

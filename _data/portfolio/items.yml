@@ -102,7 +102,7 @@ projects:
       - azure
   timurtripp.com:
     name: 'TimurTripp.com'
-    description: My personal website was first registered back in 2009 and has stayed close to my heart ever since. This nifty 80s-inspired static site is open-source with continuous deployment via GitHub Pages.
+    description: My personal website was first registered back in 2009 and has stayed close to my heart ever since. This nifty 80s-inspired static site is [open-source](/README.md) with continuous deployment via GitHub Pages.
     website: 'timurtripp.com'
     source:
       github: https://github.com/TimurTripp/TimurTripp.com-11ty
