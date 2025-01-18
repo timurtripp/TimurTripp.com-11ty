@@ -236,6 +236,17 @@ a::after, a.no-underline .underline::after {
   content: '';
 }
 
+a.underline-squiggle::after, a.no-underline .underline.underline-squiggle::after {
+  height: .25em;
+  -webkit-mask-image: url('/assets/theme/link-underline.svg');
+  mask-image: url('/assets/theme/link-underline.svg');
+  -webkit-mask-repeat: repeat;
+  mask-repeat: repeat;
+  border-radius: .125em;
+  margin-bottom: 0;
+  margin-top: -.2em;
+}
+
 a.no-underline:link, a.no-underline:visited, a.no-underline:hover, a.no-underline:focus, a.no-underline:active {
   display: inline;
   border-bottom: 0;
