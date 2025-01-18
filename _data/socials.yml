@@ -1,14 +1,14 @@
 LinkedIn:
-  username: 'Timur Tripp'
+  username: 'in/timur-tripp'
   url: 'https://www.linkedin.com/in/timur-tripp/'
   color: '0a66c2'
   footer: true
 GitHub:
-  username: '@TimurTripp'
+  username: 'TimurTripp'
   url: 'https://github.com/TimurTripp'
   footer: true
 GitLab:
-  username: '@tt'
+  username: 'gitlab.silvercrater.dev'
   url: 'https://gitlab.silvercrater.dev/tt'
   color: 'e24329'
   footer: true

@@ -78,6 +78,7 @@ projects:
     end: '2024-12'
     _tags:
       - coursework
+      - data-processing
       - data-mining
       - python
       - csv
@@ -95,8 +96,8 @@ projects:
     end: '2025-05'
     _tags:
       - coursework
+      - data-processing
       - python
-      - machine-learning
       - microservice-archiecture
       - azure
   timurtripp.com:
@@ -298,19 +299,18 @@ work:
     icon:
       faSolid: Code
     start: '2022-06'
-    end: '2025-02'
     fullTime: true
     _institutions:
       - cu-boulder
     _tags:
+      - software-engineering
+      - web-development
       - php
       - javascript
       - typescript
       - drupal
       - docker
       - ckeditor
-      - web-development
-      - software-engineering
       - collaboration
       - communication
       - html
@@ -320,6 +320,7 @@ work:
       - github
       - webpack
       - asana
+      - ci-cd
   slcc-tutor:
     title: 'Tutor'
     department: 'Computer Science and Information Systems'

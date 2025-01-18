@@ -1,7 +1,85 @@
 ---
 layout: 'layouts/base.njk'
-align: center
 ---
-<h1><span class="h3">Hello, my name is</span>
-  {{ metadata.author }}</h1>
-<p>{{ metadata.authorBio }}</p>
+{% from 'components/icon-macro.njk' import icon %}
+{% from '_includes/components/dictionary/portfolio/term-factory.njk' import createTerm, termList with context %}
+{% from '_includes/components/dictionary/term-macros.njk' import termList as termListRenderer %}
+
+<h1 class="visually-hidden">{{ metadata.author }}</h1>
+<section class="text-center content-block">
+  <div class="icon-hero">
+    <span class="icon icon-framed icon-cropped avatar-hero">
+      <img alt="Picture of Timur Tripp" src="https://assets.timurtripp.com/avatar-1.jpg">
+    </span>
+  </div>
+  <span class="h1" aria-hidden="true">{{ metadata.author }}</span>
+  <p>{{ metadata.authorBio }}</p>
+  <ul class="d-inline-block m-0 p-0 list-unstyled text-center">
+    {% if metadata.email %}
+      <li class="my-2 d-flex flex-row">
+        <a class="d-flex flex-row gap-1 align-items-center external-link no-underline" target="_blank" href="{{ metadata.email }}">
+          {{ icon({ faSolid: 'Envelope' }) }}
+          <span class="underline">{{ metadata.email }}</span>
+        </a>
+      </li>
+    {% endif %}
+    {% if socials %}
+      {% for socialName, social in socials %}
+        <li class="my-2 d-flex flex-row">
+          <a class="d-flex flex-row gap-1 align-items-center external-link no-underline" target="_blank" href="{{ social.url }}">
+            <span class="icon icon-monochrome">
+              {% brandIcon socialName %}
+            </span>
+            <span class="underline">{{ social.username }}</span>
+            {{ icon({ icon: 'external' }) }}
+          </a>
+        </li>
+      {% endfor %}
+    {% endif %}
+  </ul>
+  <a class="h2 no-underline d-flex flex-row gap-4 justify-content-center align-items-center" href="portfolio">
+    <div class="icon-64">
+      {{ icon({ icon: 'briefcase' }) }}
+    </div>
+    <span class="underline">Portfolio</span>
+    {{ icon({ icon: 'triangleRight' }) }}
+  </a>
+</section>
+<section class="content-block">
+  <h2>My Software Engineering Ethos</h2>
+  <div class="d-flex gap-4 flex-row align-items-center">
+    <div class="my-2 large-text">
+      {{ icon({ icon: 'sparkle' }) }}
+    </div>
+    <div>
+      <h3>Coding is more than just coding.</h3>
+      <p>Good code enables new experiences and changes lives. Every software engineer should strive to be a part of something bigger than they are, and write code that others can learn from and improve.</p>
+    </div>
+  </div>
+  <div class="d-flex gap-4 mflex-row align-items-center">
+    <div class="my-2 large-text">
+      {{ icon({ faSolid: 'Star' }) }}
+    </div>
+    <div>
+      <h3>Pursue your passion projects.</h3>
+      <p>I went from an 11-year-old working on a humble HTML/CSS/PHP website, to a professional developer providing the cutting-edge tools to build the web presence of the largest research university in the state of Colorado. Never lose sight of your dreams.</p>
+    </div>
+  </div>
+  <div class="d-flex gap-4 flex-row align-items-center">
+    <div class="my-2 large-text">
+      {{ icon({ icon: 'triangleUp' }) }}
+    </div>
+    <div>
+      <h3>Don’t be afraid to leave your comfort zone.</h3>
+      <p>Although everyone needs time to develop, the best opportunities for growth may lie outside your comfort zone. Don’t fear change – embrace it.</p>
+    </div>
+  </div>
+</section>
+<section class="content-block">
+  <h2>Skillset</h2>
+  {{ termListRenderer(termList(portfolio.dictionary._tagCategories | keys, '_tagCategories'), createTerm, termList) }}
+</section>
+<section class="content-block">
+  <h2>About this Website</h2>
+  <p>TimurTripp.com has been the home of my personal website since 2009. Since then it has undergone multiple reworks. The current iteration is an <a href="README.md">open-source</a> static site built with <a class="no-underline" target="_blank" href="https://www.11ty.dev/"><span class="underline">11ty</span>{{ icon({ icon: 'external' }) }}</a> and deployed with continuous deployment on GitHub Pages and GitLab pages.</p>
+</section>

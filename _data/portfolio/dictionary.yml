@@ -533,7 +533,7 @@ tags:
     related:
       - data-processing
   scipy:
-    label: 'Scipy'
+    label: 'SciPy'
     descriptors:
       - collection: _tagCategories
         term: platform

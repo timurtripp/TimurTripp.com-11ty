@@ -1,5 +1,6 @@
 ---
 title: 'Portfolio'
+section: root
 layout: 'layouts/custom/portfolio.njk'
 resume: 'https://assets.timurtripp.com/portfolio/Résumé%20Tripp-January%202025-Public.pdf'
 ---
@@ -23,29 +24,25 @@ resume: 'https://assets.timurtripp.com/portfolio/Résumé%20Tripp-January%2020
         </div>
       </div>
       <span class="underline">Load Resume</span>
-    </div>
-  </a>
+    </a>
+  </div>
   <div class="content-block theme-green">
     <h4 class="m-0 p-0">Get in touch.</h4>
-    <ul class="m-0 p-0 list-unstyled text-center">
+    <ul class="d-inline-block m-0 p-0 list-unstyled text-center">
       {% if metadata.email %}
         <li class="my-2 d-flex flex-row">
-          <span class="me-2" aria-hidden="true">
+          <a class="d-flex flex-row gap-1 align-items-center external-link no-underline" target="_blank" href="{{ metadata.email }}">
             {{ icon({ faSolid: 'Envelope' }) }}
-          </span>
-          <a href="mailto:{{ metadata.email }}">{{ metadata.email }}</a>
+            <span class="underline">{{ metadata.email }}</span>
+          </a>
         </li>
       {% endif %}
       {% if socials.LinkedIn %}
         <li class="my-2 d-flex flex-row">
-          <span class="me-2" aria-hidden="true">
+          <a class="d-flex flex-row gap-1 align-items-center external-link no-underline" target="_blank" href="{{ socials.LinkedIn.url }}">
             {{ icon({ faBrand: 'Linkedin' }) }}
-          </span>
-          <a class="d-flex flex-row external-link no-underline" target="_blank" href="{{ socials.LinkedIn.url }}">
-            <span class="underline">LinkedIn</span>
-            <span class="ms-1" aria-hidden="true">
-              {{ icon({ icon: 'external' }) }}
-            </span>
+            <span class="underline">{{ socials.LinkedIn.username }}</span>
+            {{ icon({ icon: 'external' }) }}
           </a>
         </li>
       {% endif %}

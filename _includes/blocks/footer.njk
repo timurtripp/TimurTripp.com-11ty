@@ -1,3 +1,5 @@
+{% from 'components/icon-macro.njk' import icon %}
+
 <footer class="tt-footer">
   {% include 'components/theme/line-right.njk' %}
   <div class="tt-footer-inner">
@@ -6,9 +8,9 @@
         <div class="col-sm align-items-center text-start">
           <div class="tt-footer-remark">
             <p class="tt-footer-built-with">
-              Built with <a href="https://www.11ty.dev" target="_blank">11ty</a>
+              Built with <a class="no-underline" target="_blank" href="https://www.11ty.dev/"><span class="underline">11ty</span>{{ icon({ icon: 'external' }) }}</a>
               <br>
-              <a href="https://gitlab.silvercrater.dev/tt/timurtripp.com-11ty" target="_blank">Source</a> &#8226; <a href="/README.md">Readme</a>
+              <a class="no-underline" target="_blank" href="https://gitlab.silvercrater.dev/tt/timurtripp.com-11ty"><span class="underline">Source</span>{{ icon({ icon: 'external' }) }}</a> &#8226; <a href="/README.md">Readme</a>
             </p>
           </div>
         </div>

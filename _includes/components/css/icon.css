@@ -19,6 +19,7 @@
   transform: translateY(-50%);
   max-height: 1em;
   object-fit: contain;
+  overflow: hidden;
 }
 
 .icon svg {
@@ -54,4 +55,44 @@
 
 .external-link .icon {
   vertical-align: bottom;
+}
+
+.icon-hero .icon {
+  width: 8em;
+  height: 8em;
+}
+
+.icon-hero .icon svg,
+.icon-hero .icon img {
+  height: 8em;
+  max-height: 8em;
+}
+
+.icon-hero .icon.icon-framed.icon-cropped img {
+  outline: .4em solid var(--theme-color);
+}
+
+.icon-hero .icon.icon-framed::before, .icon-hero .icon.icon-framed::after {
+  width: 8em;
+  height: 8em;
+}
+
+.icon-32 .icon {
+  width: 32px;
+  height: 32px;
+}
+
+.icon-32 .icon svg {
+  height: 32px;
+  max-height: 32px;
+}
+
+.icon-64 .icon {
+  width: 64px;
+  height: 64px;
+}
+
+.icon-64 .icon svg {
+  height: 64px;
+  max-height: 64px;
 }

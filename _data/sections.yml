@@ -1,10 +1,11 @@
 # Sections of the site navigation
-home:
+root:
   name: Home
   url: '/'
 portfolio:
   name: Portfolio
   url: '/portfolio/'
+  parent: root
 portfolio.institutions:
   name: Institutions
   url: '/portfolio/institutions/'

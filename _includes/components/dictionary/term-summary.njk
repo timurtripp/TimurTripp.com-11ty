@@ -1,4 +1,5 @@
 {% from './term-macros.njk' import termLabel, termDescription %}
+{% from './term-macros.njk' import termList as renderTermList %}
 <div class="content-block compact-content summary {% if nested %}nested-summary {% endif %}d-flex gap-2 my-2 flex-row collection-{{ term.collectionId }} term-{{ term.termId }}">
   {% if term.meta.icon or term.index.meta.icon %}
     <div class="my-2 theme-color-text enlarged-text">
@@ -15,6 +16,12 @@
       <h3>{{ termLabel(term, true) }}</h3>
       <div class="d-flex flex-row flex-wrap">
         {{ termDescription(term, createTerm, termList, true) }}
+      </div>
+      <div class="term-relationships">
+        {% if term.relationships.terms %}{% for relatedCategoryId, relatedTerms in term.relationships.terms %}
+          {% set relatedTermIndex = createTerm(relatedCategoryId, '_index') %}
+          {{ renderTermList(termList(relatedTerms, relatedCategoryId), createTerm, termList, true) }}
+        {% endfor %}{% endif %}
       </div>
     {% endif %}
   </div>
