@@ -208,7 +208,7 @@ blockquote::before {
   content: '';
 }
 
-h1::after {
+h1::after, .h1::after {
   display: block;
   height: 50px;
   background-color: var(--theme-color);
