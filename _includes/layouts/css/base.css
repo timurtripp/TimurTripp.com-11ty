@@ -228,15 +228,10 @@ h1::after, .h1::after {
 
 a::after, a.no-underline .underline::after {
   display: block;
-  height: .25em;
+  height: 1px;
   background-color: var(--theme-color-alt);
-  -webkit-mask-image: url('/assets/theme/link-underline.svg');
-  mask-image: url('/assets/theme/link-underline.svg');
-  -webkit-mask-repeat: repeat;
-  mask-repeat: repeat;
-  border-radius: .125em;
-  margin-bottom: 0;
-  margin-top: -.2em;
+  margin-bottom: 1px;
+  margin-top: -2px;
   z-index: 99;
   content: '';
 }
