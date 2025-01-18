@@ -433,6 +433,17 @@ tags:
     related:
       - javascript
       - typescript
+  nunjucks:
+    label: 'Nunjucks'
+    descriptors:
+      - collection: _tagCategories
+        term: programming-language
+        summary: true
+    related:
+      - javascript
+      - html
+      - web-development
+      - twig
   networking:
     label: 'Networking'
     descriptors:
@@ -649,6 +660,7 @@ tags:
       - html
       - drupal
       - web-development
+      - nunjucks
   typescript:
     label: 'TypeScript'
     descriptors:

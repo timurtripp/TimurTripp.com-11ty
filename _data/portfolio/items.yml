@@ -120,6 +120,7 @@ projects:
       - css
       - 11ty
       - nodejs
+      - nunjucks
       - git
       - github
       - ci-cd
