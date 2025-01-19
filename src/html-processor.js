@@ -14,7 +14,7 @@ module.exports = {
 			if (id) {
 				e.attribs.id = id;
 				element.addClass('jumpable-heading');
-				element.html('<span class="jumpable-heading-text">' + element.html() + '</span> <a aria-hidden="true" class="px-1 no-underline jumpable-heading-link" href="#' + id + '"><span class="jumpable-heading-line"></span><span class="icon">' + faSolid('Hashtag') + '</span></a>');
+				element.html('<span class="jumpable-heading-text">' + element.html() + '</span> <a class="px-1 no-underline jumpable-heading-link" href="#' + id + '"><span class="jumpable-heading-line"></span><span class="icon">' + faSolid('Hashtag') + '</span><span class="visually-hidden">Jump to heading</span></a>');
 			}
 		});
 		return $.html();

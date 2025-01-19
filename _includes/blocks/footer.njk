@@ -10,7 +10,7 @@
             <p class="tt-footer-built-with">
               Built with <a class="no-underline" target="_blank" href="https://www.11ty.dev/"><span class="underline">11ty</span>{{ icon({ icon: 'external' }) }}</a>
               <br>
-              <a class="no-underline" target="_blank" href="https://gitlab.silvercrater.dev/tt/timurtripp.com-11ty"><span class="underline">Source</span>{{ icon({ icon: 'external' }) }}</a> &#8226; <a href="/README.md">Readme</a>
+              <a class="no-underline" target="_blank" href="https://github.com/TimurTripp/TimurTripp.com-11ty"><span class="underline">Source</span>{{ icon({ icon: 'external' }) }}</a> &#8226; <a href="/README.md">Readme</a>
             </p>
           </div>
         </div>
@@ -19,11 +19,11 @@
           <div class="tt-footer-contact">
             {% if site.email %}<a href="mailto:{{ site.email }}">{{ site.email }}</a>{% endif %}
             {% if socials %}<ul class="tt-footer-socials">
-              {% for socialName, social in socials %}{% if social.footer %}
-                <li class="tt-footer-social tt-footer-social-{{ socialName|classify }}">
+              {% for social in socials %}{% if social.footer %}
+                <li class="tt-footer-social tt-footer-social-{{ social.name|classify }}">
                   <a target="_blank" href="{{ social.url }}">
-                    <span aria-hidden="true" class="text-like">{% brandIcon socialName %}</span>
-                    <span class="visually-hidden">{{ socialName }}</span>
+                    <span aria-hidden="true" class="text-like">{% brandIcon social.icon %}</span>
+                    <span class="visually-hidden">{{ social.name }}</span>
                   </a>
                 </li>
               {% endif %}{% endfor %}

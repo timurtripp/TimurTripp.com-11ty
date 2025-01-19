@@ -17,19 +17,21 @@ layout: 'layouts/base.njk'
   <ul class="d-inline-block m-0 p-0 list-unstyled text-center">
     {% if metadata.email %}
       <li class="my-2 d-flex flex-row">
-        <a class="d-flex flex-row gap-1 align-items-center external-link no-underline" target="_blank" href="{{ metadata.email }}">
+        <a class="d-flex flex-row gap-1 align-items-center external-link no-underline" target="_blank" href="mailto:{{ metadata.email }}">
           {{ icon({ faSolid: 'Envelope' }) }}
+          <span class="visually-hidden">Email:</span>
           <span class="underline">{{ metadata.email }}</span>
         </a>
       </li>
     {% endif %}
     {% if socials %}
-      {% for socialName, social in socials %}
+      {% for social in socials %}
         <li class="my-2 d-flex flex-row">
           <a class="d-flex flex-row gap-1 align-items-center external-link no-underline" target="_blank" href="{{ social.url }}">
-            <span class="icon icon-monochrome">
-              {% brandIcon socialName %}
+            <span aria-hidden="true" class="icon icon-monochrome">
+              {% brandIcon social.icon %}
             </span>
+            <span class="visually-hidden">{{ social.name }}:</span>
             <span class="underline">{{ social.username }}</span>
             {{ icon({ icon: 'external' }) }}
           </a>
@@ -37,7 +39,7 @@ layout: 'layouts/base.njk'
       {% endfor %}
     {% endif %}
   </ul>
-  <a class="h2 no-underline d-flex flex-row gap-4 justify-content-center align-items-center" href="portfolio">
+  <a class="h2 no-underline d-flex flex-row gap-4 justify-content-center align-items-center" href="portfolio/">
     <div class="icon-64">
       {{ icon({ icon: 'briefcase' }) }}
     </div>

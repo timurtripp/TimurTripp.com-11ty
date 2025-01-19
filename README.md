@@ -1,6 +1,6 @@
 # TimurTripp.com 11ty Source Project
 
-[Тhis project](https://gitlab.silvercrater.dev/tt/timurtripp.com-11ty) contains the files and source code for my personal website, TimurTripp.com. It is licensed under the [MIT license](/LICENSE.md).
+[Тhis project](https://github.com/TimurTripp/TimurTripp.com-11ty) contains the files and source code for my personal website, TimurTripp.com. It is licensed under the [MIT license](/LICENSE.md).
 
 - Designed from scratch with simplicity in mind
 - Uses YAML configuration files
@@ -24,7 +24,3 @@ See [TEST](/TEST.md) for a demo of basic CSS elements provided by the theme.
 ## Building the Site
 
 `npm run build` to output static HTML/CSS/JS files suitable for the production site.
-
-## TODO
-- Add more content to the homepage
-- Site navigation
