@@ -17,7 +17,7 @@ layout: 'layouts/base.njk'
   <ul class="d-inline-block m-0 p-0 list-unstyled text-center">
     {% if metadata.email %}
       <li class="my-2 d-flex flex-row">
-        <a class="d-flex flex-row gap-1 align-items-center external-link no-underline" target="_blank" href="mailto:{{ metadata.email }}">
+        <a class="d-flex flex-row gap-1 align-items-center no-underline" href="mailto:{{ metadata.email }}">
           {{ icon({ faSolid: 'Envelope' }) }}
           <span class="visually-hidden">Email:</span>
           <span class="underline">{{ metadata.email }}</span>

@@ -6,8 +6,9 @@ resume: 'https://assets.timurtripp.com/portfolio/Résumé%20Tripp-January%202025
 ---
 {% from 'components/icon-macro.njk' import icon %}
 {% from 'components/dictionary/portfolio/term-factory.njk' import createTerm, termList with context %}
-<div class="hero">
-  <h1>Portfolio</h1>
+
+<h1>Portfolio</h1>
+<section class="hero">
   <div class="content-block">
     <a aria-label="Load Resume" class="theme-red h2 no-underline d-inline-flex flex-row gap-4 justify-content-center align-items-center portfolio-download-resume-link" href="{{ resume }}">
       <div class="no-underline portfolio-download-resume-icon">
@@ -28,21 +29,17 @@ resume: 'https://assets.timurtripp.com/portfolio/Résumé%20Tripp-January%202025
   </div>
   <div class="content-block theme-green">
     <h4 class="m-0 p-0">Get in touch.</h4>
-    <ul class="d-inline-block m-0 p-0 list-unstyled text-center">
-      {% if metadata.email %}
-        <li class="my-2 d-flex flex-row">
-          <a class="d-flex flex-row gap-1 align-items-center external-link no-underline" target="_blank" href="mailto:{{ metadata.email }}">
-            {{ icon({ faSolid: 'Envelope' }) }}
-            <span class="underline">{{ metadata.email }}</span>
-          </a>
-        </li>
-      {% endif %}
-    </ul>
+    {% if metadata.email %}
+      <a class="d-flex flex-row gap-1 align-items-center no-underline" href="mailto:{{ metadata.email }}">
+        {{ icon({ faSolid: 'Envelope' }) }}
+        <span class="underline">{{ metadata.email }}</span>
+      </a>
+    {% endif %}
   </div>
-</div>
+</section>
 {% for index in portfolio.index %}{% set items = portfolio.items[index.id] %}
-  <div{% if index.theme %} class="theme-{{ index.theme }}"{% endif %}>
+  <section{% if index.theme %} class="theme-{{ index.theme }}"{% endif %}>
     <h2 id="{{ index.id }}">{{ index.label }}</h2>
     {% include 'components/item/item-list.njk' %}
-  </div>
+  </section>
 {% endfor %}

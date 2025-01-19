@@ -60,8 +60,10 @@ projects:
       - prometheus
       - grafana
       - docker
-      - user-story
+      - git
+      - github
       - ci-cd
+      - user-story
       - microservice-archiecture
   predictors-of-nfl-tackles:
     name: 'Predictors of NFL Tackles'
@@ -123,6 +125,7 @@ projects:
       - nunjucks
       - git
       - github
+      - gitlab
       - ci-cd
   tabletop-game:
     name: 'Tabletop Game'
@@ -187,6 +190,9 @@ projects:
       - user-story
       - html
       - css
+      - git
+      - github
+      - ci-cd
   tb:
     name: '[TB] Mods'
     description: "[TB] Mods, or Teddy Bear Mod Pack, was a set of modifications for the online multiplayer game mope.io. A PHP script used regular expressions to programmatically modify the game's client JavaScript. A lot of functionality was added, such as skin and theme features, that wasn't there by default."

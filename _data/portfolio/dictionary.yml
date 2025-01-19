@@ -300,6 +300,7 @@ tags:
         summary: true
     related:
       - git
+      - gitlab
   gitlab:
     label: 'GitLab'
     icon:
@@ -310,6 +311,7 @@ tags:
         summary: true
     related:
       - git
+      - github
   grafana:
     label: 'Grafana'
     descriptors:

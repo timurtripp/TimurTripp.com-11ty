@@ -4,13 +4,13 @@
       {{ content | safe }}
     {% else %}
       <div class="container page-intro-outer">
-        <div class="theme-color-text" style="transform: scale(-1, -1);">
+        <div aria-hidden="true" class="theme-color-text" style="transform: scale(-1, -1);">
           {% include 'components/theme/jagged.njk' %}
         </div>
         <div class="content page-intro{{ ' text-center' if align == 'center' else (' text-end' if align == 'right') }}">
           {{ content | safe }}
         </div>
-        <div class="theme-color-text">
+        <div aria-hidden="true" class="theme-color-text">
           {% include 'components/theme/jagged.njk' %}
         </div>
       </div>
