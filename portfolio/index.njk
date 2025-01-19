@@ -31,18 +31,9 @@ resume: 'https://assets.timurtripp.com/portfolio/Résumé%20Tripp-January%202025
     <ul class="d-inline-block m-0 p-0 list-unstyled text-center">
       {% if metadata.email %}
         <li class="my-2 d-flex flex-row">
-          <a class="d-flex flex-row gap-1 align-items-center external-link no-underline" target="_blank" href="{{ metadata.email }}">
+          <a class="d-flex flex-row gap-1 align-items-center external-link no-underline" target="_blank" href="mailto:{{ metadata.email }}">
             {{ icon({ faSolid: 'Envelope' }) }}
             <span class="underline">{{ metadata.email }}</span>
-          </a>
-        </li>
-      {% endif %}
-      {% if socials.LinkedIn %}
-        <li class="my-2 d-flex flex-row">
-          <a class="d-flex flex-row gap-1 align-items-center external-link no-underline" target="_blank" href="{{ socials.LinkedIn.url }}">
-            {{ icon({ faBrand: 'Linkedin' }) }}
-            <span class="underline">{{ socials.LinkedIn.username }}</span>
-            {{ icon({ icon: 'external' }) }}
           </a>
         </li>
       {% endif %}
