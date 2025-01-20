@@ -1,6 +1,15 @@
-{% set previousTermInline = false %}
-{% for descriptor in term.meta.descriptors %}{% if not asSummary or descriptor.summary %}
-  {% set inline = descriptor.display == 'inline' or descriptor.display == 'inline-only' %}
+{% set previousTermInline = null %}
+{% for descriptor in term.meta.descriptors %}{% if not nested or descriptor.nest %}
+  {% set inline = descriptor.display == 'inline' %}
+  {% if previousTermInline != inline %}
+    {% if previousTermInline != null %}
+      </div>
+    {% endif %}
+    <div class="d-flex {{ 'flex-row' if inline else 'flex-column' }}">
+  {% endif %}
   {% include '_includes/components/dictionary/term-descriptor.njk' %}
   {% set previousTermInline = inline %}
 {% endif %}{% endfor %}
+{% if previousTermInline != null %}
+  </div>
+{% endif %}

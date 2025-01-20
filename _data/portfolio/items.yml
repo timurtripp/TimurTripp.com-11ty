@@ -49,6 +49,7 @@ projects:
       - agile-methodology
       - java
       - javascript
+      - jsx
       - react
       - tailwind
       - spring-framework

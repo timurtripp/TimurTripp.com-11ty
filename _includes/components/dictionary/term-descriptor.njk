@@ -1,7 +1,7 @@
 {% from './term-macros.njk' import termLabel, termSummary %}
-{% if asSummary or descriptor.display != 'inline-only' %}
+{% if asSummary %}
   {% set term = createTerm(descriptor.term, descriptor.collection) %}
-  <div class="descriptor{% if not inline %} w-100 flex-fill{% endif %}">
+  <div class="descriptor">
     {% if asSummary %}{% if inline and previousTermInline %}, {% endif %}{{ termLabel(term, not nested) }}{% else %}{{ termSummary(term, createTerm, termList) }}{% endif %}
   </div>
 {% endif %}

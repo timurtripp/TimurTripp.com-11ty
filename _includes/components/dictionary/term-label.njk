@@ -1,7 +1,16 @@
 {% set url %}{% if asLink %}{% if term.index.meta.path %}{{ term.index.meta.path }}{{ term.termId }}/{% elif term.meta.url %}{{ term.meta.url }}{% endif %}{% endif %}{% endset %}
 {% set externalLink = url == term.meta.url %}
 {% if url %}
-  <a class="label collection-{{ term.collectionId }} term-{{ term.termId }}{% if externalLink %} external-link" target="_blank{% endif %}" href="{{ url }}">{{ term.meta.label }}</a>
+  {% if externalLink %}
+    <a class="label collection-{{ term.collectionId }} term-{{ term.termId }} external-link no-underline" target="_blank" href="{{ url }}">
+      <span class="underline">{{ term.meta.label }}</span>
+      {{ icon({ icon: 'external' }) }}
+    </a>
+  {% else %}
+    <a class="label collection-{{ term.collectionId }} term-{{ term.termId }}" href="{{ url }}">
+      {{ term.meta.label }}
+    </a>
+  {% endif %}
 {% else %}
   <span class="label collection-{{ term.collectionId }} term-{{ term.termId }}">{{ term.meta.label }}</span>
 {% endif %}

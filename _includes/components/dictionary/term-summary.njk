@@ -8,15 +8,11 @@
   {% endif %}
   <div>
     {% if nested %}
-      <h4>{{ termLabel(term, true) }}</h4>
-      <div class="nested-content d-flex flex-row flex-wrap">
-        {{ termDescription(term, createTerm, termList, true, true) }}
-      </div>
+      <span class="h4">{{ termLabel(term, true) }}</span>
+      {{ termDescription(term, createTerm, termList, true, true) }}
     {% else %}
       <h3>{{ termLabel(term, true) }}</h3>
-      <div class="d-flex flex-row flex-wrap">
-        {{ termDescription(term, createTerm, termList, true) }}
-      </div>
+      {{ termDescription(term, createTerm, termList, true) }}
       <div class="term-relationships">
         {% if term.relationships.terms %}{% for relatedCategoryId, relatedTerms in term.relationships.terms %}
           {% set relatedTermIndex = createTerm(relatedCategoryId, '_index') %}
