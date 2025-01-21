@@ -1,11 +1,12 @@
 {% set previousTermInline = null %}
 {% for descriptor in term.meta.descriptors %}{% if not nested or descriptor.nest %}
   {% set inline = descriptor.display == 'inline' %}
+  {% set lastTerm = term.meta.descriptors.length == loop.index + 1 %}
   {% if previousTermInline != inline %}
     {% if previousTermInline != null %}
       </div>
     {% endif %}
-    <div class="d-flex {{ 'flex-row' if inline else 'flex-column' }}">
+    <div class="content-block d-flex {{ 'flex-row' if inline else 'flex-column' }} flex-wrap">
   {% endif %}
   {% include '_includes/components/dictionary/term-descriptor.njk' %}
   {% set previousTermInline = inline %}
