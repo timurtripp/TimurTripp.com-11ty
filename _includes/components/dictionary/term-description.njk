@@ -1,7 +1,7 @@
 {% set previousTermInline = null %}
 {% for descriptor in term.meta.descriptors %}{% if not nested or descriptor.nest %}
   {% set inline = descriptor.display == 'inline' %}
-  {% set lastTerm = term.meta.descriptors.length == loop.index + 1 %}
+  {% set lastTerm = term.meta.descriptors.length == loop.index %}
   {% if previousTermInline != inline %}
     {% if previousTermInline != null %}
       </div>
