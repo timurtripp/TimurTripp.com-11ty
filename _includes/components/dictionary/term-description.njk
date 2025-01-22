@@ -1,16 +1,23 @@
 {% set previousTermInline = null %}
-{% for descriptor in term.meta.descriptors %}{% if not nested or descriptor.nest %}
-  {% set inline = descriptor.display == 'inline' %}
-  {% set lastTerm = term.meta.descriptors.length == loop.index %}
-  {% if previousTermInline != inline %}
-    {% if previousTermInline != null %}
-      </div>
+{% for descriptor in term.meta.descriptors %}
+  {% if not nested or descriptor.nest %}
+    {% set inline = descriptor.display == 'inline' %}
+    {% if previousTermInline != inline %}
+      {% if previousTermInline != null %}
+        </div>
+      {% endif %}
+      <div class="content-block d-flex {{ 'flex-row flex-wrap' if inline else 'flex-column' }}">
     {% endif %}
-    <div class="content-block d-flex {{ 'flex-row' if inline else 'flex-column' }} flex-wrap">
+    <span>
+      {{ termLabel(createTerm(descriptor.term, descriptor.collection), not nested) }}
+    </span>
+    {% if inline and term.meta.descriptors.length != loop.index and term.meta.descriptors[loop.index].display == 'inline' %}
+      {# Inserts comma to separate inline items. #}
+      <span>,&nbsp;</span>
+    {% endif %}
+    {% set previousTermInline = inline %}
   {% endif %}
-  {% include '_includes/components/dictionary/term-descriptor.njk' %}
-  {% set previousTermInline = inline %}
-{% endif %}{% endfor %}
+{% endfor %}
 {% if previousTermInline != null %}
   </div>
 {% endif %}
