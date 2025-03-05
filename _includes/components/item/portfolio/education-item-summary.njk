@@ -3,5 +3,9 @@
 {% block itemName %}{{ item.award }}, {{ item.field }}{% endblock %}
 {% block itemHeader %}
   {{ super() }}
-  {{ termSummary(createTerm(item.institution, 'institutions'), createTerm, termList, true) }}
+  {% if item._institutions %}
+      {% for institution in item._institutions %}
+        {{ termSummary(createTerm(institution, 'institutions'), createTerm, termList, true) }}
+      {% endfor %}
+  {% endif %}
 {% endblock %}
