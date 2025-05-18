@@ -22,10 +22,13 @@
 {% if section %}
   {% set section = sections[section] %}
   {% set maxDepth = breadcrumbDepth(section, 0) | int %}
-  <div class="container block-breadcrumb">
-    <h4 class="visually-hidden">Parent pages</h4>
-    <ul>
-      {{ breadcrumb(section, 0, maxDepth) }}
-    </ul>
-  </div>
+  {% set renderedBreadcrumbs = breadcrumb(section, 0, maxDepth) %}
+  {% if renderedBreadcrumbs|trim != '' %}
+    <div class="container block-breadcrumb">
+      <h4 class="visually-hidden">Parent pages</h4>
+      <ul>
+        {{ renderedBreadcrumbs }}
+      </ul>
+    </div>
+  {% endif %}
 {% endif %}

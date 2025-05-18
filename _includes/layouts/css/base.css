@@ -371,12 +371,14 @@ ol ol, ol ul, ul ol, ul ul {
 }
 
 .card {
+  color: var(--theme-text-normal);
   background: transparent;
   text-align: center;
   border: none;
 }
 
 .card .card-hero-icon {
+  color: var(--theme-text-strong);
   font-size: 4em;
 }
 
