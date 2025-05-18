@@ -9,6 +9,7 @@ styles.css:
     - path: '_includes/blocks/css/*.css'
     - path: '_includes/components/css/*.css'
     - path: '_includes/components/theme/css/*.css'
+  version: 2
 
 eb-garamond-400-400i-700-700i-powerr-400-700-900-cmu-400-400i-700-700i.css:
   parse: false

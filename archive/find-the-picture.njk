@@ -1,0 +1,112 @@
+---
+title: Find the Picture
+section: archive
+layout: 'layouts/custom/archive.find-the-picture.njk'
+---
+{% from 'components/icon-macro.njk' import icon %}
+
+<h1 class="visually-hidden">Find the Picture</h1>
+<section class="text-center content-block">
+  <span class="h1" aria-hidden="true">Find the Picture</span>
+  <div class="sft-center">
+    <img src="https://assets.timurtripp.com/archive/ftp/correct.png" style="width: 150px; height: 112px;">
+    <p>Enjoy this fun picture finding game I made when I was 13. Landscape orientation is recommended to play the game on mobile.</p>
+  </div>
+</section>
+<section id="displaySection">
+  <div class="container section-container col-lg-12 col-sm-12">
+    <div class="container">
+      <div class="row">
+        <div class="container padded-col text-center col-lg-3">
+          <img src="https://assets.timurtripp.com/archive/ftp/default.png" style="width: 150px; height: 112px;">
+          <span class="h3"><span id="clickeddisplay">0 of 0</span></span>
+        </div>
+        <div class="container padded-col text-center col-lg-3">
+          <img src="https://assets.timurtripp.com/archive/ftp/correct.png" style="width: 150px; height: 112px;">
+          <span class="h3" id="notfounddisplay">{{ icon({ faSolid: 'Question' }) }}</span>
+          <span class="h3" style="display: none" id="founddisplay">{{ icon({ faSolid: 'Check' }) }}</span>
+        </div>
+        <div class="container padded-col text-center col-lg-3">
+          <img src="https://assets.timurtripp.com/archive/ftp/incorrect.png" style="width: 150px; height: 112px;">
+          <span class="h3"><span id="incorrectdisplay">0 of 0</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="gameSection">
+  <div class="container section-container col-lg-12 col-sm-12">
+    <div class="container">
+      <div class="row old-styling">
+        <div class="container text-center col-lg-10">
+          <ul class="tabbedlist list-unstyled" id="difficultyselect" style="margin: 0 auto;"><li class="selectedtab">Easy</li><li>Medium</li><li>Hard</li><li>Extra Hard</li><li>Custom</li></ul>
+          <div style="display: none;" class="row" id="customcontrols">
+            <p>X Amount:</p>
+            <ul class="tabbedlist list-unstyled" id="xselect" style="margin: 0 auto;"><li id="xoption1">A</li><li id="xoption2">B</li><li id="xoption3">C</li><li id="xoption4">D</li><li class="selectedtab" id="xoption5">E</li></ul>
+            <p>Y Amount: <input type="text" id="yamount" value="3" style="padding-left: 0; padding-right: 0; text-align: center; width: 32px;"></p>
+          </div>
+          <p class="navlist" style="text-align: center; padding-top: 8px; padding-bottom: 8px"><a href="javascript: resetButton();" id="resetGame">Reset Game</a></p>
+        </div>
+        <div class="container col-lg-10">
+          <div id="onboardstatus" style="display: none; position: fixed; top: 88px; left: 0; right: 0; color: #FFFFFF; background-color: #5BACFA; background-clip: padding-box; border: 2px solid rgba(0,0,0,.2); width: 100px; height: 16px; text-align: center; margin: 0 auto; padding: 8px 8px;" onmouseover="if(this.style.bottom == '32px'){this.style.top = '88px'; this.style.bottom = '';} else {this.style.bottom = '32px'; this.style.top = '';};">0/0</div>
+          <table id="gametable">
+            <tr>
+              <th class="horisontal"></th>
+              <th class="horisontal">A</th>
+              <th class="horisontal">B</th>
+              <th class="horisontal">C</th>
+              <th class="horisontal">D</th>
+              <th class="horisontal">E</th>
+              <th class="horisontal"></th>
+            </tr>
+            <tr>
+              <th class="vertical">1</th>
+              <td class="gamesquare" onmousedown="checkSquare(this)"></td>
+              <td class="gamesquare" onmousedown="checkSquare(this)"></td>
+              <td class="gamesquare" onmousedown="checkSquare(this)"></td>
+              <td class="gamesquare" onmousedown="checkSquare(this)"></td>
+              <td class="gamesquare" onmousedown="checkSquare(this)"></td>
+              <th class="vertical">1</th>
+            </tr>
+            <tr>
+              <th class="vertical">2</th>
+              <td class="gamesquare" onmousedown="checkSquare(this)"></td>
+              <td class="gamesquare" onmousedown="checkSquare(this)"></td>
+              <td class="gamesquare" onmousedown="checkSquare(this)"></td>
+              <td class="gamesquare" onmousedown="checkSquare(this)"></td>
+              <td class="gamesquare" onmousedown="checkSquare(this)"></td>
+              <th class="vertical">2</th>
+            </tr>
+            <tr>
+              <th class="vertical">3</th>
+              <td class="gamesquare" onmousedown="checkSquare(this)"></td>
+              <td class="gamesquare" onmousedown="checkSquare(this)"></td>
+              <td class="gamesquare" onmousedown="checkSquare(this)"></td>
+              <td class="gamesquare" onmousedown="checkSquare(this)"></td>
+              <td class="gamesquare" onmousedown="checkSquare(this)"></td>
+              <th class="vertical">3</th>
+            </tr>
+            <tr>
+              <th class="horisontal"></th>
+              <th class="horisontal">A</th>
+              <th class="horisontal">B</th>
+              <th class="horisontal">C</th>
+              <th class="horisontal">D</th>
+              <th class="horisontal">E</th>
+              <th class="horisontal"></th>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="row">
+        <div class="container col-lg-10 text-center">
+          <img src="https://assets.timurtripp.com/archive/ftp/snowy-the-rabbit.png" style="width: 201px; height: 37px; border: 0; vertical-align: middle;" alt="Snowy the Rabbit"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script type="text/javascript">
+  setUpTabbedLists();
+  resetGame(new gameTable(5,3));
+</script>

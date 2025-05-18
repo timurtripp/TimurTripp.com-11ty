@@ -26,5 +26,16 @@ module.exports = {
 	license: data => data.metadata.license || package.license,
 	noIndex: data => data.noIndex || data.isDeveloperPage,
 	permalink: data => data.isDeveloperPage ? data.page.inputPath + '/' : data.permalink,
-	termFactory: data => (dictionary, index, items, relationships) => new TermFactory(dictionary, index, items, relationships)
+	termFactory: data => (dictionary, index, items, relationships) => new TermFactory(dictionary, index, items, relationships),
+	rootSection: data => {
+		if (!data.section) return null;
+		let sectionName = data.section;
+		let section = data.sections[sectionName];
+		if (!section) return null;
+		while (section.parent && section.parent != 'root') {
+			sectionName = section.parent;
+			section = data.sections[sectionName];
+		}
+		return sectionName;
+	}
 };

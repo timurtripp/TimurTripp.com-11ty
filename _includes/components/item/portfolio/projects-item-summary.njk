@@ -12,7 +12,7 @@
         <div>
           <span class="d-block">View project at</span>
           <span class="d-block">
-            <a class="d-flex flex-row external-link no-underline" target="_blank" href="{{ item.url if item.url else '//' ~ item.website }}">
+            <a class="d-flex flex-row fst-italic external-link no-underline" target="_blank" href="{{ item.url if item.url else '//' ~ item.website }}">
               <span class="underline">{{ item.name if item.url else item.website }}</span>
               <span class="ms-1">{{ icon({ icon: 'external' }) }}</span>
             </a>

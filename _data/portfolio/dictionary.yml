@@ -179,6 +179,14 @@ tags:
         nest: true
     related:
       - software-engineering
+  cms:
+    label: 'Content Management System (CMS)'
+    descriptors:
+      - collection: _tagCategories
+        term: technical-skill
+        nest: true
+    related:
+      - drupal
   coursework:
     label: 'Coursework'
     descriptors: []
@@ -248,7 +256,7 @@ tags:
     related:
       - python
       - web-development
-      - 11ty
+      - flask
   docker:
     label: 'Docker'
     icon:
@@ -257,6 +265,15 @@ tags:
       - collection: _tagCategories
         term: platform
         nest: true
+  deep-learning:
+    label: 'Deep Learning'
+    descriptors:
+      - collection: _tagCategories
+        term: technical-skill
+        nest: true
+    related:
+      - llm
+      - machine-learning
   drupal:
     label: 'Drupal'
     icon:
@@ -266,9 +283,28 @@ tags:
         term: platform
         nest: true
     related:
-      - php
+      - cms
       - ckeditor
+      - php
+  express:
+    label: 'Express JS'
+    descriptors:
+      - collection: _tagCategories
+        term: platform
+        nest: true
+    related:
+      - javascript
+      - api-development
+  flask:
+    label: 'Flask'
+    descriptors:
+      - collection: _tagCategories
+        term: platform
+        nest: true
+    related:
+      - python
       - web-development
+      - django
   heroku:
     label: 'Heroku'
     descriptors:
@@ -384,6 +420,15 @@ tags:
       - html
       - react
       - web-development
+  llm:
+    label: 'Large Language Model (LLM)'
+    descriptors:
+      - collection: _tagCategories
+        term: technical-skill
+        nest: true
+    related:
+      - machine-learning
+      - deep-learning
   machine-learning:
     label: 'AI / Machine Learning'
     descriptors:
@@ -391,7 +436,8 @@ tags:
         term: technical-skill
         nest: true
     related:
-      - software-engineering
+      - deep-learning
+      - llm
   macos:
     label: 'macOS'
     descriptors:
@@ -568,6 +614,15 @@ tags:
       - python
       - numpy
       - pandas
+  sequelize:
+    label: 'Sequelize'
+    descriptors:
+      - collection: _tagCategories
+        term: platform
+        nest: true
+    related:
+      - javascript
+      - sql
   spring-framework:
     label: 'Spring Framework'
     descriptors:
@@ -606,6 +661,16 @@ tags:
         nest: true
     related:
       - sql
+  streamlit:
+    label: 'Streamlit'
+    descriptors:
+      - collection: _tagCategories
+        term: platform
+        nest: true
+    related:
+      - python
+      - matplotlib
+      - scipy
   swift:
     label: 'Swift'
     icon:
@@ -629,7 +694,7 @@ tags:
       - swift
       - xcode
   system-administration:
-    label: 'System Administration'
+    label: 'Linux System Administration'
     descriptors:
       - collection: _tagCategories
         term: technical-skill
@@ -664,6 +729,15 @@ tags:
       - agile-methodology
       - unit-testing
       - integration-testing
+  transformers:
+    label: 'Hugging Face Transformers'
+    descriptors:
+      - collection: _tagCategories
+        term: platform
+        nest: true
+    related:
+      - python
+      - llm
   twig:
     label: 'Twig'
     descriptors:

@@ -1,0 +1,18 @@
+---
+title: Archive
+section: archive
+layout: 'layouts/base.njk'
+---
+{% from 'components/icon-macro.njk' import icon %}
+
+<h1 class="visually-hidden">Archive</h1>
+<section class="text-center content-block">
+  <span class="h1" aria-hidden="true">Archive</span>
+  <a class="h2 no-underline d-inline-flex flex-row gap-4 align-items-center" href="/archive/find-the-picture/">
+    <div class="enlarged-text">
+      {{ icon({ imageurl: 'https://assets.timurtripp.com/archive/ftp/correct.png', imagecrop: true }) }}
+    </div>
+    <span class="underline">Find the Picture</span>
+    {{ icon({ icon: 'triangleRight' }) }}
+  </a>
+</section>

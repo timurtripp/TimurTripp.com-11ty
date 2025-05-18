@@ -1,0 +1,89 @@
+{% extends 'layouts/base.njk' %}
+{% block head %}
+  {{ super() }}
+  <link rel="stylesheet" type="text/css" href="https://assets.timurtripp.com/archive/themestyle.css">
+  <link rel="stylesheet" type="text/css" href="https://assets.timurtripp.com/archive/ftp/game.css">
+  <script type="text/javascript" src="https://assets.timurtripp.com/archive/themescript.js"></script>
+  <script type="text/javascript" src="https://assets.timurtripp.com/archive/ftp/Find-the-Picture.js"></script>
+  <script type="text/javascript">
+  //Declare some variables for the game:
+  var answer = Math.floor(Math.random()*15);
+  var ovr = false;
+  var clicks = 0;
+  var currentDifficulty = 'easy';
+  //Pre-load images:
+  var preloadimgincorrectlores = new Image();
+  preloadimgincorrectlores.src = 'https://assets.timurtripp.com/archive/ftp/incorrect-lores.png';
+  var preloadimgincorrect = new Image();
+  preloadimgincorrect.src = 'https://assets.timurtripp.com/archive/ftp/incorrect.png';
+  var preloadimgcorrectlores = new Image();
+  preloadimgcorrectlores.src = 'https://assets.timurtripp.com/archive/ftp/correct-lores.png';
+  var preloadimgcorrect = new Image();
+  preloadimgcorrect.src = 'https://assets.timurtripp.com/archive/ftp/correct.png';
+  var preloadimgunchosenlores = new Image();
+  preloadimgunchosenlores.src = 'https://assets.timurtripp.com/archive/ftp/unchosen-lores.png';
+  var preloadimgunchosen = new Image();
+  preloadimgunchosen.src = 'https://assets.timurtripp.com/archive/ftp/unchosen.png';
+
+  function tabChanged(tabbedList, option){
+    if(tabbedList == document.getElementById('difficultyselect')){
+      var customControls = document.getElementById('customcontrols');
+      var xAmount = 5;
+      var yAmount = 3;
+      switch(option.innerHTML){
+        case "Easy":
+          xAmount = 5;
+          yAmount = 3;
+          customControls.style.display = 'none';
+          break;
+        case "Medium":
+          xAmount = 5;
+          yAmount = 5;
+          customControls.style.display = 'none';
+          break;
+        case "Hard":
+          xAmount = 5;
+          yAmount = 10;
+          customControls.style.display = 'none';
+          break;
+        case "Extra Hard":
+          xAmount = 5;
+          yAmount = 50;
+          customControls.style.display = 'none';
+          break;
+        case "Custom":
+          customControls.style.display = 'block';
+          return true;
+      }
+      if(xAmount !== getGameTable().xAmount || yAmount !== getGameTable().yAmount){
+        resetGame(new gameTable(xAmount,yAmount));
+      }
+      return true;
+    }
+    if(tabbedList == document.getElementById('xselect')){
+      resetGame(new gameTable(option.id.substr(7), document.getElementById('yamount').value));
+      return true;
+    }
+  }
+
+  function resetButton(){
+    var xAmount = getGameTable().xAmount;
+    var yAmount = getGameTable().yAmount;
+    if(getGameTable().yAmount !== document.getElementById('yamount').value){
+      yAmount = document.getElementById('yamount').value;
+    }
+    resetGame(new gameTable(xAmount, yAmount));
+  }
+
+  window.onscroll = window.onresize = function(){/* fadeOutNav(); */ displayStatusInGame();};
+  </script>
+  <style type="text/css">
+    /* Overrides Bootstrap 5 styles */
+    #gametable tr:last-child td {
+      padding-bottom: 0;
+    }
+    #onboardstatus {
+      box-sizing: content-box;
+    }
+  </style>
+{% endblock %}

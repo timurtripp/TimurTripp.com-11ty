@@ -7,3 +7,4 @@ scripts.js:
   files:
     - path: '_includes/layouts/js/*.js'
     - path: '_includes/blocks/js/*.js'
+  version: '1.0'

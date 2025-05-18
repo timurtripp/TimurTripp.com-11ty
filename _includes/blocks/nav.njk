@@ -7,19 +7,16 @@
         </a>
       </div>
       <div class="float-right">
-        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="icon-bar top-bar"></span>
-          <span class="icon-bar middle-bar"></span>
-          <span class="icon-bar bottom-bar"></span>
-        </button>
-        <div class="p-0 container collapse navbar-collapse" id="navMenu">
+        <div class="p-0" id="navMenu">
           <ul class="navbar-nav ml-auto">
-            {% for sectionClass, section in sections %}{% if not section.parent or section.parent == 'root' %}
+            {% for sectionClass, sectionItem in sections %}{% if not sectionItem.parent or sectionItem.parent == 'root' %}
               <li class="nav-item opt opt-{{ sectionClass }} theme-{{ sectionClass }}">
-                <a class="d-inline-block nav-link no-underline py-1" href="{{ section.url }}"><span class="underline">{{ section.name }}</span></a>
+                <a class="d-inline-block nav-link no-underline py-1{{ ' active' if rootSection == sectionClass }}" href="{{ sectionItem.url }}">
+                  <span aria-hidden="true" class="triangle-right active-indicator"></span> 
+                  <span class="underline">{{ sectionItem.name }}</span>
+                </a>
               </li>
             {% endif %}{% endfor %}
-            <li class="nav-item">{% include 'components/theme/theme-mode-toggle.njk' %}</li>
           </ul>
         </div>
       </div>

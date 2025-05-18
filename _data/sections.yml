@@ -22,3 +22,7 @@ portfolio.tags.categories:
   name: Categories
   url: '/portfolio/tags/categories/'
   parent: portfolio.tags
+archive:
+  name: Archive
+  url: '/archive/'
+  parent: root

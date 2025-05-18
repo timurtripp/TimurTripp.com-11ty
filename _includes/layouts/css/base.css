@@ -1,23 +1,23 @@
 html, body {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    color: var(--theme-text-normal);
-    background: var(--theme-background-bg);
-    font-family: var(--font-normal);
+  display: flex;
+  flex-direction: column;
+  color: var(--theme-text-normal);
+  background: var(--theme-background-bg);
+  font-family: var(--font-normal);
   font-size: 1.2rem;
   line-height: 1.2em;
 }
 
 h1, .h1 {
   display: block;
-    color: var(--theme-text-strong);
-    font-family: var(--font-emphasis);
-    font-weight: 900;
-    font-size: 4rem;
+  color: var(--theme-text-strong);
+  font-family: var(--font-emphasis);
+  font-weight: 900;
+  font-size: 4rem;
   text-align: center;
 }
 
@@ -370,8 +370,18 @@ ol ol, ol ul, ul ol, ul ul {
   border-left: .4em solid currentColor;
 }
 
+.card {
+  background: transparent;
+  text-align: center;
+  border: none;
+}
+
+.card .card-hero-icon {
+  font-size: 4em;
+}
+
 @media (max-width: 1199px) {
-  h1, .h1, .h1-like {
+  h1, .h1, .h1-like, .card .card-hero-icon {
     font-size: calc(3rem + 1.2vw);
   }
   h2, .h2, h3, .h3, .large-text {

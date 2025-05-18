@@ -76,6 +76,34 @@ a.navbar-brand::after {
   opacity: 1;
 }
 
+.tt-nav .nav-item {
+  display: block;
+  font-family: var(--font-emphasis);
+  width: 76px;
+  height: 48px;
+  margin-top: -8px;
+}
+
+.tt-nav .nav-item .nav-link {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-45deg);
+  padding: 0;
+}
+
+.tt-nav .nav-item .nav-link .active-indicator {
+  visibility: hidden;
+}
+
+.tt-nav .nav-item .nav-link.active .active-indicator,
+.tt-nav .nav-item .nav-link:hover .active-indicator,
+.tt-nav .nav-item .nav-link:active .active-indicator {
+  visibility: visible;
+}
+
 .tt-nav .nav-link, .tt-nav .theme-mode-toggle-container {
   background-color: transparent;
   padding: 4px 16px;
@@ -100,5 +128,11 @@ a.navbar-brand::after {
 @media (min-width: 576px) {
   .tt-logo-main {
     font-size: 2em;
+  }
+}
+
+@media (min-width: 768px) {
+  .tt-nav .nav-item {
+    height: 32px;
   }
 }

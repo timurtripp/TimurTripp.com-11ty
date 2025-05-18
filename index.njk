@@ -1,4 +1,5 @@
 ---
+section: root
 layout: 'layouts/base.njk'
 ---
 {% from 'components/icon-macro.njk' import icon %}
@@ -14,7 +15,7 @@ layout: 'layouts/base.njk'
   </div>
   <span class="h1" aria-hidden="true">{{ metadata.author }}</span>
   <p>{{ metadata.authorBio }}</p>
-  <ul class="d-inline-block m-0 p-0 list-unstyled text-center">
+  <ul class="d-inline-block mt-0 p-0 list-unstyled text-center">
     {% if metadata.email %}
       <li class="my-2 d-flex flex-row">
         <a class="d-flex flex-row gap-1 align-items-center no-underline" href="mailto:{{ metadata.email }}">
@@ -39,7 +40,42 @@ layout: 'layouts/base.njk'
       {% endfor %}
     {% endif %}
   </ul>
-  <a class="h2 no-underline d-flex flex-row gap-4 justify-content-center align-items-center" href="portfolio/">
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="card">
+        <div class="card-body">
+          <div class="card-hero-icon">
+            {{ icon({ faSolid: 'GraduationCap' }) }}
+          </div>
+          <span class="h3">Master of Science</span>
+          <p>Computer Science</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="card">
+        <div class="card-body">
+          <div class="card-hero-icon">
+            {{ icon({ icon: 'sparkle' }) }}
+          </div>
+          <span class="h3">Professional Experience</span>
+          <p>Web development, web applications, and Drupal CMS (2.5 years)</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="card">
+        <div class="card-body">
+          <div class="card-hero-icon">
+            {{ icon({ faSolid: 'Crown' }) }}
+          </div>
+          <span class="h3">Breadth of Expertise</span>
+          <p>10+ personal and professional projects across the stack</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="h2 no-underline d-flex flex-row gap-4 justify-content-center align-items-center" href="/portfolio/">
     <div class="icon-64">
       {{ icon({ icon: 'briefcase' }) }}
     </div>
@@ -48,34 +84,17 @@ layout: 'layouts/base.njk'
   </a>
 </section>
 <section class="content-block">
-  <h2>My Software Engineering Ethos</h2>
-  <div class="d-flex gap-4 flex-row align-items-center">
-    <div class="my-2 large-text">
-      {{ icon({ icon: 'sparkle' }) }}
-    </div>
-    <div>
-      <h3>Coding is more than just coding.</h3>
-      <p>Good code enables new experiences and changes lives. Every software engineer should strive to be a part of something bigger than they are, and write code that others can learn from and improve.</p>
-    </div>
-  </div>
-  <div class="d-flex gap-4 flex-row align-items-center">
-    <div class="my-2 large-text">
-      {{ icon({ faSolid: 'Star' }) }}
-    </div>
-    <div>
-      <h3>Pursue your passion projects.</h3>
-      <p>I went from an 11-year-old working on a humble HTML/CSS/PHP website, to a professional developer providing the cutting-edge tools to build the web presence of the largest research university in the state of Colorado. Never lose sight of your dreams.</p>
-    </div>
-  </div>
-  <div class="d-flex gap-4 flex-row align-items-center">
-    <div class="my-2 large-text">
-      {{ icon({ icon: 'triangleUp' }) }}
-    </div>
-    <div>
-      <h3>Don’t be afraid to leave your comfort zone.</h3>
-      <p>Although everyone needs time to develop, the best opportunities for growth may lie outside your comfort zone. Don’t fear change – embrace it.</p>
-    </div>
-  </div>
+  <h2>About</h2>
+  <p>I’m a software engineer with a 16 year passion for web and application development. I first learned to code as a 10-year-old in 2009, using books and online tutorials to learn HTML, CSS, PHP, and JavaScript to build the first iteration of my TimurTripp.com website. Since then, across my education, work experience, and hobby projects I’ve gained hands-on experience with real-time client-server applications, machine learning, Linux system administration, cybersecurity, and more. I earned my Master of Science in Computer Science from University of Colorado Boulder in May 2025.</p>
+  <h4>Open to new oppertunities.</h4>
+  <ul>
+    <li>Software engineering</li>
+    <li>Application development</li>
+    <li>Web development</li>
+    <li>Web CMS</li>
+    <li>DevOps</li>
+    <li>Cybersecurity</li>
+  </ul>
 </section>
 <section class="content-block">
   <h2>Skillset</h2>
