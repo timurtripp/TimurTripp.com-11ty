@@ -9,7 +9,7 @@ projects:
 
       *Demo coming soon!*
     icon:
-      faSolid: Star
+      icon: sparkle
     start: '2025-03'
     _tags:
       - personal-project
@@ -38,7 +38,7 @@ projects:
     icon:
       imageurl: 'https://assets.timurtripp.com/portfolio/iiod.io.png'
       imagecrop: true
-      faSolid: Star
+      icon: sparkle
     start: '2018-01'
     end: '2024-06'
     _tags:
@@ -66,7 +66,7 @@ projects:
       - Developed using Agile concepts, including user stories, TDD, and CI/CD pipelines.
       - Features acceptance testing with Selenium and production monitoring with Prometheus and Grafana.
     icon:
-      faSolid: Star
+      icon: sparkle
     source:
       gitlab: https://gitlab.silvercrater.com/explore?name=team-strength
     start: '2024-03'
@@ -105,7 +105,7 @@ projects:
       - Provides visualizations via a Streamlit app deployed on Microsoft Azure.
     url: 'https://assets.timurtripp.com/portfolio/Alliant%20National%20Risk%20Profiling.pdf'
     icon:
-      faSolid: Star
+      icon: sparkle
     start: '2024-09'
     end: '2025-05'
     _tags:
@@ -130,7 +130,7 @@ projects:
     icon:
       imageurl: '/assets/mask-icon.svg'
       imageicon: true
-      faSolid: Star
+      icon: sparkle
     start: '2009-01'
     _tags:
       - personal-project
@@ -152,7 +152,7 @@ projects:
       - Delivered insights through visualization and statistical modeling.
     url: 'https://assets.timurtripp.com/portfolio/Predictors%20of%20NFL%20Tackles.pdf'
     icon:
-      faSolid: Star
+      icon: sparkle
     source:
       github: https://github.com/sesh9096/csci4502project
       gitlab: https://gitlab.silvercrater.com/tt/predictors-of-nfl-tackles
@@ -179,7 +179,7 @@ projects:
     icon:
       imageurl: 'https://assets.timurtripp.com/portfolio/d20-webgl.png'
       imagecrop: true
-      faSolid: Star
+      icon: sparkle
     start: '2023-10'
     end: '2023-12'
     _institutions:
@@ -199,7 +199,7 @@ projects:
     icon:
       imageurl: 'https://assets.timurtripp.com/portfolio/iiod.io.png'
       imagecrop: true
-      faSolid: Star
+      icon: sparkle
     start: '2021-11'
     end: '2022-04'
     _tags:
@@ -215,7 +215,7 @@ projects:
     description: 'This was a group project in CMPT 375 Web Applications to create a check-in app for our clients at Utah Pride Center. Administrators can manage users, sections, and programs, as well as generate a unique and secure join link for each user in Django admin.'
     source: { }
     icon:
-      faSolid: Star
+      icon: sparkle
     start: '2021-09'
     end: '2021-12'
     _institutions:
@@ -243,7 +243,7 @@ projects:
     icon:
       imageurl: 'https://assets.timurtripp.com/portfolio/TB.png'
       imagecrop: true
-      faSolid: Star
+      icon: sparkle
     start: '2017-01'
     end: '2018-05'
     _tags:
