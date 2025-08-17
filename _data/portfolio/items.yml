@@ -332,6 +332,34 @@ education:
       - mysql
 
 work:
+  bio-techne:
+    title: Full Stack Web Application Developer
+    department: ''
+    description: '' #todo: stub
+    icon:
+      faSolid: Code
+    start: '2025-08'
+    fullTime: true
+    _institutions:
+      - bio-techne
+    _tags:
+      - software-engineering
+      - web-development
+      - php
+      - javascript
+      - typescript
+      - cms
+      - drupal
+      - docker
+      - ckeditor
+      - collaboration
+      - communication
+      - html
+      - css
+      - twig
+      - git
+      - bitbucket
+      - ci-cd
   cu-boulder-software-engineer:
     title: 'Software Enginner'
     department: 'Strategic Relations'

@@ -1,7 +1,7 @@
 - label: 'Work Experience'
   id: work
   theme: cyan
-  expandedItems: 1
+  expandedItems: 2
   templates:
     summary: 'portfolio/work-item-summary.njk'
 - label: 'Education'

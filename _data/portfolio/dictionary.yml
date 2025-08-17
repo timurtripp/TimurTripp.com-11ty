@@ -106,6 +106,18 @@ tags:
       - aws
       - cloudflare
       - heroku
+  bitbucket:
+    label: Bitbucket
+    icon:
+      faBrand: Bitbucket
+    descriptors:
+      - collection: _tagCategories
+        term: platform
+        nest: true
+    related:
+      - git
+      - github
+      - gitlab
   c:
     label: 'C'
     descriptors:
@@ -326,6 +338,7 @@ tags:
     related:
       - github
       - gitlab
+      - bitbucket
   github:
     label: 'GitHub'
     icon:
@@ -337,6 +350,7 @@ tags:
     related:
       - git
       - gitlab
+      - bitbucket
   gitlab:
     label: 'GitLab'
     icon:
@@ -348,6 +362,7 @@ tags:
     related:
       - git
       - github
+      - bitbucket
   grafana:
     label: 'Grafana'
     descriptors:
@@ -826,6 +841,25 @@ tags:
       - mobile-development
 
 institutions:
+  bio-techne:
+    label: Bio-Techne
+    icon:
+    descriptors:
+      - collection: _locations
+        term: centennial
+        nest: true
+        display: inline
+      - collection: _locations
+        term: colorado
+        nest: true
+        display: inline
+      - collection: _locations
+        term: united-states
+        nest: true
+        display: inline
+      - collection: _websites
+        term: bio-techne.com
+        nest: false
   cu-boulder:
     label: 'University of Colorado Boulder'
     icon:
@@ -911,6 +945,17 @@ _locations:
         term: united-states
         nest: true
         display: inline
+  centennial:
+    label: Centennial
+    descriptors:
+      - collection: _locations
+        term: colorado
+        nest: true
+        display: inline
+      - collection: _locations
+        term: united-states
+        nest: true
+        display: inline
   colorado:
     label: 'Colorado'
     descriptors:
@@ -959,6 +1004,9 @@ _tagCategories:
     label: 'Technical Skill'
 
 _websites:
+  bio-techne.com:
+    label: 'bio-techne.com'
+    url: '//bio-techne.com'
   colorado.edu:
     label: 'colorado.edu'
     url: '//colorado.edu'
