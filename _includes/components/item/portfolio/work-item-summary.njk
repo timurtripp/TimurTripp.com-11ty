@@ -14,7 +14,28 @@
   {{ super() }}
 {% endblock %}
 {% block itemBelowNameList %}
-  {% if item.fullTime %}<li class="my-1"><span>Full time</span></li>{% endif %}
-  {% if item.partTime %}<li class="my-1"><span>Part time</span></li>{% endif %}
+  {% if item.fullTime or item.partTime or item.modality %}
+    <li class="my-1">
+      {% if item.fullTime %}
+        <span>Full time</span>
+      {% elif item.partTime %}
+        <span>Part time</span>
+      {% endif %}
+      {% if item.modality %}
+        {% if item.fullTime or item.partTime %}
+          <span class="theme-color-text">&bull;</span>
+        {% endif %}
+        <span>
+          {% if item.modality == 'remote' %}
+            Remote
+          {% elif item.modality == 'hybrid' %}
+            Hybrid
+          {% elif item.modality == 'on-site' %}
+            On-site
+          {% endif %}
+        </span>
+      {% endif %}
+    </li>
+  {% endif %}
   {{ super() }}
 {% endblock %}

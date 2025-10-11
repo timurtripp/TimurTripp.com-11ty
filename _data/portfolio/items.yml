@@ -335,11 +335,13 @@ work:
   bio-techne:
     title: Full Stack Web Application Developer
     department: ''
-    description: '' #todo: stub
+    description: |
+      - Developing the R&D Systems e-commerce website using a modern CMS stack with Drupal 11 and PHP 8.
     icon:
       faSolid: Code
     start: '2025-08'
     fullTime: true
+    modality: hybrid
     _institutions:
       - bio-techne
     _tags:
@@ -374,6 +376,7 @@ work:
     start: '2022-06'
     end: '2025-02'
     fullTime: true
+    modality: remote
     _institutions:
       - cu-boulder
     _tags:
@@ -405,6 +408,7 @@ work:
     start: '2022-02'
     end: '2022-05'
     partTime: true
+    modality: hybrid
     _institutions:
       - slcc
     _tags:
@@ -420,6 +424,7 @@ work:
     start: '2021-12'
     end: '2022-04'
     partTime: true
+    modality: remote
     _institutions:
       - introcs-pogil
       - westminster
@@ -439,6 +444,7 @@ work:
     start: '2021-06'
     end: '2021-12'
     partTime: true
+    modality: on-site
     _institutions:
       - westminster
     _tags:

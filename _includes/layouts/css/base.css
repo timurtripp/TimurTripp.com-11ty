@@ -356,8 +356,8 @@ ol ol, ol ul, ul ol, ul ul {
 .triangle-left, .triangle-right {
   display: inline-block;
   vertical-align: baseline;
-  width: 0; 
-  height: 0; 
+  width: 0;
+  height: 0;
   border-top: .33em solid transparent;
   border-bottom: .33em solid transparent;
 }

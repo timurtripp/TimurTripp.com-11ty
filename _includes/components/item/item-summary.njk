@@ -20,7 +20,7 @@
         {% block itemBelowName %}
         <ul class="list-unstyled item-attributes">
           {% block itemBelowNameList %}
-            {% set endDate = item.end if item.end else ('present' if item.start) %}
+            {% set endDate = item.end if item.end else ('Present' if item.start) %}
             {% if endDate %}
               <li class="item-date my-1">
                 <span>{% if item.start %}{% dateFormatted item.start %} <span aria-label="to" class="theme-color-text triangle-right"></span> {% endif %}{% dateFormatted endDate %}</span>
