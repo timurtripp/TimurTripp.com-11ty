@@ -361,6 +361,7 @@ work:
       - twig
       - git
       - bitbucket
+      - acquia
       - ci-cd
   cu-boulder-software-engineer:
     title: 'Software Enginner'
@@ -398,6 +399,7 @@ work:
       - github
       - webpack
       - asana
+      - pantheon
       - ci-cd
   slcc-tutor:
     title: 'Tutor'

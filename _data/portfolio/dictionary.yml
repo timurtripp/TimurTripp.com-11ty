@@ -45,6 +45,15 @@ tags:
       - unit-testing
       - integration-testing
       - tdd
+  acquia:
+    label: 'Acquia'
+    descriptors:
+      - collection: _tagCategories
+        term: platform
+        nest: true
+    related:
+      - pantheon
+      - drupal
   agile-methodology:
     label: 'Agile Methodology'
     descriptors:
@@ -549,6 +558,15 @@ tags:
       - python
       - numpy
       - scipy
+  pantheon:
+    label: 'Pantheon'
+    descriptors:
+      - collection: _tagCategories
+        term: platform
+        nest: true
+    related:
+      - acquia
+      - drupal
   personal-project:
     label: 'Personal Project'
     icon:
@@ -844,6 +862,7 @@ institutions:
   bio-techne:
     label: Bio-Techne
     icon:
+      imageurl: 'https://assets.timurtripp.com/portfolio/Bio-Techne.svg'
     descriptors:
       - collection: _locations
         term: centennial
